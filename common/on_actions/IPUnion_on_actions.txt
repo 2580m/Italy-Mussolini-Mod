@@ -1,0 +1,20 @@
+on_actions = {
+	on_startup = {
+		#ITA = {
+		#	add_ideas = idea_ITA_GIL
+		#}
+		effect = {
+			#build_railway = {
+			#	path = { 3928 13378 911 }
+			#	level = 2
+			#}
+			#build_railway = {
+			#	path = { 1155 13377 12049 7011 }
+			#	level = 2
+			#}
+			BUL = {
+				add_ideas = idea_BUL_lonely_nationalist
+			}
+		}
+	}
+}

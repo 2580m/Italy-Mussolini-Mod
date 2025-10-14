@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_IPUnion_album_art"
+		texturefile = "gfx/IPUnion_SoundTrack_Icon.png"
+		noOfFrames = 2
+	}
+}

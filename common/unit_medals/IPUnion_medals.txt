@@ -1,0 +1,20 @@
+unit_medals = {
+	Capital_Defender = {
+		
+		available = { always = no }
+		frame = 3
+		icon = "GFX_medal_icon_ita"
+		
+		cost = 30
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.1
+			army_defence_factor = -0.05
+		}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+		
+	}
+}

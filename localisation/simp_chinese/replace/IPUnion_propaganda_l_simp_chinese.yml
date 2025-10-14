@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ ITA_propaganda_campaigns: "国家法西斯党中央委员会-宣传鼓动部"
+ ITA_propaganda_duce: "团结在[ITA.GetLeader]的领导下！"
+ ITA_propaganda_builders_of_fascism: "年轻的法西斯主义建设者！"
+ ITA_propaganda_anti_anti_fascism: "向法西斯战士们致敬！"
+ ITA_propaganda_transport: "运输对军队必不可少"
+ ITA_propaganda_defend_roma: "我们必须保卫罗马！"
+ ITA_propaganda_rebuild_to_glory: "进军是宣言书，进军是宣传队，进军是播种机"
+ ITA_propaganda_high_yield: "一万年太久，只争朝夕"
+ SOV_propaganda_builders_of_communism: "年轻的法西斯主义建设者！"
+ SOV_propaganda_stalin: "团结在[ITA.GetLeader]的领导下！"
+ SOV_propaganda_anti_fascism: "向法西斯战士们致敬！"
+ SOV_propaganda_transport: "运输对军队必不可少"
+# SOV_propaganda_defend_moscow: "我们必须保卫罗马！"
+ SOV_propaganda_rebuild_to_glory: "进军是宣言书，进军是宣传队，进军是播种机"
+ SOV_propaganda_high_yield: "一万年太久，只争朝夕"
+ SOV_propaganda_anti_capitalism: "千万不要忘记阶级调和"
+ 
+
+
+# SOV_poster_left_text: "[GetDaysRemainingLeft]"
+# SOV_poster_center_text: "[GetDaysRemainingCenter]"
+# SOV_poster_right_text: "[GetDaysRemainingRight]"
+ ITA_PROPAGANDA_CAMPAIGN_TT_LEFT: "[ITA_GetPropagandaCampaignEffects_Left]"
+ ITA_PROPAGANDA_CAMPAIGN_TT_CENTER: "[ITA_GetPropagandaCampaignEffects_Center]"
+ ITA_PROPAGANDA_CAMPAIGN_TT_RIGHT: "[ITA_GetPropagandaCampaignEffects_Right]"

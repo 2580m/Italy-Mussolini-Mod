@@ -1,0 +1,95 @@
+ITA_state_monopoly_capitalism_reforming = {
+	hidden_effect = {
+		add_dynamic_modifier = {
+			modifier = ITA_recovering_economy_modifier
+		}
+	}
+	add_to_variable = {
+		GER_industrial_production_speed_arms_factory_factor = -0.1
+		tooltip = production_speed_arms_factory_factor_tt
+	}
+	add_to_variable = {
+		GER_industrial_production_speed_dockyard_factor = -0.1
+		tooltip = production_speed_dockyard_factor_tt
+	}
+	add_to_variable = {
+		GER_industrial_industrial_capacity_factory = -0.1
+		tooltip = industrial_capacity_factory_tt
+	}
+	add_to_variable = {
+		GER_industrial_industrial_capacity_dockyard = -0.1
+		tooltip = industrial_capacity_dockyard_tt
+	}
+}
+
+ITA_promote_umberto_to_country_leader_1 = {
+	if = {
+		limit = {
+			ITA_prince_umberto = {
+				can_be_country_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				ITA_prince_umberto = {
+					has_ideology_group = neutrality
+				}
+			}
+			ITA_prince_umberto = { promote_character = { ideology = despotism } }
+		}
+		else_if = {
+			limit = {
+				ITA_prince_umberto = {
+					has_ideology_group = democratic
+				}
+			}
+			ITA_prince_umberto = { promote_character = { ideology = conservatism } }
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = ITA_democratic_king
+		}
+		add_country_leader_role = {
+			character =  ITA_prince_umberto
+			promote_leader = yes
+			country_leader = {
+				ideology = conservatism
+				traits = { inexperienced_monarch eager_commander }
+				expire = "1965.1.1.1"
+				id = -1
+			}
+		}
+		add_country_leader_role = { #Add the Non-Aligned role too, but without promoting
+			character =  ITA_prince_umberto
+			country_leader = {
+				ideology = despotism
+				traits = { inexperienced_monarch eager_commander }
+				expire = "1965.1.1.1"
+				id = -1
+			}
+		}
+		set_character_name = {
+			character = ITA_prince_umberto
+			name = ITA_prince_umberto_king
+		}
+		#BoP
+	}
+	else = {
+		add_country_leader_role = {
+			character =  ITA_prince_umberto
+			promote_leader = yes
+			country_leader = {
+				ideology = despotism
+				traits = { inexperienced_monarch eager_commander }
+				expire = "1965.1.1.1"
+				id = -1
+			}
+		}
+		set_character_name = {
+			character = ITA_prince_umberto
+			name = ITA_prince_umberto_king
+		}
+
+	}
+}

@@ -1,0 +1,120 @@
+music = {
+	name = "BattaglioneM"
+	file = "Battaglione M.ogg"
+	volume = 1
+}
+music = {
+	name = "DuceDuce"
+	file = "Duce! Duce!.ogg"
+	volume = 1
+}
+music = {
+	name = "FaccettaNera"
+	file = "Faccetta Nera.ogg"
+	volume = 1
+}
+music = {
+	name = "InnoDeiBalillaMoschettieri"
+	file = "Inno dei Balilla Moschettieri.ogg"
+	volume = 1
+}
+music = {
+	name = "InnoDeiSommergibili"
+	file = "Inno dei Sommergibili.ogg"
+	volume = 1
+}
+music = {
+	name = "InnoDelleBrigateNere"
+	file = "Inno delle Brigate Nere.ogg"
+	volume = 1
+}
+music = {
+	name = "LaProclamazioneDellImpero"
+	file = "La proclamazione dell'Impero.ogg"
+	volume = 1
+}
+music = {
+	name = "VogliamoScolpireUnaLapide"
+	file = "Vogliamo scolpire una lapide.ogg"
+	volume = 1
+}
+music = {
+	name = "LiliMarlene"
+	file = "Lili Marlene.ogg"
+	volume = 1
+}
+music = {
+	name = "Menefrego"
+	file = "Me ne frego!.ogg"
+	volume = 1
+}
+music = {
+	name = "LaFanfaraDeiBersaglieri"
+	file = "La Fanfara dei Bersaglieri（Flik Flok）.ogg"
+	volume = 1
+}
+music = {
+	name = "MarciaDelVolontario"
+	file = "Marcia del Volontario (Inno della R.S.I.).ogg"
+	volume = 1
+}
+music = {
+	name = "Giovinezza1909"
+	file = "Giovinezza-1909.ogg"
+	volume = 1
+}
+music = {
+	name = "InnoDeiGiovaniFascisti"
+	file = "Inno dei Giovani Fascisti.ogg"
+	volume = 1
+}
+music = {
+	name = "BandaDellaBrigataSassari"
+	file = "Banda della Brigata Sassari.ogg"
+	volume = 1
+}
+music = {
+	name = "IPUnionBellaCiao"
+	file = "BellaCiao_IPUnion.ogg"
+	volume = 1
+}
+music = {
+	name = "Mediterraneo"
+	file = "Mediterraneo.ogg"
+}
+music = {
+	name = "AllarmiSiamFascisti"
+	file = "All‘armi siam fascisti.ogg"
+}
+music = {
+	name = "InnoARoma"
+	file = "Inno a Roma.ogg"
+}
+music = {
+	name = "LaBellaGigogin"
+	file = "La bella Gigogin.ogg"
+}
+music = {
+	name = "InnoDiMameli"
+	file = "Inno di Mameli.ogg"
+}
+music = {
+	name = "LeDonneNonCiVoglionoPiuBene"
+	file = "Le donne non ci vogliono più bene.ogg"
+}
+music = {
+	name = "IlPassoDellaCorsa"
+	file = "Il Passo Della Corsa.ogg"
+}
+music = {
+	name = "Giovinezza1922"
+	file = "Giovinezza-1922.ogg"
+}
+music = {
+	name = "VincereVincereVincere"
+	file = "Vincere,Vincere,Vincere!.ogg"
+}
+music = {
+	name = "LaleggendadelPiave"
+	file = "La leggenda del Piave.ogg"
+}

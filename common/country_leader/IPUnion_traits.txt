@@ -1,0 +1,39 @@
+leader_traits = {
+	ITA_duce_helmsman = {
+		random = no
+		stability_factor = 0.10
+		war_support_factor = 0.10
+		planning_speed = 0.05
+		max_planning = 0.10
+		research = 0.10
+		drift_defence_factor = 0.15
+		political_power_gain = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ITA_duce_ffs_sfp = { ##Father Forged steel,Son Forged the People
+		random = no
+		fascism_drift = 0.15
+		political_power_gain = 0.05
+		stability_factor = 0.05
+		war_support_factor = 0.05
+	}
+	public_utilities_department = {
+		random = no
+
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		political_power_gain = -0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	capitalist_unite = {
+		random = no
+		consumer_goods_factor = 0.10
+		political_power_gain = 0.05
+		production_speed_buildings_factor = 0.10
+	}
+}

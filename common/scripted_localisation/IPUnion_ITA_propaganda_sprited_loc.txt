@@ -1,0 +1,117 @@
+defined_text = {
+	name = ITA_GetPropagandaCampaignEffects_Left
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_left_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_defend_roma
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_left_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_transport
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_left_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_high_yield
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_left_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_anti_anti_fascism
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_left_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_builders_of_fascism
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_left_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_duce
+	}
+}
+defined_text = {
+	name = ITA_GetPropagandaCampaignEffects_Center
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_center_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_defend_roma
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_center_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_transport
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_center_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_high_yield
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_center_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_anti_anti_fascism
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_center_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_builders_of_fascism
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_center_icon_frame = 10 }
+		}
+		localization_key = ITA_propaganda_duce
+	}
+}
+defined_text = {
+	name = ITA_GetPropagandaCampaignEffects_Right
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_right_icon_frame = 105 }
+		}
+		localization_key = ITA_propaganda_defend_roma
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_right_icon_frame = 108 }
+		}
+		localization_key = ITA_propaganda_transport
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_right_icon_frame = 1011 }
+		}
+		localization_key = ITA_propaganda_high_yield
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_right_icon_frame = 1015 }
+		}
+		localization_key = ITA_propaganda_anti_anti_fascism
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_right_icon_frame = 1020 }
+		}
+		localization_key = ITA_propaganda_builders_of_fascism
+	}
+	text = {
+		trigger = {
+			check_variable = { SOV_poster_right_icon_frame = 1023 }
+		}
+		localization_key = ITA_propaganda_duce
+	}
+}

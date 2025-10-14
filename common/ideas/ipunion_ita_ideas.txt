@@ -1,0 +1,486 @@
+ideas = {
+	hidden_ideas = {
+		idea_ITA_democratic_puppet = {
+			removal_cost = -1
+			available = {
+				has_government = democratic
+			}
+			modifier = {
+				democratic_drift = 0.15
+			}
+		}
+		idea_ITA_10percent_consumer_goods = {
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				consumer_goods_factor = 0.10
+				fascism_drift = 0.05
+			}
+		}
+		idea_ITA_15percent_consumer_goods = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				democratic_drift = 0.05
+			}
+		}
+		ITA_has_life_meeting_180days = {
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+		ITA_has_cirticism_meeting_180days = {
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+	}
+	country = {
+		idea_ITA_the_question_of_por_colony_1 = {
+			name = idea_ITA_the_question_of_por_colony_1
+			picture = generic_deal_with_the_devil
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = -0.15
+				war_support_factor = -0.20
+				consumer_goods_factor = 0.15
+				resistance_damage_to_garrison = 0.30
+			}
+		}
+		idea_ITA_the_question_of_por_colony_2 = {
+			name = idea_ITA_the_question_of_por_colony_2
+			picture = generic_deal_with_the_devil
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.10
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.10
+				resistance_damage_to_garrison = 0.15
+			}
+		}
+		idea_ITA_the_question_of_por_colony_3 = {
+			name = idea_ITA_the_question_of_por_colony_3
+			picture = generic_deal_with_the_devil
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.10
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.10
+				#resistance_damage_to_garrison = 0.15
+			}
+		}
+		idea_ITA_the_question_of_por_colony_4 = {
+			name = idea_ITA_the_question_of_por_colony_4
+			picture = generic_deal_with_the_devil
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				#war_support_factor = -0.05
+				consumer_goods_factor = 0.10
+				#resistance_damage_to_garrison = 0.15
+			}
+		}
+		idea_ITA_the_question_of_por_colony_5 = {
+			name = idea_ITA_the_question_of_por_colony_5
+			picture = generic_deal_with_the_devil
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				war_support_factor = 0.10
+				consumer_goods_factor = 0.05
+				#resistance_damage_to_garrison = 0.15
+			}
+		}
+		idea_ITA_overseas_state = {
+			name = idea_ITA_overseas_state
+			picture = CHL_famae
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.20
+				political_power_gain = 0.50
+				war_support_factor = 0.15
+				weekly_manpower = 500
+				monthly_population = 0.10
+				forced_surrender_limit = 0.95
+				drift_defence_factor = 0.15
+				heat_attrition = -0.05
+				resistance_target = -0.05
+				consumer_goods_factor = 0.075
+			}
+		}
+		idea_ita_por_colony_development = {
+			name = idea_ita_por_colony_development
+			picture = FRA_motorized_focus
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = { 
+				production_speed_buildings_factor = 0.15
+				weekly_manpower = 5000
+				local_non_core_manpower = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		idea_ITA_relief_booklet_in_por_colony = {
+			name = idea_ITA_relief_booklet_in_por_colony
+			picture = generic_goods_red_bonus
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		idea_ITA_capital_out = {
+			name = idea_ITA_capital_out
+			picture = chi_hyper_inflation4
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		idea_ITA_overseas_science_base = {
+			name = idea_ITA_overseas_science_base
+			picture = jap_duplicate_research
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		idea_ITA_goa_ship_science_base_por_conoly = {
+			name = idea_ITA_goa_ship_science_base_por_conoly
+			picture = Cockatoo_doe
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_dockyard_factor = 0.25
+				industrial_capacity_dockyard = 0.25
+			}
+		}
+		idea_ITA_por_army_demobilization = {
+			name = idea_ITA_por_army_demobilization
+			picture = ARG_construction_guilds
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -1000
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		idea_ITA_land_of_milk_and_honey = {
+			name = idea_ITA_land_of_milk_and_honey
+			picture = CHL_araucanian_aristocracy
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				supply_node_range = 0.35
+				supply_consumption_factor = -0.05
+				political_power_gain = 0.5
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.20
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		idea_ITA_forced_nationalization = {
+			name = idea_ITA_forced_nationalization
+			picture = ger_mefo_bills_payment
+			allowed = {
+
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.75
+				political_power_gain = -0.10
+			}
+		}
+
+		idea_ITA_state_monopoly_capitalism = {
+			name = idea_ITA_state_monopoly_capitalism
+			picture = fra_deluge
+			allowed = {
+
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.025
+				research_speed_factor = 0.10
+				industry_repair_factor = 0.15
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.15
+				global_building_slots = 2
+			}
+
+		}
+
+		idea_ITA_miracolo_economico = {
+			name = idea_ITA_miracolo_economico
+			picture = chi_hyper_inflation5
+			allowed = {
+
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		idea_ITA_lease_toulon = {
+			name = idea_ITA_lease_toulon
+			picture = BRA_arsenal_de_marinha
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		idea_ITA_second_marching_to_Fiume = {
+			name = idea_ITA_second_marching_to_Fiume
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+
+			}
+			available = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.15
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		idea_ITA_party_command_guns = {
+			name = idea_ITA_party_command_guns
+			picture = CHL_carabineros_de_chile_neutrality
+			allowed = {
+
+			}
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				fascism_drift = 0.05
+				political_power_gain = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		idea_ITA_Hot_Autumn = {
+			name = idea_ITA_Hot_Autumn
+			picture = generic_goods_red_bonus
+			allowed = {
+
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -5
+				stability_factor = -0.10
+				consumer_goods_factor = 0.3
+				democratic_drift = 0.10
+				fascism_drift = -0.05
+				neutrality_drift = 0.10
+				communism_drift = 0.10
+			}
+		}
+		idea_ITA_normal_organizational_life = {
+			name = idea_ITA_normal_organizational_life
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				political_power_gain = 0.05
+				fascism_drift = 0.01
+			}
+		}
+		idea_ITA_GIL = {
+			name = idea_ITA_GIL
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_government = fascism
+			}
+			picture = ITA_GIL
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				fascism_drift = 0.01
+				party_popularity_stability_factor = 0.3
+			}
+		}
+		idea_ITA_political_risks = {
+			name = idea_ITA_political_risks
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			allowed = {
+
+			}
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				political_power_gain = -0.01
+				stability_factor = -0.05
+				fascism_drift = 0.01
+				democratic_drift = 0.01
+				neutrality_drift = 0.01
+			}
+		}
+		idea_ITA_learn_form_foggia = {
+			name = idea_ITA_learn_form_foggia
+			picture = FIN_funs_from_kalevala_koru_oy
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.05
+				out_of_supply_factor = -0.10
+				monthly_population = 0.05
+				supply_node_range = 0.10
+			}
+		}
+		idea_ITA_learn_form_torina = {
+			name = idea_ITA_learn_form_torina
+			picture = FIN_finnish_federation_of_trade_unions_heavy
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				political_power_gain = 0.05
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		idea_ITA_learn_form_camicie_nere = {
+			name = idea_ITA_learn_form_camicie_nere
+			picture = generic_reserve_divisions
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				modifier_army_sub_unit_militia_max_org_factor = 1.00
+				modifier_army_sub_unit_militia_attack_factor = 0.30
+				modifier_army_sub_unit_militia_defence_factor = 0.30
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.10
+			}
+		}
+		ITA_planned_parenthood_idea = {
+			name = ITA_planned_parenthood_idea
+			picture = ITA_battaglie_per_la_nascite
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			modifier = {
+				political_power_gain = 0.05
+				monthly_population = 0.2
+				weekly_manpower = 1000
+			}
+		}
+		idea_ITA_anti_revisionism = {
+			name = idea_ITA_anti_revisionism
+			picture = generic_victors_of_ww1
+			removal_cost = -1
+			available = {
+				has_government = fascism
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+	}
+	industrial_concern = {
+		ITA_OND = {
+
+			picture = ITA_OND
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_completed_focus = ITA_workers_rights
+				has_government = fascism
+			}
+			
+			cost = 75
+
+			research_bonus = {
+				train_tech = 0.05
+				synth_resources = 0.05
+				industry = 0.05
+				electronics = 0.05
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = 0.025
+				war_support_factor = -0.10
+			}
+			
+			traits = { public_utilities_department }
+		}
+	}
+}

@@ -1,0 +1,105 @@
+add_namespace = IPUnion_border_war_event
+
+country_event = {
+	id = IPUnion_border_war_event.1  ##科西嘉岛边境战争攻方胜利事件
+	title = IPUnion_border_war_event.1.t
+	desc = IPUnion_border_war_event.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = IPUnion_border_war_event.1.a
+		
+		transfer_state = 1
+			
+		1 = {
+			add_core_of = ITA
+			remove_core_of = FRA
+		}
+	}
+}
+country_event = {
+	id = IPUnion_border_war_event.2  ##边境战争败方通用事件
+	title = IPUnion_border_war_event.2.t
+	desc = IPUnion_border_war_event.2.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = IPUnion_border_war_event.2.a
+		add_stability = -0.10
+		add_war_support = -0.10
+		add_political_power = -30
+	}
+}
+country_event = {
+	id = IPUnion_border_war_event.3  ##边界战争胜方通用事件
+	title = IPUnion_border_war_event.3.t
+	desc = IPUnion_border_war_event.3.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = IPUnion_border_war_event.3.a
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_political_power = 30
+	}
+}
+country_event = {
+	id = IPUnion_border_war_event.4 ##北非边界战争Part1_的黎波里塔尼亚和加贝斯攻方胜利事件
+	title = IPUnion_border_war_event.4.t
+	desc = IPUnion_border_war_event.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = IPUnion_border_war_event.4.a
+		
+		#transfer_state = 665
+		#transfer_state = 458
+			
+		#665 = {
+		#	add_core_of = ITA
+		#	remove_core_of = FRA
+		#}
+		#458 = {
+		#	add_core_of = ITA
+		#	remove_core_of = FRA
+		#}
+
+		hidden_effect = {
+			#set_country_flag = IPUnion_border_war_event_4_flag
+			if = {
+				limit = {
+					has_country_flag = IPUnion_border_war_event_5_flag
+				}
+				country_event = IPUnion_country_event.30
+			}
+			else = {
+				set_country_flag = IPUnion_border_war_event_4_flag
+			}
+		}
+	}
+}
+country_event = {
+	id = IPUnion_border_war_event.5 ##北非边界战争Part2_的黎波里和加贝斯攻方胜利事件
+	title = IPUnion_border_war_event.5.t
+	desc = IPUnion_border_war_event.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = IPUnion_border_war_event.5.a
+
+		hidden_effect = {
+			#set_country_flag = IPUnion_border_war_event_5_flag
+			if = {
+				limit = {
+					has_country_flag = IPUnion_border_war_event_4_flag
+				}
+				country_event = IPUnion_country_event.30
+			}
+			else = {
+				set_country_flag = IPUnion_border_war_event_5_flag
+			}
+		}
+	}
+}

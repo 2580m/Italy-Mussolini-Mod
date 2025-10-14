@@ -1,0 +1,158 @@
+music_station = "IPUnionSoundtrack"
+
+music = {
+	song = "BattaglioneM"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "DuceDuce"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "FaccettaNera"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "InnoDeiBalillaMoschettieri"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "InnoDeiSommergibili"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "InnoDelleBrigateNere"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "LaProclamazioneDellImpero"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "VogliamoScolpireUnaLapide"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "LiliMarlene"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "Menefrego"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "LaFanfaraDeiBersaglieri"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "MarciaDelVolontario"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "Giovinezza1909"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "InnoDeiGiovaniFascisti"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "BandaDellaBrigataSassari"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "IPUnionBellaCiao"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "Mediterraneo"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "AllarmiSiamFascisti"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "InnoARoma"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "LaBellaGigogin"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "InnoDiMameli"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "LeDonneNonCiVoglionoPiuBene"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "IlPassoDellaCorsa"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "VincereVincereVincere"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "Giovinezza1922"
+	chance = {
+		factor = 1
+	}
+}
+music = {
+	song = "LaleggendadelPiave"
+	chance = {
+		factor = 1
+	}
+}

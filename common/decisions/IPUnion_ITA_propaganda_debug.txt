@@ -1,0 +1,119 @@
+ITA_propaganda_campaigns = {
+	SOV_debug_unlock_slot = {
+		priority = 59
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			OR = {
+				check_variable = { SOV_poster_left_icon_frame = SOV_propaganda_locked_slot_index }
+				check_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index }
+				check_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index }
+			}
+		}
+
+		visible = {
+			OR = {
+				check_variable = { SOV_poster_left_icon_frame = SOV_propaganda_locked_slot_index }
+				check_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index }
+				check_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index }
+			}
+			is_debug = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+			SOV_unlock_propaganda_campaign_slot_effect = yes
+		}
+	}
+
+	SOV_debug_MAKE_CAMPAIGNS_FASTER_HERE = {
+		priority = 51
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = SOV_debug_fast_propaganda_campaigns_flag
+			}
+			is_debug = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = SOV_debug_fast_propaganda_campaigns_flag
+			set_variable = { SOV_default_propaganda_campaign_duration = 5 }
+			set_variable = { SOV_default_propaganda_campaign_cooldown = 1 }
+			set_variable = { SOV_default_propaganda_campaign_old_days = 2 }
+		}
+	}
+
+	SOV_debug_REGULAR_CAMPAIGN_DURATION_HERE = {
+		priority = 51
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_country_flag = SOV_debug_fast_propaganda_campaigns_flag
+			is_debug = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = SOV_debug_fast_propaganda_campaigns_flag
+			set_variable = { SOV_default_propaganda_campaign_duration = 180 }
+			set_variable = { SOV_default_propaganda_campaign_cooldown = 90 }
+			set_variable = { SOV_default_propaganda_campaign_old_days = 150 }
+		}
+	}
+
+	SOV_debug_UNLOCK_ALL_CAMPAIGNS = {
+		priority = 50
+
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag
+			}
+			is_debug = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = SOV_debug_unlock_propaganda_campaigns_flag
+		}
+	}
+}

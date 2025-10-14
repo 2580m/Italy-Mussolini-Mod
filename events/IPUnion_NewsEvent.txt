@@ -1,0 +1,32 @@
+add_namespace = IPUnion_news
+
+news_event = {
+	id = IPUnion_news.1
+	title = IPUnion_news.1.t
+	desc = IPUnion_news.1.d
+	picture = GFX_news_event_german_soldiers
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		ITA = {
+			has_country_flag = form_cooperate_with_knights_of_malta_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		trigger = { NOT = { tag = ITA } }
+		name = IPUnion_news.1.a
+	}
+
+	option = {
+		trigger = {
+			tag = ITA
+		}
+		name = IPUnion_news.1.b
+	}
+}

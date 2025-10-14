@@ -1,0 +1,32 @@
+opinion_modifiers = {
+	IPUnion_be_friend_ita_spr = {
+		value = 100
+	}
+	IPUnion_defend_balkan_ita = {
+		value = 1000
+	}
+	IPUnion_ITA_FRA_treaty = {
+		value = 100
+	}
+	IPUnion_ITA_ROM_Munich_in_balkans = {
+		value = -15
+	}
+	IPUnion_be_friend_ITA_SOV = {
+		value = 200
+	}
+	IPUnion_Abandon_past_suspicions = {
+		value = 200
+	}
+	IPUnion_ITA_sale_the_ZC_Islands_to_BUL = {
+		value = 200
+	}
+	IPUnion_Epirus_Separatism = {
+		value = -20
+	}
+	IPUnion_dont_recive_our_character = {
+		value = 10
+	}
+	ita_diplomacy_focus_1 = {
+		value = 100
+	}
+}

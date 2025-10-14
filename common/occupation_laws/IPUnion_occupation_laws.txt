@@ -1,0 +1,22 @@
+colonial_militia = {
+	icon = 13
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+
+	fallback_law = colonial_police_improved
+
+	visible = {
+		has_completed_focus = ITA_milizia_coloniale
+	}
+
+	state_modifier = { #CHANGES HERE NEED TO BE APPLIED ALSO IN ITA_fake_colonial_police_law idea
+		resistance_target 				= -0.75
+		compliance_gain 				= -0.01
+		required_garrison_factor 		= -0.50
+		resistance_damage_to_garrison	= -0.75
+	}
+
+
+	ai_will_do = {
+		base = 0
+	}
+}

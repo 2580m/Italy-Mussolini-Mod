@@ -1,0 +1,42 @@
+characters = {
+	AUS_friedrich_hayek = {
+		name = AUS_friedrich_hayek
+		portraits = {
+			army = {
+				small = GFX_portrait_AUS_friedrich_hayek_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_friedrich_hayek
+			allowed = {
+				#original_tag = ITA
+				#has_dlc = "By Blood Alone"
+				#OR = {
+				#	original_tag = ITA
+				#	original_tag = AUS
+				#}
+				ITA_is_italian_tag = yes
+			}
+			available = {
+				#OR = {
+				#	has_completed_focus = ITA_christian_democracy
+				#	AND = {
+				#		has_completed_focus = ITA_common_ground
+				#		has_government = democratic
+				#	}
+				#}
+				has_completed_focus = ITA_abolish_price_controls
+			}
+			traits = {
+				#minister_of_posts_and_telegraphs # Christian Democracy guy
+				capitalist_unite
+			}
+
+			ai_will_do = {
+				base = 0.300
+			}
+		}
+	}
+}

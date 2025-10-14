@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_luce
+		textureFile = "gfx/interface/ideas/idea_luce.png"
+	}
+	spriteType = {
+		name = GFX_idea_ITA_GIL
+		textureFile = "gfx/interface/ideas/idea_GIL.png"
+	}
+	spriteType = {
+		name = GFX_idea_ITA_OND
+		textureFile = "gfx/interface/ideas/idea_ITA_OND.png"
+	}
+	spriteType = {
+		name = GFX_portrait_AUS_friedrich_hayek_small
+		textureFile = "gfx/interface/ideas/portrait_AUS_friedrich_hayek_small.png"
+	}
+	spriteType = {
+		name = GFX_idea_knights_of_malta
+		textureFile = "gfx/interface/ideas/idea_knights_of_malta.png"
+	}
+}

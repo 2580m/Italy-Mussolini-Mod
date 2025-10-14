@@ -1,0 +1,20 @@
+focus_tree = {
+	id = epirus_focus
+
+	default = no
+
+	continuous_focus_position = { x = 1500 y = 1500 }
+
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+	focus = {
+		id = NEF_Cooperative_government
+		icon = xx
+		x = 10
+		y = 0
+		
+	}
+}

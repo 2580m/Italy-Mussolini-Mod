@@ -1,0 +1,183 @@
+add_namespace = IPUnion_router_event
+
+##正如其名，这里是“路由”事件的文件。
+
+country_event = {
+	id = IPUnion_router_event.1
+	title = IPUnion_router_event.1.t
+	desc = IPUnion_router_event.1.d
+	hidden = yes
+
+	trigger = {
+		GER = {
+			has_completed_focus = GER_reorganize_the_wehrmacht
+		}
+	}
+
+	immediate = {
+		ITA = {
+			country_event = {
+				id = IPUnion_country_event.31
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_router_event.2
+	title = IPUnion_router_event.2.t
+	desc = IPUnion_router_event.2.d
+	hidden = yes
+
+	trigger = {
+		#AUS = {
+		#	has_opinion_modifier = took_stand_for_us
+		#}
+		GER = {
+			focus_progress = {
+				focus = GER_anschluss
+				progress > 0.1
+			}
+		}
+	}
+
+	immediate = {
+		ITA = {
+			country_event = {
+				id = IPUnion_country_event.32
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_router_event.3
+	title = IPUnion_router_event.3
+	desc = IPUnion_router_event.3
+	hidden = yes
+
+	trigger = {
+		ITA = {
+			focus_progress = {
+				focus = ITA_capo_supremo
+				progress > 0.001
+			}
+		}
+	}
+
+	immediate = {
+		ITA = {
+			country_event = IPUnion_country_event.34
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_router_event.4
+	title = IPUnion_router_event.4
+	desc = IPUnion_router_event.4
+	hidden = yes
+
+	trigger = {
+		if = {
+			limit = {
+				ITA = {
+					has_war_with = EGY
+					has_war_with = PAL
+					has_war_with = JOR
+					has_war_with = IRQ
+					has_war_with = CYP
+					has_war_with = SYR
+					has_war_with = LEB
+					has_war_with = KUW
+				}
+			}
+			ITA = {
+				controls_province = 4076
+				controls_province = 7011
+				controls_province = 1086
+				controls_province = 7151
+				controls_province = 792
+				controls_province = 4111
+				controls_province = 2097
+				controls_province = 8085
+			}
+		}
+		else = {
+			ITA = {
+				controls_province = 4076
+				controls_province = 7011
+				controls_province = 1086
+				controls_province = 7151
+				controls_province = 2097
+				controls_province = 8085
+			}	
+		}
+	}
+
+	immediate = {
+		ITA = {
+			white_peace = EGY
+			white_peace = PAL
+			white_peace = JOR
+			white_peace = IRQ
+			white_peace = CYP
+			white_peace = SYR
+			white_peace = LEB
+			white_peace = KUW
+			country_event = IPUnion_country_event.44
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_router_event.5
+	title = IPUnion_router_event.5.t
+	desc = IPUnion_router_event.5.d
+	hidden = yes
+
+	trigger = {
+		ITA = {
+			has_tech = basic_carrier
+			has_tech = cv_fighter1
+		}
+	}
+
+	immediate = {
+		ITA = {
+			country_event = IPUnion_country_event.45
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_router_event.6
+	title = IPUnion_router_event.6.t
+	desc = IPUnion_router_event.6.d
+	hidden = yes
+
+	trigger = {
+		OR = {
+			GER = {
+				focus_progress = {
+					focus = GER_operation_tannenbaum
+					progress > 0.1
+				}
+			}
+			GER = {
+				focus_progress = {
+					focus = GER_the_swiss_gold
+					progress > 0.1
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ITA = {
+			country_event = IPUnion_country_event.45
+		}
+	}
+}

@@ -1,0 +1,1291 @@
+form_our_friend_in_iberia_category = {
+	form_change_national_name_ita_to_ita_por_union = {
+		days_remove = 1
+		days_re_enable = 1
+		allowed = {
+			original_tag = ITA
+		}
+		#visible = {
+		#	original_tag = ITA
+		#}
+		available = {
+			has_completed_focus = ITA_ita-por_union
+		}
+		complete_effect = {
+			set_cosmetic_tag = ITA_POR_UNION
+			#drop_cosmetic_tag = yes
+		}
+		remove_effect = {
+			add_political_power = -1
+		}
+	}
+	form_remove_national_name_ita_to_ita_por_union = {
+		days_remove = 1
+		days_re_enable = 1
+		allowed = {
+			original_tag = ITA
+		}
+		#visible = {
+		#	original_tag = ITA
+		#}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ITA_has_cosmetic_tag_ITA_POR_UNION
+				has_cosmetic_tag = ITA_POR_UNION
+			}
+		}
+		complete_effect = {
+			#drop_cosmetic_tag = yes
+			hidden_effect = {
+				drop_cosmetic_tag = yes
+			}
+			custom_effect_tooltip = ITA_drop_cosmetic_tag_tt
+		}
+		remove_effect = {
+			add_political_power = 1
+		}
+	}
+}
+form_denfender_of_balkan_category = {
+	form_Munich_in_the_Balkans = {
+		days_remove = 30
+		cost = 25
+		allowed = {
+
+		}
+		available = {
+			is_in_faction_with = ROM
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = ITA_SOV_balkan_trigger_tt
+					SOV = {
+						controls_state = 89
+						controls_state = 91
+						controls_state = 93
+						controls_state = 94
+						controls_state = 97
+						controls_state = 95
+						controls_state = 96
+						controls_state = 784
+					}
+				}
+				SOV = {
+					has_completed_focus = SOV_claims_on_poland
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ITA_be_friend_SOV_ipunion
+			NOT = {
+				has_global_flag = has_form_Munich_in_the_Balkans
+			}
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			SOV = {
+				transfer_state = 80
+				transfer_state = 78
+				transfer_state = 766
+			}
+			ROM = {
+				add_opinion_modifier = {
+					target = ITA
+					modifier = IPUnion_ITA_ROM_Munich_in_balkans
+				}
+			}
+			hidden_effect = {
+				set_global_flag = has_form_Munich_in_the_Balkans
+			}
+		}
+	}
+	form_Abandon_past_suspicions_defend_balkans = {
+		days_remove = 15
+		cost = 30
+		allowed = {
+
+		}
+		available = {
+			OR = {
+				AND = {
+					is_in_faction_with = YUG
+					is_in_faction_with = ROM
+					is_in_faction_with = BUL
+					is_in_faction_with = GRE
+				}
+				AND = {
+					is_in_faction_with = YUG
+					#is_in_faction_with = ROM
+					is_in_faction_with = BUL
+					is_in_faction_with = GRE
+					AND = {
+						ROM = {
+							has_opinion = {
+								target = ITA
+								value > 75
+							}
+							has_military_access_to = ITA
+						}
+						gives_military_access_to = ROM
+						has_non_aggression_pact_with = ROM
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ITA_defend_the_balkan
+			NOT = {
+				has_global_flag = has_form_Abandon_past_suspicions_defend_balkans_flag
+			}
+		}
+		complete_effect = {
+
+		}
+		remove_effect = {
+			YUG = {
+				add_opinion_modifier = {
+					target = ROM
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = BUL
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = GRE
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+			}
+			ROM = {
+				add_opinion_modifier = {
+					target = YUG
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = BUL
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = GRE
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+			}
+			BUL = {
+				add_opinion_modifier = {
+					target = ROM
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = YUG
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = GRE
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+			}
+			GRE = {
+				add_opinion_modifier = {
+					target = ROM
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = YUG
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+				add_opinion_modifier = {
+					target = BUL
+					modifier = IPUnion_Abandon_past_suspicions
+				}
+			}
+			hidden_effect = {
+				set_global_flag = has_form_Abandon_past_suspicions_defend_balkans_flag
+			}
+		}
+	}
+	#form_Zoze_Canisos_Islands_to_BUL = {
+	#	days_remove = 7
+	#	cost = 30
+
+	#}
+	form_founded_palestine = {
+		days_remove = 30
+		cost = 50
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			#has_completed_focus = ITA_sword_aimed_middle_east
+			ENG = {
+				has_opinion = {
+					target = ITA
+					value > 49.999
+				}
+			}
+			country_exists = EGY
+		}
+		#visible = {
+		#	has_completed_focus = ITA_sword_aimed_middle_east
+		#	NOT = {
+		#		country_exists = PAL
+		#	}
+		#}
+		remove_effect = {
+			hidden_effect = {
+				PAL = {
+					transfer_state = 454
+					transfer_state = 455
+				}
+				#453 = { add_core_of = PAL }
+				#455 = { add_core_of = PAL }
+				release_autonomy = {
+					target = PAL
+					autonomy_state = autonomy_puppet
+					freedom_level = 0.5
+				}
+				PAL = {
+					set_politics = {
+						ruling_party = neutrality
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.60
+					}
+				}
+			}
+			hidden_effect = {
+				PAL = {
+					add_ideas = idea_ITA_neutrality_puppet
+					set_cosmetic_tag = PAL_NEU
+				}
+			}
+			custom_effect_tooltip = form_founded_palestine_tt
+		}
+	}
+	
+}
+BUL_ITA_be_friend = {
+	form_Zoze_Canisos_Islands_to_BUL = {
+		days_remove = 30
+		cost = 30
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1000
+				is_in_faction_with = ITA
+			}
+		}
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			has_completed_focus = BUL_cooperation_with_italy
+			custom_trigger_tooltip = {
+				tooltip = has_form_Zoze_Canisos_Islands_to_BUL_flag_tt
+				NOT = {
+					has_country_flag = has_form_Zoze_Canisos_Islands_to_BUL_flag
+				}
+			}
+		}
+		remove_effect = {
+			#country_event = IPUnion_country_event.3
+			ITA = {
+				country_event = IPUnion_country_event.3
+			}
+			hidden_effect = {
+				set_country_flag = has_form_Zoze_Canisos_Islands_to_BUL_flag
+			}
+		}
+	}
+	form_sale_the_Zoze_Canisos_Islands_to_BUL_again = {
+		days_remove = 14
+		cost = 30
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 999
+				is_in_faction_with = BUL
+			}
+		}
+		available = {
+			controls_state = 164
+		}
+		visible = {
+			has_global_flag = ITA_can_sales_the_ZC_Islands_to_BUL_again_flag
+			NOT = {
+				has_country_flag = ITA_form_sale_the_Zoze_Canisos_Islands_to_BUL_again_flag
+			}
+		}
+		remove_effect = {
+			BUL = {
+				country_event = {
+					id = IPUnion_country_event.5
+					days = 1
+				}
+			}
+			custom_effect_tooltip = ITA_rewards_of_BUL_accept_our_tt
+			hidden_effect = {
+				set_country_flag = ITA_form_sale_the_Zoze_Canisos_Islands_to_BUL_again_flag
+			}
+		}
+	}
+}
+
+IPUnion_Partition_of_Greece = {
+	form_ITA_founding_Eprius_Free_State = {
+		days_remove = 30
+		cost = 50
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			AND = {
+				has_completed_focus = ITA_defend_the_balkan
+				GRE = {
+					has_opinion = {
+						target = ITA
+						value > 50
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = IPUnion_GRE_has_control_988_989_tt
+					GRE = {
+						controls_state = 1023
+						controls_state = 1024
+						controls_state = 1025
+					}
+				}
+				NOT = {
+					country_exists = NEF
+				}
+			}
+		}
+		visible = {
+			GRE = {
+				controls_state = 1023
+				controls_state = 1024
+				controls_state = 1025
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				transfer_state = 1023
+				transfer_state = 1024
+				transfer_state = 1025
+				#release_puppet_on_controlled = NEF
+				1023 = { remove_core_of = GRE }
+				1024 = { remove_core_of = GRE }
+				1025 = { remove_core_of = GRE }
+				#release_puppet_on_controlled = NEF
+				NEF = {
+					transfer_state = 1023
+					transfer_state = 1024
+					transfer_state = 1025
+				}
+				1023 = { add_core_of = NEF }
+				1024 = { add_core_of = NEF }
+				1025 = { add_core_of = NEF }
+				release_autonomy = {
+					target = NEF
+					autonomy_state = autonomy_puppet
+					freedom_level = 0.5
+				}
+				1024 = {
+					#add_building_construction = {
+					#	type = infrastructure
+					#	level = 3
+					#	instant_build = yes
+					#}
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 7
+				}
+				1023 = {
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				1025 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 11
+				}
+				NEF = {
+					add_ideas = idea_separatism_of_eprius
+					hidden_effect = {
+						set_party_name = {
+							ideology = fascism
+							long_name = NEF_fascism_party_long
+							name = NEF_fascism_party
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ITA_founding_Eprius_Free_State_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			GRE = {
+				add_opinion_modifier = {
+					target = NEF
+					modifier = IPUnion_Epirus_Separatism
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			NEF = {
+				add_opinion_modifier = {
+					target = GRE
+					modifier = IPUnion_Epirus_Separatism
+				}
+			}
+
+		}
+	}
+
+	form_ITA_EGY_transfer_Crete = {
+		days_remove = 30
+		cost = 50
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			country_exists = EGY
+			EGY = {
+				is_puppet_of = ITA
+			}
+		}
+		visible = {
+			GRE = {
+				controls_state = 182
+			}
+		}
+		remove_effect = {
+			EGY = {
+				transfer_state = 182
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			182 = { add_core_of = EGY }
+
+			182 = { remove_core_of = GRE }
+
+		}
+	}
+
+	form_Ownership_of_the_archipelago = {
+		days_remove = 30
+		cost = 30
+		available = {
+			AND = {
+				GRE = {
+					controls_state = 1026
+					controls_state = 1027
+				}
+
+				is_in_faction_with = TUR
+
+				NOT = {
+					is_in_faction_with = GRE
+				}
+
+				GRE = {
+					NOT = {
+						is_puppet_of = ITA
+					}
+				}
+
+				custom_trigger_tooltip = {
+					tooltip = ITA_anschluss_army_trigger_tt
+					fighting_army_strength_ratio = {
+						tag = GRE
+						ratio > global.deployed_manpower_ratio_needed_for_anschluss
+					}
+				}
+			}
+		}
+
+		visible = {
+			GRE = {
+				controls_state = 1026
+				controls_state = 1027
+			}
+		}
+
+		remove_effect = {
+			GRE = {
+				country_event = {
+					id = IPUnion_country_event.6
+					hours = 6
+				}
+			}
+			custom_effect_tooltip = IPUnion_GRE_accept_ICEvent_6_tt
+		}
+	}
+	form_The_court_of_the_Italian = {
+		days_remove = 30
+		cost = 75
+		available = {
+			BUL = {
+				controls_state = 184
+				controls_state = 731
+			}
+			#country_exists = NEF
+			NEF = {
+				controls_state = 1023
+				controls_state = 1024
+				controls_state = 1025
+			}
+			TUR = {
+				controls_state = 1026
+				controls_state = 1027
+			}
+			EGY = {
+				controls_state = 182
+			}
+		}
+		visible = {
+			NOT = {
+				GRE = {
+					is_puppet_of = ITA
+				}
+			}
+			BUL = {
+				controls_state = 184
+				controls_state = 731
+			}
+			#country_exists = NEF
+			NEF = {
+				controls_state = 1023
+				controls_state = 1024
+				controls_state = 1025
+			}
+			TUR = {
+				controls_state = 1026
+				controls_state = 1027
+			}
+			EGY = {
+				controls_state = 182
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = IPUnion_form_The_court_of_the_Italian_tt
+			hidden_effect = {
+				release_autonomy = {
+					target = GRE
+					autonomy_state = autonomy_puppet
+					freedom_level = 0.5
+				}
+				GRE = {
+					set_politics = {
+						ruling_party = neutrality
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.60
+					}
+					add_ideas = idea_ITA_neutrality_puppet
+				}
+				transfer_state = 164
+			}
+			hidden_effect = {
+				set_global_flag = GRE_is_puppet_of_ITA_flag
+			}
+		}
+	}
+	form_assigned_Cyprus_to_Greece = {
+		days_remove = 30
+		cost = 50
+		available = {
+			controls_state = 183
+			GRE = {
+				is_puppet_of = ITA
+			}
+		}
+		visible = {
+			has_global_flag = GRE_is_puppet_of_ITA_flag
+			GRE = {
+				NOT = {
+					controls_state = 183
+				}
+			}
+		}
+		remove_effect = {
+			GRE = {
+				transfer_state = 183
+			}
+			183 = { add_core_of = GRE }
+			183 = { remove_core_of = ITA }
+		}
+	}
+}
+IPUnion_Tirumvirate = {
+	form_invite_SPR_join_faction = {
+		days_remove = 15
+		cost = 30
+		available = {
+			SPR = {
+				has_opinion = {
+					target = ITA
+					value > 50
+				}
+				is_in_faction = no
+			}
+		}
+		visible = {
+			has_completed_focus = ITA_triumvirate
+			NOT = {
+				is_in_faction_with = SPR
+			}
+		}
+		remove_effect = {
+			SPR = {
+				country_event = {
+					id = IPUnion_country_event.8
+					hours = 6
+				}
+			}
+		}
+	}
+	form_invite_TUR_join_faction = {
+		days_remove = 15
+		cost = 30
+		available = {
+			TUR = {
+				has_opinion = {
+					target = ITA
+					value > 50
+				}
+				is_in_faction = no
+			}
+		}
+		visible = {
+			has_completed_focus = ITA_triumvirate
+			NOT = {
+				is_in_faction_with = TUR
+			}
+		}
+		remove_effect = {
+			TUR = {
+				country_event = {
+					id = IPUnion_country_event.8
+					hours = 12
+				}
+			}
+		}
+	}
+}
+IPUnion_Ita_Cosmetic_Tags = {
+	form_cos_rsi = {
+		days_remove = 1
+		days_re_enable = 1
+		allowed = {
+			original_tag = ITA
+		}
+		#visible = {
+		#	original_tag = ITA
+		#}
+		available = {
+			has_completed_focus = ITA_capo_supremo
+			NOT = {
+				has_cosmetic_tag = ITA_rsi
+			}
+		}
+		complete_effect = {
+			set_cosmetic_tag = ITA_rsi
+			play_song = "VogliamoScolpireUnaLapide"
+			#drop_cosmetic_tag = yes
+		}
+		remove_effect = {
+			add_political_power = -1
+		}
+	}
+	form_cos_italian_empire = {
+		days_remove = 1
+		days_re_enable = 1
+		allowed = {
+			original_tag = ITA
+		}
+		#visible = {
+		#	original_tag = ITA
+		#}
+		available = {
+			has_completed_focus = ITA_capo_supremo
+			NOT = {
+				has_cosmetic_tag = ITA_italian_empire
+			}
+		}
+		complete_effect = {
+			set_cosmetic_tag = ITA_italian_empire
+			#drop_cosmetic_tag = yes
+			play_song = "LaProclamazioneDellImpero"
+		}
+		remove_effect = {
+			add_political_power = -1
+		}
+	}
+}
+IPUnion_Political_Turmoil = {
+	form_ITA_Clear_the_Square = {
+		days_remove = 7
+		fire_only_once = yes
+		#cost = 30
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			divisions_in_state = {
+				type = armor
+				size > 2
+				state = 2
+			}
+			hidden_trigger = {
+				has_country_flag = IPUnion_country_event_17_flag
+			}
+		}
+		remove_effect = {
+			country_event = IPUnion_country_event.19
+			add_political_power = -30
+		}
+	}
+	form_awarding_of_honors = {
+		days_remove = 15
+		fire_only_once = yes
+		cost = 30
+		visible = {
+			has_country_flag = IPUnion_country_event_25_a_flag
+		}
+		available = {
+			divisions_in_state = {
+				type = armor
+				size > 2
+				state = 2
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+		remove_effect = {
+			custom_effect_tooltip = form_awarding_of_honors_effect_tt
+			hidden_effect = {
+				2 = {
+					every_state_division = {
+						add_history_entry = {
+							key = "在保卫罗马的行动中，表现突出，功勋卓越"
+							subject = "首都卫士"
+							allow = yes
+						}
+						add_unit_medal_to_latest_entry = {
+							unit_medals = Capital_Defender
+						}
+					}
+				}
+			}
+
+		}
+	}
+	form_colosseum_incident = {
+		days_remove = 3
+		fire_only_once = yes
+		cost = 75
+		visible = {
+			has_country_flag = IPUnion_country_event_26_a_flag
+		}
+		available = {
+			divisions_in_state = {
+				state = 2
+				size > 0
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_restore_organizational_life_tt
+				has_country_flag = has_restore_organizational_life
+			}
+		}
+		remove_effect = {
+			country_event = IPUnion_country_event.27
+		}
+	}
+}
+IPUnion_east_afric_nationalism = {
+	form_ITA_Incite_Soomaaliland_Nationalism = {
+		days_remove = 70
+		cost = 100
+		fire_only_once = yes
+		available = {
+			country_exists = AOI
+			NOT = {
+				AOI = {
+					controls_state = 269
+					controls_state = 268
+					#controls_state = 903
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ITA_Shaping_east_africa_nation
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					country_exists = AOI
+				}
+				AOI = {
+					transfer_state = 269
+					transfer_state = 268
+				}
+				269 = { add_core_of = AOI }
+				268 = { add_core_of = AOI }
+			}
+			else = {
+				transfer_state = 269
+				transfer_state = 268
+			}
+			unlock_decision_tooltip = form_ITA_Incite_Garissa_Nationalism
+			hidden_effect = {
+				set_country_flag = has_completed_form_ITA_Incite_Soomaaliland_Nationalism
+			}
+		}
+	}
+	form_ITA_Incite_Garissa_Nationalism = {
+		days_remove = 70
+		cost = 100
+		fire_only_once = yes
+		available = {
+			country_exists = AOI
+			NOT = {
+				AOI = {
+					#controls_state = 269
+					#controls_state = 268
+					controls_state = 903
+				}
+			}
+		}
+		visible = {
+			#has_country_flag = has_completed_form_ITA_Incite_Soomaaliland_Nationalism_flag
+			has_completed_focus = ITA_Shaping_east_africa_nation
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					country_exists = AOI
+				}
+				AOI = {
+					#transfer_state = 269
+					transfer_state = 903
+					add_ideas = idea_AOI_father_of_East_Africa_Nationalism
+				}
+				903 = { add_core_of = AOI }
+				every_state = {
+					limit = { is_core_of = ETH }
+					add_core_of = AOI
+				}
+			}
+			else = {
+				#transfer_state = 269
+				transfer_state = 903
+			}
+		}
+	}
+}
+ITA_organizational_life = {
+	form_restore_organizational_life = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 30
+		#available = {
+		#	has_completed_focus = ITA_keep_the_course
+		#}
+		visible = {
+			has_completed_focus = ITA_keep_the_course
+		}
+		remove_effect = {
+			add_political_power = 10
+			country_event = IPUnion_ITA_meeting.1
+			hidden_effect = {
+				set_country_flag = has_restore_organizational_life
+			}
+		}
+	}
+	form_ITA_life_meeting_of_the_fascism_party = {
+		days_remove = 1
+		#days_re_enable = 180
+		cost = 75
+		visible = {
+			has_country_flag = has_restore_organizational_life
+		}
+		available = {
+			#custom_trigger_tooltip = form_ITA_life_meeting_of_the_fascism_party_trigger_1_tt
+			#custom_trigger_tooltip = form_ITA_life_meeting_of_the_fascism_party_trigger_2_tt
+			#custom_trigger_tooltip = has_restore_organizational_life_tt
+			#hidden_trigger = {
+			#	NOT = {
+			#		has_idea = ITA_has_life_meeting_180days
+			#	}
+			#	has_country_flag = has_restore_organizational_life
+			#}
+			#has_country_flag = has_restore_organizational_life
+			custom_trigger_tooltip = {
+				tooltip = has_restore_organizational_life_tt
+				has_country_flag = has_restore_organizational_life
+			}
+			custom_trigger_tooltip = {
+				tooltip	= form_ITA_meeting_of_self_criticism_tt
+				NOT = {
+					has_idea = ITA_has_life_meeting_180days
+				}
+			}
+		}
+		remove_effect = {
+			add_political_power = 15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			hidden_effect = {
+				add_timed_idea = {
+					idea = ITA_has_life_meeting_180days
+					days = 180
+				}
+			}
+		}
+	}
+	form_ITA_meeting_of_self_criticism = {
+		days_remove = 1
+		cost = 75
+		visible = {
+			has_country_flag = has_restore_organizational_life
+		}
+		available = {
+			#custom_trigger_tooltip = has_restore_organizational_life_tt
+			#custom_trigger_tooltip = form_ITA_meeting_of_self_criticism_tt
+			custom_trigger_tooltip = {
+				tooltip = has_restore_organizational_life_tt
+				has_country_flag = has_restore_organizational_life
+			}
+			custom_trigger_tooltip = {
+				tooltip	= form_ITA_meeting_of_self_criticism_tt
+				NOT = {
+					has_idea = ITA_has_cirticism_meeting_180days
+				}
+			}
+			#hidden_trigger = {
+			#	has_country_flag = has_restore_organizational_life
+			#	NOT = {
+			#		has_idea = ITA_has_cirticism_meeting_180days
+			#	}
+			#}
+		}
+		remove_effect = {
+			add_political_power = 15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			hidden_effect = {
+				add_timed_idea = {
+					idea = ITA_has_cirticism_meeting_180days
+					days = 180
+				}
+			}
+		}
+	}
+}
+ITA_mare_nostrum_category = {
+	form_ITA_claim_corsica = {
+		days_remove = 70
+		cost = 30
+		modifier = {
+			political_power_gain = -0.01
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ITA
+		}
+		remove_effect = {
+			start_border_war = {
+                change_state_after_war = no #overrides the transfer of state at the end of war
+                combat_width = 180 #combat width for border war
+                minimum_duration_in_days = 40 #minimum duration for combat
+                attacker = {
+                	on_win = IPUnion_border_war_event.1
+                	on_lose = IPUnion_border_war_event.2
+                    state = 114 # state to start border war
+                    num_provinces = 1 #number of provinces we want border war to be
+                    #on_win = <event_id> #effect to call if wins
+                    #on_lose = <event_id> #effect to call if loses
+                    
+                    leader_score = { # Optional score for selecting a leader 
+                        base = 1
+                        modifier = {
+                            skill > 2
+                            factor = 5
+                        }
+                        modifier = {
+                            skill > 3
+                            factor = 10
+                        }
+                    }
+                    
+                    dig_in_factor = 0 #dig in modifier factor (default value: 1.0)
+                    terrain_factor = 0 #terrain modifier factor(default value: 1.0)
+                    }
+                
+                defender = {
+                    state = 1 # state to start border war
+                    num_provinces = 1 #number of provinces we want border war to be
+                    #on_win = <event_id> #effect to call if wins
+                    on_lose = IPUnion_border_war_event.1
+                    on_win = IPUnion_border_war_event.2
+                    #on_cancel = <event_id> #effect to call if cancels
+                }
+            }
+			custom_effect_tooltip = form_ITA_claim_corsica_effect_tt
+		}
+	}
+	form_accusation_france = {
+		days_remove = 30
+		cost = 30
+		fire_only_once = yes
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			controls_state = 661
+			controls_state = 448
+		}
+		remove_effect = {
+			country_event = IPUnion_country_event.29
+		}
+	}
+	form_cooperate_with_knights_of_malta = {
+		days_remove = 30
+		fire_only_once = yes
+		cost = 30
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			controls_state = 2
+		}
+		remove_effect = {
+			unlock_decision_tooltip = form_attack_Island_malta
+			116 = {
+				add_claim_by = ITA
+			}
+			custom_effect_tooltip = form_cooperate_with_knights_of_malta_effect_tt
+			hidden_effect = {
+				add_timed_idea = {
+					idea = idea_knights_of_malta
+					days = 730
+				}
+			}
+			hidden_effect = {
+				set_country_flag = form_cooperate_with_knights_of_malta_flag
+			}
+			show_ideas_tooltip = idea_knights_of_malta
+		}
+	}
+	form_attack_Island_malta = {
+		days_remove = 15
+		fire_only_once = yes
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			has_idea = idea_knights_of_malta
+		}
+		complete_effect = {
+			MLT = {
+				transfer_state = 116
+				set_rule = {
+					can_join_factions = no
+				}
+			}
+			116 = {
+				create_unit = {
+					division = "division_template =\"Infantry Division\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = MLT
+					count = 3
+				}
+			}
+		}
+		remove_effect = {
+			country_event = IPUnion_country_event.28
+		}
+	}
+}
+
+ITA_OND_category = {
+	form_organize_worker_vacation = {
+		days_remove = 180
+		cost = 30
+		allowed = {
+			#has_idea = ITA_OND
+		}
+		available = {
+			has_idea = ITA_OND
+			has_government = fascism
+		}
+		modifier = {
+			consumer_goods_factor = 0.025
+			fascism_drift = 0.01
+			production_speed_buildings_factor = 0.05
+			industrial_capacity_factory = 0.10
+		}
+	}
+}
+
+ITA_sword_aimed_middle_east_category = {
+	form_attack_middle_east = {
+		days_remove = 30
+		cost = 30
+		fire_only_once = yes
+		available = {
+			country_exists = EGY
+		}
+		remove_effect = {
+			declare_war_on = {
+    			target = EGY
+    			type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+    			target = PAL
+    			type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+    			target = JOR
+    			type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+    			target = IRQ
+    			type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+    			target = KUW
+    			type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+    			target = CYP
+    			type = puppet_wargoal_focus
+			}
+			183 = {
+				set_demilitarized_zone = yes
+			}
+			if = {
+				limit = {
+					SYR = {
+						is_in_faction_with = EGY
+					}
+					LEB = {
+						is_in_faction_with = EGY
+					}
+				}
+				declare_war_on = {
+    				target = SYR
+    				type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+    				target = LEB
+    				type = puppet_wargoal_focus
+				}	
+			}
+			hidden_effect = {
+				set_country_flag = form_attack_middle_east_flag
+			}
+			activate_mission = ITA_attack_middle_east_part1
+		}
+	}
+
+	ITA_attack_middle_east_part1 = {
+		days_mission_timeout = 3
+		activation = {
+			has_country_flag = form_attack_middle_east_flag
+		}
+		available = {
+			controls_province = 7011
+		}
+		cancel_trigger = {
+			NOT = {
+				has_war_with = EGY
+			}
+		}
+		is_good = yes
+		complete_effect = {
+			country_event = IPUnion_country_event.42
+			hidden_effect = {
+				clr_country_flag = form_attack_middle_east_flag
+			}
+		}
+		timeout_effect = {
+			country_event = IPUnion_country_event.43
+			hidden_effect = {
+				clr_country_flag = form_attack_middle_east_flag
+			}
+		}
+	}
+	form_IRQ_oil_resource = {
+		days_remove = 360
+		#days_re_enable = 1
+		cost = 30
+		available = {
+			any_country = {
+				OR = {
+					original_tag = ITA
+					is_puppet_of = ITA
+				}
+				controls_state = 291
+				controls_state = 1010
+				controls_state = 676
+			}
+		}
+		complete_effect = {
+			give_resource_rights = {
+   				receiver = ITA
+    			state = 291
+    			resources = { oil }
+			}
+			give_resource_rights = {
+   				receiver = ITA
+    			state = 1010
+    			resources = { oil }
+			}
+			give_resource_rights = {
+   				receiver = ITA
+    			state = 676
+    			resources = { oil }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			ITA = {
+				remove_resource_rights = 291
+				remove_resource_rights = 1010
+				remove_resource_rights = 676
+			}
+		}
+	}
+}

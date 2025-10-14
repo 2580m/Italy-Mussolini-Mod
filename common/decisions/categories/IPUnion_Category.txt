@@ -1,0 +1,107 @@
+form_our_friend_in_iberia_category = {
+	icon = x
+	picture = x
+	allowed = {
+
+	}
+}
+form_denfender_of_balkan_category = {
+	icon = xxx
+	picture = xx
+	allowed = {
+		
+	}
+}
+BUL_ITA_be_friend = {
+	icon = x
+	picture = x
+	allowed = {
+		
+	}
+}
+IPUnion_Partition_of_Greece = {
+	icon = xx
+	picture = xx
+	allowed = {
+		original_tag = ITA
+	}
+}
+IPUnion_Tirumvirate = {
+	icon = xxx
+	picture = xx
+	allowed = {
+		
+	}
+}
+IPUnion_Transitional_Council = {
+	icon = xxxx
+	picture = xxxx
+	allowed = {
+		
+	}
+}
+IPUnion_Ita_Cosmetic_Tags = {
+	icon = xxxxx
+	picture = xxxxx
+	allowed = {
+		#original_tag = ITA
+	}
+}
+IPUnion_Political_Turmoil = {
+	icon = xxxxxx
+	picture = xxxxxx
+	allowed = {
+		#original_tag = ITA
+	}
+}
+IPUnion_east_afric_nationalism = {
+	icon = xxx
+	picture = xxx
+}
+ITA_propaganda_campaigns = {
+	priority = 100
+
+	icon = SOV_propaganda
+
+	scripted_gui = sov_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		has_completed_focus = ITA_ministero_della_cultura_popolare
+	}
+
+	#visible = {
+	#	OR = {
+	#		has_completed_focus = SOV_expand_the_agitprop
+	#		has_country_flag = SOV_debug_show_propaganda_system_flag #Debug
+	#	}
+	#}
+}
+ITA_organizational_life = {
+	icon = xxx
+	picture = xxx
+}
+ITA_mare_nostrum_category = {
+	visible = {
+		has_completed_focus = ITA_control_the_mediterranean
+	}
+	icon = xx
+	picture = xxx
+}
+ITA_OND_category = {
+	icon = xxx
+	picture = xxx
+	visible = {
+		has_idea = ITA_OND
+	}
+}
+ITA_sword_aimed_middle_east_category = {
+	icon = xxx
+	picture = xxx
+	visible = {
+		has_completed_focus = ITA_sword_aimed_middle_east
+	}
+}
