@@ -23430,7 +23430,7 @@ focus_tree = {
 		icon = GFX_focus_generic_mediterranean_sea_focus
 		relative_position_id = ITA_keep_the_course
 		x = -2
-		y = 3
+		y = 4
 		cost = 4
 		prerequisite = { focus = ITA_national_economy_fascismful }
 		available = {
@@ -23876,12 +23876,34 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_learn_form_camicie_nere
+		id = ITA_leap_forward
 		prerequisite = { focus = ITA_keep_the_course }
-		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		available = { has_completed_focus = ITA_believe_obey_fight }
+		icon = GFX_focus_generic_industry_3
 		relative_position_id = ITA_keep_the_course
 		x = 0
 		y = 1
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = ITA_leap_forward_tt
+			add_ideas = idea_ITA_leap_forward_1
+			hidden_effect = {
+				add_ideas = idea_ITA_reality_1
+				country_event = {
+					id = IPUnion_leap_forward_event.1
+					days = 10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_learn_form_camicie_nere
+		prerequisite = { focus = ITA_leap_forward }
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		relative_position_id = ITA_keep_the_course
+		x = 0
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_ideas = idea_ITA_learn_form_camicie_nere
@@ -23890,11 +23912,11 @@ focus_tree = {
 
 	focus = {
 		id = ITA_learn_form_foggia
-		prerequisite = { focus = ITA_keep_the_course }
+		prerequisite = { focus = ITA_leap_forward }
 		icon = GFX_focus_generic_farmland
 		relative_position_id = ITA_keep_the_course
 		x = 2
-		y = 1
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_ideas = idea_ITA_learn_form_foggia
@@ -23903,11 +23925,11 @@ focus_tree = {
 
 	focus = {
 		id = ITA_learn_form_torina
-		prerequisite = { focus = ITA_keep_the_course }
+		prerequisite = { focus = ITA_leap_forward }
 		icon = GFX_focus_generic_modernize_industry
 		relative_position_id = ITA_keep_the_course
 		x = -2
-		y = 1
+		y = 2
 		cost = 5
 		completion_reward = {
 			add_ideas = idea_ITA_learn_form_torina
@@ -23919,7 +23941,7 @@ focus_tree = {
 		icon = GFX_focus_GER_monarchy_compromise
 		relative_position_id = ITA_keep_the_course
 		x = 0
-		y = 2
+		y = 3
 		prerequisite = { focus = ITA_learn_form_foggia }
 		prerequisite = { focus = ITA_learn_form_camicie_nere }
 		prerequisite = { focus = ITA_learn_form_torina }
@@ -24946,7 +24968,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_FRA_base_in_far_east }
 		relative_position_id = ITA_keep_the_course
 		x = 2
-		y = 3
+		y = 4
 		cost = 3
 		available = {
 			FRA = {

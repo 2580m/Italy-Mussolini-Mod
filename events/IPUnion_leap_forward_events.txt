@@ -1,0 +1,44 @@
+add_namespace = IPUnion_leap_forward_event
+
+country_event = {
+	id = IPUnion_leap_forward_event.1
+	title = IPUnion_leap_forward_event.1.t
+	desc = IPUnion_leap_forward_event.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = IPUnion_leap_forward_event.1.a
+		country_event = {
+			id = IPUnion_leap_forward_event.2
+			days = 15
+		}
+	}
+	option = {
+		name = IPUnion_leap_forward_event.1.b
+		add_timed_idea = {
+			idea = idea_ITA_leap_forward_1
+			days = 90
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_leap_forward_event.2
+	title = IPUnion_leap_forward_event.2.t
+	desc = IPUnion_leap_forward_event.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = IPUnion_leap_forward_event.2.a
+		swap_ideas = {
+			remove_idea = idea_ITA_leap_forward_1
+			add_idea = idea_ITA_leap_forward_2
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = idea_ITA_reality_1
+				add_idea = idea_ITA_reality_2
+			}
+		}
+	}
+}

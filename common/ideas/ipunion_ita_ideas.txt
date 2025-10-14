@@ -38,6 +38,66 @@ ideas = {
 				
 			}
 		}
+		idea_ITA_reality_1 = {
+			name = idea_ITA_reality
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0
+				industrial_capacity_factory = 0
+				production_speed_buildings_factor = 0
+				local_resources_factor = 0
+			}
+		}
+		idea_ITA_reality_2 = {
+			name = idea_ITA_reality
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = -1.01
+				industrial_capacity_factory = -1.01
+				production_speed_buildings_factor = -1.01
+				local_resources_factor = -1.01
+			}
+		}
+		idea_ITA_reality_3 = {
+			name = idea_ITA_reality
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = -5.1
+				industrial_capacity_factory = -5.1
+				production_speed_buildings_factor = -5.1
+				local_resources_factor = -5.1
+			}
+		}
+		idea_ITA_reality_4 = {
+			name = idea_ITA_reality
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = -10.3
+				industrial_capacity_factory = -10.3
+				production_speed_buildings_factor = -10.3
+				local_resources_factor = -10.3
+			}
+		}
+		idea_ITA_reality_5 = {
+			name = idea_ITA_reality
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = -100.5
+				industrial_capacity_factory = -100.5
+				production_speed_buildings_factor = -100.5
+				local_resources_factor = -100.5
+			}
+		}
+		idea_ITA_reality_6 = {
+			name = idea_ITA_reality
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = -200.6
+				industrial_capacity_factory = -200.6
+				production_speed_buildings_factor = -200.6
+				local_resources_factor = -200.6
+			}
+		}
 	}
 	country = {
 		idea_ITA_the_question_of_por_colony_1 = {
@@ -448,6 +508,72 @@ ideas = {
 				tag = GER
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.15
+			}
+		}
+		idea_ITA_leap_forward_1 = {
+			removal_cost = -1
+			name = idea_ITA_leap_forward
+			picture = generic_deal_with_the_devil
+			modifier = {
+				industrial_capacity_dockyard = 0.3
+				industrial_capacity_factory = 0.3
+				production_speed_buildings_factor = 0.3
+				local_resources_factor = 0.3
+			}
+		}
+		idea_ITA_leap_forward_2 = {
+			removal_cost = -1
+			name = idea_ITA_leap_forward
+			picture = generic_deal_with_the_devil
+			modifier = {
+				industrial_capacity_dockyard = 1
+				industrial_capacity_factory = 1
+				production_speed_buildings_factor = 1
+				local_resources_factor = 1
+			}
+		}
+		idea_ITA_leap_forward_3 = {
+			removal_cost = -1
+			name = idea_ITA_leap_forward
+			picture = generic_deal_with_the_devil
+			modifier = {
+				industrial_capacity_dockyard = 5
+				industrial_capacity_factory = 5
+				production_speed_buildings_factor = 5
+				local_resources_factor = 5
+			}
+		}
+		idea_ITA_leap_forward_4 = {
+			removal_cost = -1
+			name = idea_ITA_leap_forward
+			picture = generic_deal_with_the_devil
+			modifier = {
+				industrial_capacity_dockyard = 10
+				industrial_capacity_factory = 10
+				production_speed_buildings_factor = 10
+				local_resources_factor = 10
+			}
+		}
+		idea_ITA_leap_forward_5 = {
+			removal_cost = -1
+			name = idea_ITA_leap_forward
+			picture = generic_deal_with_the_devil
+			modifier = {
+				industrial_capacity_dockyard = 100
+				industrial_capacity_factory = 100
+				production_speed_buildings_factor = 100
+				local_resources_factor = 100
+			}
+		}
+		idea_ITA_leap_forward_6 = {
+			removal_cost = -1
+			name = idea_ITA_leap_forward
+			picture = generic_deal_with_the_devil
+			modifier = {
+				industrial_capacity_dockyard = 200
+				industrial_capacity_factory = 200
+				production_speed_buildings_factor = 200
+				local_resources_factor = 200
 			}
 		}
 	}
