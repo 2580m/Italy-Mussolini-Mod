@@ -1289,3 +1289,27 @@ ITA_sword_aimed_middle_east_category = {
 		}
 	}
 }
+ETH_second_italo_ethiopian_war_category = {
+	form_ITA_use_sentox_in_eth = {
+		days_remove = 30
+		cost = 15
+		visible = {
+			has_country_flag = ITA_missiolinis_active_flag
+		}
+		available = {
+			has_government = fascism
+		}
+		complete_effect = {
+			add_to_variable = { ETH.ETH_war_escalation_level = 1 }
+		}
+		modifier = {
+			army_attack_factor = 0.10
+		}
+		targeted_modifier = {
+			tag = ETH
+			army_defence_factor = -0.10
+			army_speed_factor = -0.05
+			army_org_factor = -0.10
+		}
+	}
+}
