@@ -21,6 +21,7 @@ news_event = {
 	option = {
 		trigger = { NOT = { tag = ITA } }
 		name = IPUnion_news.1.a
+
 	}
 
 	option = {
@@ -28,5 +29,11 @@ news_event = {
 			tag = ITA
 		}
 		name = IPUnion_news.1.b
+		hidden_effect = {
+			country_event = {
+				id = IPUnion_country_event.53
+				days = 2
+			}
+		}
 	}
 }

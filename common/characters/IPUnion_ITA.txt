@@ -1,0 +1,110 @@
+characters = {
+	ITA_benito_mussolini = {
+		name = ITA_benito_mussolini
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_benito_mussolini
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { il_duce }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+		corps_commander = {
+			traits={}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+			visible = {
+				has_completed_focus = ITA_capo_supremo
+			}
+		}
+	}
+	ITA_gian_galeazzo_ciano = {
+		name = ITA_gian_galeazzo_ciano
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_gian_galeazzo_ciano_small
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			#traits = { il_duce }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_gian_galeazzo_ciano
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+				has_completed_focus = ITA_foreign_affairs
+				NOT = {
+					has_country_leader_with_trait = mussolini_minister_of_foreign_affairs
+				}
+				ITA_government_is_somewhat_fascist = yes
+			}
+			cost = 75
+			traits = {
+				hierarch_minister_of_foreign_affairs
+			}
+			on_add = {
+				owner = {
+					hidden_effect = {
+						ITA_bop_medium_decrease_effect = yes
+					}
+				}
+			}
+			on_remove = {
+				owner = {
+					hidden_effect = {
+						ITA_bop_medium_increase_effect = yes
+					}
+				}
+			}
+			ai_will_do = {
+				base = 0.3
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+					}
+				}
+			}
+		}
+	}
+	ITA_grand_council = {
+		name = ITA_grand_council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_grand_council
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { the_grand_council }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+		country_leader = {
+			ideology = conservatism
+			#traits = { the_grand_council }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

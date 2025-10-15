@@ -1845,9 +1845,11 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		GER = {
-			white_peace = SWI
-			white_peace = ITA
+		hidden_effect = {
+			GER = {
+				white_peace = SWI
+				white_peace = ITA
+			}
 		}
 	}
 
@@ -1859,6 +1861,205 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = IPUnion_country_event.53
+	title = IPUnion_country_event.53.t
+	desc = IPUnion_country_event.53.d
+
+	picture = GFX_report_event_gre_george_ii_victorious
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = IPUnion_country_event.53.a
+		116 = {
+			add_core_of = ITA
+		}
+		add_timed_idea = {
+			idea = idea_ITA_liberation_malta
+			days = 730
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.54
+	title = IPUnion_country_event.54.t
+	desc = IPUnion_country_event.54.d
+
+	picture = GFX_report_event_gre_george_ii_victorious
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = IPUnion_country_event.54.a
+		add_political_power = 10
+	}
+
+	option = {
+		name = IPUnion_country_event.54.b
+		hidden_effect = {
+			set_country_flag = mussolini_is_in_terminally_ill_flag
+		}
+		country_event = {
+			id = IPUnion_country_event.55
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.55
+	title = IPUnion_country_event.55.t
+	desc = IPUnion_country_event.55.d
+
+	picture = GFX_report_event_gre_george_ii_victorious
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = IPUnion_country_event.55.a
+		custom_effect_tooltip = IPUnion_country_event.55.tt
+		hidden_effect = {
+			country_event = {
+				id = IPUnion_country_event.56
+				days = 30
+			}
+		}
+		#add_political_power = 10
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.56
+	title = IPUnion_country_event.56.t
+	desc = IPUnion_country_event.56.d
+
+	picture = GFX_report_event_gre_george_ii_victorious
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = IPUnion_country_event.56.a
+		retire_character = ITA_benito_mussolini
+		if = {
+			limit = {
+				has_character = ITA_grand_council
+			}
+			promote_character = ITA_grand_council
+		}
+		#add_ideas = ITA_shadow_of_mussolini
+		#ITA_bop_low_decrease_effect = yes 
+		hidden_effect = {
+			set_country_flag = IPUnion_country_event.56_flag
+		}
+		ITA_bop_low_decrease_effect = yes
+		complete_national_focus = ITA_helmsman_died
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.57
+	title = IPUnion_country_event.57.t
+	desc = IPUnion_country_event.57.d
+
+	picture = GFX_report_event_gre_george_ii_victorious
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = IPUnion_country_event.57.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+	}
+	option = {
+		name = IPUnion_country_event.57.b
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+	}
+	option = {
+		name = IPUnion_country_event.57.c
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.58
+	title = IPUnion_country_event.58.t
+	desc = IPUnion_country_event.58.d
+
+	picture = GFX_report_event_gre_george_ii_victorious
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = IPUnion_country_event.58.a
+		set_power_balance = {
+			id = ITA_power_balance
+			right_side = ITA_balbo_side 
+		}
+		custom_effect_tooltip = ITA_remove_balbo_as_advisor_tt
+		add_country_leader_role = {
+			character = ITA_italo_balbo
+			promote_leader = yes
+			country_leader = {
+				ideology = fascism_ideology
+				expire = 1965.1.1.1
+				traits =  {	aviation_hero }
+			}
+		}
+		hidden_effect = {
+			add_ideas = ITA_italo_balbo_traits
+		}
+		ITA_italo_balbo = {	set_character_flag = ITA_has_new_duce_flag }
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+		ITA_bop_medium_increase_balbo_side_effect = yes
+	}
+	option = {
+		name = IPUnion_country_event.58.b
+		set_power_balance = {
+			id = ITA_power_balance
+			right_side = ITA_balbo_side 
+		}
+		custom_effect_tooltip = ITA_remove_balbo_as_advisor_tt
+		add_country_leader_role = {
+			character = ITA_italo_balbo
+			promote_leader = yes
+			country_leader = {
+				ideology = fascism_ideology
+				expire = 1965.1.1.1
+				traits =  {	aviation_hero }
+			}
+		}
+		hidden_effect = {
+			add_ideas = ITA_italo_balbo_traits
+		}
+		ITA_italo_balbo = {	set_character_flag = ITA_has_new_duce_flag }
+		add_political_power = 75
+		add_war_support = 0.1
+		add_stability = 0.05
+		ITA_bop_medium_increase_balbo_side_effect = yes
+	}
+}
 
 
 

@@ -576,6 +576,18 @@ ideas = {
 				local_resources_factor = 200
 			}
 		}
+		idea_ITA_liberation_malta = {
+			removal_cost = -1
+			name = idea_ITA_liberation_malta
+			picture = ARG_women_in_industry
+			modifier = {
+				army_core_attack_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = MLT
+				army_core_defence_factor = -0.10
+			}
+		}
 	}
 	industrial_concern = {
 		ITA_OND = {

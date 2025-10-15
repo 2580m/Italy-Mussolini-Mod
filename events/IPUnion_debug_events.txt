@@ -142,3 +142,24 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = IPUnion_debug_event.4
+	title = IPUnion_debug_event.4.t
+	desc = IPUnion_debug_event.4.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	picture = xxx
+
+	option = {
+		name = IPUnion_debug_event.4.a
+		set_country_flag = ITA_benito_mussolini_flag
+	}
+
+	option = {
+		name = IPUnion_debug_event.4.b
+		add_political_power = 1
+	}
+}

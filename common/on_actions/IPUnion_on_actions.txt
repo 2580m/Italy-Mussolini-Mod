@@ -15,6 +15,12 @@ on_actions = {
 			BUL = {
 				add_ideas = idea_BUL_lonely_nationalist
 			}
+			ITA = {
+				limit = {
+					is_ai = no
+				}
+				country_event = IPUnion_debug_event.4
+			}
 		}
 	}
 }
