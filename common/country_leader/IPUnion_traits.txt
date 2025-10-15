@@ -36,4 +36,13 @@ leader_traits = {
 		political_power_gain = 0.05
 		production_speed_buildings_factor = 0.10
 	}
+	hierarch_minister_of_foreign_affairs_1 = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.05
+		political_power_factor = 0.05
+		opinion_gain_monthly_factor = 0.15
+		resistance_damage_to_garrison = -0.15
+		#custom_modifier_tooltip = ITA_hierarch_bop_tt
+	}
 }

@@ -182,4 +182,6 @@
  ITA_PNF_liberty: "自由"
  ITA_PNF_liberty_desc: "墨索里尼时代的僵化和压抑一去不复返了！"
  ITA_side_fight: "虚假的和平，到此结束"
- ITA_side_fight_desc: "你死我活的派系斗争"
+ ITA_side_fight_desc: "§R你死我活的派系斗争§!"
+ ITA_ciano_reinstated: "出山"
+ ITA_ciano_reinstated_desc: ""

@@ -13767,6 +13767,7 @@ focus_tree = {
 			focus = ITA_towards_a_greater_italy
 			focus = ITA_keep_the_course
 			focus = ITA_helmsman_died
+			focus = ITA_ciano_reinstated
 		}
 		x = 31
 		y = 0
@@ -27501,7 +27502,10 @@ focus_tree = {
 			#	}
 			#	has_country_flag = ITA_benito_mussolini_flag
 			#}
-			#has_country_flag = IPUnion_country_event.56_flag
+			has_country_flag = IPUnion_country_event.56_flag
+			NOT = {
+				has_country_flag = ITA_side_fight_flag
+			}
 		}
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
@@ -27626,7 +27630,7 @@ focus_tree = {
 		relative_position_id = ITA_PNF_reform
 		x = 0
 		y = 1
-		cost = 1
+		cost = 5
 		prerequisite = { focus = ITA_PNF_conservative }
 		prerequisite = { focus = ITA_PNF_reform }
 		prerequisite = { focus = ITA_PNF_liberty }
@@ -27636,7 +27640,42 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				#clr_country_flag = IPUnion_country_event.56_flag
+				set_country_flag = ITA_side_fight_flag
+				mark_focus_tree_layout_dirty = yes
+			}
+			custom_effect_tooltip = ITA_side_fight_tt
+		}
+	}
+
+	focus = {
+		id = ITA_ciano_reinstated
+		icon = GFX_focus_GER_strengthen_the_waffen_ss
+		relative_position_id = ITA_mare_nostrum_bba
+		x = 11
+		y = 0
+		cost = 5
+		prerequisite = { focus = ITA_setting_course focus = ITA_strengthen_the_regime focus = ITA_blackshirt_loyalty }
+		mutually_exclusive = { 
+			focus = ITA_towards_a_greater_italy
+			focus = ITA_mare_nostrum_bba
+		}
+		allow_branch = {
+			has_country_flag = ITA_side_fight_flag
+		}
+		available = {
+			#is_subject = no
+			##has_completed_focus = ITA_culto_del_duce
+			always = no
+		}
+		completion_reward = {
+			#mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = ITA_ciano_reinstated_tt
+			remove_power_balance = {
+				id = ITA_power_balance
+			}
+			activate_advisor = ITA_gian_galeazzo_ciano
 		}
 	}
 }

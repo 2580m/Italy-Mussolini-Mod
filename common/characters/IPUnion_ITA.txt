@@ -55,24 +55,15 @@ characters = {
 				}
 				ITA_government_is_somewhat_fascist = yes
 			}
+			visible = {
+				has_completed_focus = ITA_ciano_reinstated
+			}
 			cost = 75
 			traits = {
-				hierarch_minister_of_foreign_affairs
+				hierarch_minister_of_foreign_affairs_1
 			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
-			}
+			can_be_fired = no
+			
 			ai_will_do = {
 				base = 0.3
 				modifier = {
