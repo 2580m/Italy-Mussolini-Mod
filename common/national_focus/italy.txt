@@ -23879,7 +23879,7 @@ focus_tree = {
 		id = ITA_leap_forward
 		prerequisite = { focus = ITA_keep_the_course }
 		available = { has_completed_focus = ITA_believe_obey_fight }
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_SOV_socialist_emulation_ccp_2d_sov_compatibility
 		relative_position_id = ITA_keep_the_course
 		x = 0
 		y = 1
@@ -27167,9 +27167,9 @@ focus_tree = {
 		id = ITA_triumvirate
 		icon = GFX_focus_ITA_the_social_republic_prevails
 		cost = 5
-		relative_position_id = ITA_keep_the_course
+		relative_position_id = ITA_enter_the_high_stage_of_imperialism
 		x = 0
-		y = 4
+		y = 1
 		prerequisite = { focus = ITA_enter_the_high_stage_of_imperialism }
 		available = {
 			AND = {
