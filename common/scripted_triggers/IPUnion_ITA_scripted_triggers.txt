@@ -6,6 +6,14 @@ ITA_CHI_trigger = {
 	}
 }
 
+ITA_stresa_front_nations = {
+	exists = yes
+	OR = {
+		original_tag = ITA
+		original_tag = FRA
+		original_tag = CHI
+	}
+}
 
 ITA_propaganda_poster_slot_available = {
 	custom_trigger_tooltip = {

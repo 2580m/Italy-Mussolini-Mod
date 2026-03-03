@@ -3352,3 +3352,24 @@ ITA_mussolini_healthy = {
 		}
 	}
 }
+
+ITA_derheimilche_aufmarsch = {  ##秘密集结
+	from_der_heimilche_aufmarsch = {
+
+		cost = 100
+
+		days_remove = 1080
+
+		visible = {
+			has_completed_focus	= ITA_dejure_fake_pact_of_steel
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				activate_shine_on_focus = ITA_italy_first
+				
+			}
+		}
+
+	}
+}

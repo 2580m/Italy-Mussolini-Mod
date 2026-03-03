@@ -44,6 +44,8 @@ focus_tree = {
 	shared_focus = CHI_SINAW_focus
 
 	shared_focus = CHI_italian_development_loans
+
+	#shared_focus = ITA_revive_the_stresa_front
 	
 	default = no
 
@@ -15530,8 +15532,9 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
 		mutually_exclusive = { focus = ITA_pact_of_steel focus = ITA_italy_first }
-		x = -10
+		x = -8
 		y = 1
+
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 5
 		available = {
@@ -15924,11 +15927,13 @@ focus_tree = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
-		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_italy_first }
-		x = -4
+		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_italy_first focus = ITA_guarantee_austrian_independence_shared }
+		x = -2
 		y = 1
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 5
+
+		text_icon = italy_ITA_GER_focus_styles
 
 		bypass = {
 			is_in_faction = yes
@@ -15977,11 +15982,16 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ITA_pact_of_steel
+
+		text_icon = italy_ITA_GER_focus_styles
+
 		cost = 5
 		available = {
 			NOT = { has_war_with = GER }
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
+
+		
 
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
 
@@ -16002,6 +16012,8 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
+
+		text_icon = italy_ITA_GER_focus_styles
 		
 		search_filters = {FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
@@ -16037,6 +16049,8 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
+		text_icon = italy_ITA_GER_focus_styles
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_secret_weapons
@@ -16054,6 +16068,8 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = ITA_pact_of_steel }
 
+		text_icon = italy_ITA_GER_focus_styles
+
 		x = -1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
@@ -16061,6 +16077,8 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
+
+		
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -16167,8 +16185,8 @@ focus_tree = {
 		id = ITA_italy_first
 		icon = GFX_focus_generic_italy_first
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
-		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_pact_of_steel }
-		x = 0
+		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_pact_of_steel focus = ITA_guarantee_austrian_independence_shared }
+		x = 4
 		y = 1
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 4
@@ -16254,7 +16272,7 @@ focus_tree = {
 		icon = GFX_focus_BEL_the_lost_tribe
 		prerequisite = { focus = ITA_italy_first }
 		relative_position_id = ITA_italy_first
-		x = 5
+		x = 8
 		y = 1
 		cost = 5
 		available = {
@@ -16420,7 +16438,7 @@ focus_tree = {
 		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = ITA_italy_first }
 
-		x = 3
+		x = 6
 		y = 1
 		relative_position_id = ITA_italy_first
 		cost = 5
@@ -16539,6 +16557,8 @@ focus_tree = {
 			}
 		}
 
+		text_icon = italy_ITA_JAP_focus_styles
+
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
@@ -16562,13 +16582,15 @@ focus_tree = {
 		icon = GFX_focus_ITA_italian_irredentism
 		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
 
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 4
 		available = {
 			is_subject = no
 		}
+
+		
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 
@@ -16714,7 +16736,7 @@ focus_tree = {
 			focus = ITA_request_control_of_french_territories 
 		}
 
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ITA_war_with_france
 		cost = 10
@@ -16874,6 +16896,10 @@ focus_tree = {
 			NOT = { country_exists = GRE }
 		}
 
+		allow_branch = {
+			is_ai = yes
+		}
+
 		available = {
 			country_exists = GRE
 			NOT = {
@@ -17004,7 +17030,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_foreign_affairs }
 
-		x = 9
+		x = 20
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 1

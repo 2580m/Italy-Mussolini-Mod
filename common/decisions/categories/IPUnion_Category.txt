@@ -224,3 +224,12 @@ ITA_mussolini_healthy = {
 	}
 	picture = x
 }
+
+ITA_derheimilche_aufmarsch = {
+	icon = x
+	priority = 101
+	allowed = {
+
+	}
+	picture = x
+}

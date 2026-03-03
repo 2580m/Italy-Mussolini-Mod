@@ -1,0 +1,24 @@
+
+
+
+	shared_focus = {
+		id = ITA_dejure_fake_pact_of_steel
+
+		relative_position_id = ITA_pact_of_steel
+		x = 0
+		y = 6
+
+		cost = 0
+
+		allow_branch = {
+			has_country_flag = ITA_dejure_fake_pact_of_steel_flag
+		}
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = from_der_heimilche_aufmarsch
+		}
+	}
