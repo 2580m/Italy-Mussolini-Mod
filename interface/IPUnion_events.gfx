@@ -24,4 +24,12 @@ spriteTypes = {
 		name = "GFX_report_IPUnion_summon_blackshirts"
 		textureFile = "gfx/event_pictures/report_event_summon_blackshirts.png"
 	}
+	spriteType = {
+		name = "GFX_report_event_papa_pio_xii"
+		textureFile = "gfx/event_pictures/report_event_papa_pio_xii.png"
+	}
+	spriteType = {
+		name = "GFX_report_spiderman_mussolini"
+		textureFile = "gfx/event_pictures/report_spiderman_mussolini.png"
+	}
 }

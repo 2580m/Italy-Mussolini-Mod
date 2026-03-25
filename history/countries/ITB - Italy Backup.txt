@@ -34,6 +34,7 @@ oob = "ITB_1936"
 #GRE_fascism
 #GRE_neutrality
 #set_cosmetic_tag = GRE_neutrality
+recruit_character = BAK_mussolini
 
 set_research_slots = 3
 

@@ -155,3 +155,369 @@ ITA_create_pontifical_swiss_guard_effects = {
 		}
 	}
 }
+
+ITA_start_civil_war_game_over_effect = { #The one triggered via BoP
+
+	#log = "CIVIL WAR EFFECT"
+
+	GER = {
+		annex_country = {
+			target = ITA
+		}
+		release_autonomy = {
+			target = ITA
+			autonomous_state = autonomy_satellite
+		}
+	}
+
+	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
+	ITA_bop_remove_bop_effect = yes
+
+	# Launch The Civil War
+	start_civil_war = {
+		ideology = neutrality #SPLITTING TAG
+		ruling_party = fascism #ORIGINAL TAG
+		capital = var:RSI.ITA_cw_rds_capital
+		states = all
+		states_filter = {
+			has_state_flag = ITA_cw_state_split
+		}
+
+		keep_all_characters = yes
+
+		size = 0.35
+		#army_ratio = var:ITA_cw_army_size
+		#navy_ratio = var:ITA_cw_navyy_size
+		#air_ratio = var:ITA_cw_air_size
+
+		#keep_political_leader = no # When YES -> all characters with country leader role will remain in original tag // ABSURD
+		#keep_political_party_members = no # When YES -> all characters with country leader role will remain in original tag // ABSURD
+		#keep_unit_leaders_trigger = {
+		#	has_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+		#}
+	}
+
+	set_country_flag = ITA_rsi_cw_flag #SET AS RSI ALIAS
+	set_cosmetic_tag = ITA_rsi
+
+	random_other_country = {
+		limit = {
+			original_tag = ITA
+			has_war_with = RSI
+			#RSI = { check_variable = { ITA_cw_rds_capital = PREV } }
+		}
+		set_country_flag = ITA_rds_cw_flag #SET AS RDS ALIAS
+		set_cosmetic_tag = ITA_rds
+
+		#SET VARIABLES
+		set_variable = { ITA_rds_overlord = RSI.ITA_rds_overlord }
+
+		#log = "I am in [THIS.GetName] random_other_country" #RDS
+	}
+
+	#log = "+++++++++++"
+	#log = "I am in [THIS.GetName]"
+	#log = "RSI is [RSI.GetName] led by [RSI.GetLeader] capital in [RSI.capital.GetName]"
+	#log = "RDS is [RDS.GetName] led by [RDS.GetLeader] capital in [RDS.capital.GetName]"
+	#log = "+++++++++++"
+
+	#STATES
+	every_core_state = { #Transfer ownership of assigned states so that there's no weird transfers when puppetting (trust me there's weird stuff going on)
+		limit = {
+			has_state_flag = ITA_cw_state_split
+			NOT = { is_owned_by = RDS }
+		}
+		controller = {
+			country_event = { id = BBA_italy_civil_war.100 hours = 6 random_hours = 3 }
+		}
+		set_state_owner_to = RDS
+	}
+
+	#CHARACTERS
+	every_character = {
+		limit = {
+			#NOT = { has_character_flag = ITA_cw_character_fascist_side_flag }
+			OR = {
+				has_character_flag = ITA_cw_character_monarchist_side_flag
+				has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+				has_character_flag = ITA_cw_character_antifascist_side_flag
+				has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+			}
+		}
+		#log = "[THIS.GetName] shouldn't be in [RSI.GetName]"
+		set_nationality = RDS
+	}
+
+	#RDS = { #Error dog keeps complaining
+	random_other_country = {
+		limit = {
+			original_tag = ITA
+			has_war_with = RSI
+			#RSI = { check_variable = { ITA_cw_rds_capital = PREV } }
+		}
+		# SET UP COUNTRY LEADERS
+		if = {
+			limit = {
+				has_character = ITA_ferruccio_parri
+			}
+			promote_character = ITA_ferruccio_parri
+		}
+
+		if = {
+			limit = {
+				has_character = ITA_palmiro_togliatti
+			}
+			promote_character = ITA_palmiro_togliatti
+		}
+
+		if = {
+			limit = {
+				has_character = ITA_vittorio_emanuele_iii
+			}
+			promote_character = ITA_vittorio_emanuele_iii
+		}
+		else_if = {
+			limit = {
+				has_character = ITA_prince_umberto
+			}
+			promote_character = ITA_prince_umberto
+		}
+
+		#COMMITTEE IS THE LAST ONE SO THAT IT OVERRIDES EVERYONE ELSE
+		if = {
+			limit = {
+				has_character = ITA_comitato_di_liberazione_nazionale
+			}
+			ITA_promote_cln_to_country_leader_communism = yes
+
+			ITA_promote_cln_to_country_leader_democratic = yes
+
+			ITA_promote_cln_to_country_leader_neutrality = yes
+		}
+	}
+
+	#PUPPETS
+	if = {
+		limit = {
+			any_other_country = {
+				has_country_flag = ITA_rsi_overlord_flag
+			}
+		}
+		var:RSI.ITA_rsi_overlord = {
+			#log = "I am [THIS.GetName] and I am going to puppet [RSI.GetName]"
+			puppet = {
+				target = RSI
+				end_civil_wars = no
+				end_wars = no
+			}
+		}
+	}
+	else = {
+		#log = "No RSI overlord"
+	}
+
+	if = {
+		limit = {
+			any_other_country = {
+				has_country_flag = ITA_rds_overlord_flag
+			}
+		}
+		var:RDS.ITA_rds_overlord = {
+			#log = "I am [THIS.GetName] and I am going to puppet [RDS.GetName]"
+			puppet = {
+				target = RDS
+				end_civil_wars = no
+				end_wars = no
+			}
+		}
+	}
+	else = {
+		#log = "No RDS overlord"
+	}
+
+	#IDEOLOGY AND LEADERS
+	RDS = {
+		if = { #COMMUNIST CW
+			limit = {
+				has_global_flag = ITA_communist_cw_flag
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 25
+				communism = 35
+				democratic = 30
+				fascism = 10
+			}
+		}
+		else_if = { #DEMOCRATIC CW
+			limit = {
+				has_global_flag = ITA_democratic_cw_flag
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 25
+				communism = 30
+				democratic = 35
+				fascism = 10
+			}
+		}
+		else = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 35
+				communism = 30
+				democratic = 25
+				fascism = 10
+			}
+		}
+	}
+
+	#FOCUS TREE for RDS (and NSs)
+	#RDS = { #MM: Error dog will complain I cannot stand it
+	random_other_country = {
+		limit = {
+			original_tag = ITA
+			has_war_with = RSI
+		}
+
+		load_focus_tree = {
+			tree = italian_focus
+			keep_completed = yes
+		}
+
+		if = { #MUSSOLINI BRANCH
+			limit = {
+				has_completed_focus = ITA_culto_del_duce
+			}
+			uncomplete_national_focus = {
+				focus = ITA_culto_del_duce
+				uncomplete_children = yes
+			}
+		}
+		if = { #Going COMMIE or DEMOCRATIC
+			limit = {
+				OR = {
+					has_global_flag = ITA_communist_cw_flag
+					has_global_flag = ITA_democratic_cw_flag
+				}
+			}
+			if = { #ALT-FASCIST/MONARCHIST BRANCH
+				limit = {
+					has_completed_focus = ITA_convene_the_grand_council
+				}
+				uncomplete_national_focus = {
+					focus = ITA_convene_the_grand_council
+					uncomplete_children = yes
+				}
+			}
+			if = { #FASCIST FOREIGN AFFAIRS BRANCH
+				limit = {
+					has_completed_focus = ITA_foreign_affairs
+				}
+				uncomplete_national_focus = {
+					focus = ITA_foreign_affairs
+					uncomplete_children = yes
+				}
+			}
+			if = { #ETH-ITA war focus
+				limit = {
+					has_completed_focus = ITA_struggle_in_ethiopia
+				}
+				uncomplete_national_focus = {
+					focus = ITA_struggle_in_ethiopia
+				}
+				unlock_national_focus = ITA_the_abyssinian_fiasco
+			}
+
+			#COMPLETE FOCUS
+			unlock_national_focus = ITA_unite_the_opposition
+			unlock_national_focus = ITA_defy_the_duce
+			hidden_effect = { #Just doing the key thing we're missing from the unlocked focus above
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+		}
+		else = { #Going MONARCHIST
+			if = { #BALBO BRANCH
+				limit = {
+					has_completed_focus = ITA_italo_balbo_focus
+				}
+				uncomplete_national_focus = {
+					focus = ITA_italo_balbo_focus
+					uncomplete_children = yes
+				}
+			}
+			else_if = { #GRANDI BRANCH
+				limit = {
+					has_completed_focus = ITA_dino_grandi_focus
+				}
+				uncomplete_national_focus = {
+					focus = ITA_dino_grandi_focus
+					uncomplete_children = yes
+				}
+			}
+			if = { #PACT OF STEEL BRANCH
+				limit = {
+					has_completed_focus = ITA_pact_of_steel
+				}
+				uncomplete_national_focus = {
+					focus = ITA_pact_of_steel
+					uncomplete_children = yes
+				}
+			}
+			if = { #ETH-ITA war focus
+				limit = {
+					has_completed_focus = ITA_the_abyssinian_fiasco
+				}
+				uncomplete_national_focus = {
+					focus = ITA_the_abyssinian_fiasco
+				}
+				unlock_national_focus = ITA_struggle_in_ethiopia
+			}
+			#COMPLETE FOCUS
+			if = {
+				limit = {
+					NOT = { has_completed_focus = ITA_triumph_in_africa_bba }
+				}
+				unlock_national_focus = ITA_undermine_the_duce
+				unlock_national_focus = ITA_conspiracies_in_the_shadows
+			}
+			unlock_national_focus = ITA_convene_the_grand_council
+			unlock_national_focus = ITA_depose_mussolini
+			unlock_national_focus = ITA_monarchia_d_italia
+		}
+
+		ITA_manage_national_spirits_in_civil_war = yes
+	}
+
+	#FIRST FOCUS FROM CW BRANCH are completed via event after changing tag so that player will always get the appropriate popup for the focus completion
+
+	#CLEAR GLOBAL FLAG
+	if = {
+		limit = {
+			has_global_flag = ITA_communist_cw_flag
+		}
+		clr_global_flag = ITA_communist_cw_flag
+	}
+	else_if = {
+		limit = {
+			has_global_flag = ITA_democratic_cw_flag
+		}
+		clr_global_flag = ITA_democratic_cw_flag
+	}
+
+	hidden_effect = { # Test for nightlies
+		set_global_flag = ITA_antifascist_civil_war_triggered_flag
+		mark_focus_tree_layout_dirty = yes
+	}
+}

@@ -441,3 +441,65 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = IPUnion_router_event.18
+	title = IPUnion_router_event.18
+	desc = IPUnion_router_event.18
+	hidden = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ITA_fascist_side_for_character_split_flag # Used for character split
+			ITA_cw_set_sides_and_overlords = yes #MANAGES SIDES (Cosmetics, flags, overlords, etc.)
+
+			ITA_cw_manage_states_split_effect = yes #SETS THE STATE SPLIT
+		}
+
+		hidden_effect = {
+			ITA_set_special_characters_as_fascist_effect = yes
+			ITB = {
+				transfer_state = 914
+				change_tag_from	= ITA
+				set_cosmetic_tag = ITA_rsi
+				set_politics = {
+					ruling_party = fascism
+				}
+				BAK_mussolini = {
+					promote_character = yes
+				}
+			}
+			GER = {
+				annex_country = {
+					target = ITB
+				}
+			}
+			NOR = {
+				transfer_state = 914
+			}
+			ITA_start_civil_war_game_over_effect = yes
+			complete_national_focus = ITA_the_italian_social_republic
+			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+			news_event = { id = bba_news.110 hours = 2 }
+		}
+
+		hidden_effect = {
+			RDS = {
+				transfer_state = 117
+				transfer_state = 114
+				transfer_state = 849
+				transfer_state = 156
+				transfer_state = 115
+			}
+			every_state	= {
+				limit = {
+					is_core_of = LBA
+				}
+				transfer_state_to = RDS
+			}
+		}
+	}
+}

@@ -297,7 +297,7 @@
  IPUnion_country_event.85.a: "很好"
  IPUnion_country_event.86.t: "新教宗"
  IPUnion_country_event.86.d: "位于梵蒂冈中心的大教堂上空漂浮着一缕白烟，教宗庇护十二世就此上任"
- IPUnion_country_event.86.a: "Holy Father!"
+ IPUnion_country_event.86.a: "过去我带你们对抗魔鬼，现在我又要带你们对抗魔鬼了。"
  IPUnion_country_event.87.t: "百变老墨"
  IPUnion_country_event.87.desc: "老墨今天穿什么？"
  IPUnion_country_event.87.a: "经典套装"
@@ -322,6 +322,10 @@
  IPUnion_country_event.92.a: "自今日起"
  IPUnion_country_event.92.b: "米兰市党、政、财、文大权"
  IPUnion_country_event.92.c: "统统归人民公社！"
+ IPUnion_country_event.93.t: "丢人现眼"
+ IPUnion_country_event.93.d: "完了，全完了。我们将国家和民族的前途赌在了意埃战争的胜利上，而这一切都已随埃塞俄比亚高原上坦克的残骸和堆积如山的士兵尸体化为了泡影。我们别无他法，只能静静吞下这耻辱的苦果，让他们自顾自地庆祝所谓“反殖民主义”的胜利。而且，我们现在还要处理一团乱麻的国内局势。"
+ IPUnion_country_event.93.a: "人事已尽..."
+ IPUnion_country_event.93.b: "...天命难违"
 
 
 

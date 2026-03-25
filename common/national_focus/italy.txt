@@ -8437,13 +8437,13 @@ focus_tree = {
 		id = ITA_the_abyssinian_fiasco
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		mutually_exclusive = { focus = ITA_solid_progress focus = ITA_struggle_in_ethiopia }
-		x = 30
+		x = 15
 		y = 0
 		relative_position_id = ITA_naval_power_projection
 		cost = 5
 
 		allow_branch = {
-			has_dlc = "By Blood Alone"
+			#has_dlc = "By Blood Alone"
 			if = {
 				limit = {
 					has_game_rule = {
@@ -8451,7 +8451,7 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				is_ai = yes
+				#is_ai = yes
 			}
 		}
 
@@ -8477,11 +8477,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			add_popularity = {
-				ideology = fascism 
-				popularity = -0.15
-			}
-			add_war_support = -0.03
+			country_event = IPUnion_country_event.93
 		}
 	}
 
@@ -8492,7 +8488,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		offset = {
-			x = -20
+			#x = -20
 			y = 0
 			trigger = {
 				OR = {
@@ -8644,7 +8640,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		offset = {
-			x = 1
+			#x = 1
 			y = 0
 			trigger = {
 				OR = {
