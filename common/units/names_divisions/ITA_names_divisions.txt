@@ -768,3 +768,37 @@ ITA_REG_01 = {
 		10 = { "%d° Reggimento Bersaglieri" }
 	}
 }
+
+ITA_INF_03 = { 
+	name = "MWRR.HQ. VAAD." 
+
+	for_countries = { ITA } 
+
+	can_use = { always = yes } 
+
+	division_types = { "militia" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ITA_INF_03 } 
+
+	fallback_name = "%da VAAD. MWRR.HQ." 
+
+	# Names with numbers (only one number per entry).
+	# It's okay to have gaps in numbering.
+	ordered = { 
+		1 = { "%da VAAD. MWRR.HQ. '23 Marzo'" } 									# Created in '35
+		2 = { "%da VAAD. MWRR.HQ. '28 Ottobre'" } 								# Created in '35
+		3 = { "%da VAAD. MWRR.HQ. '21 Aprile'" } 									# Created in '35
+		4 = { "%da VAAD. MWRR.HQ. '3 Gennaio'" } 									# Created in '35
+		5 = { "%da VAAD. MWRR.HQ. '1 Febbraio'" } 								# Created in '35
+		6 = { "%da VAAD. MWRR.HQ. 'Tevere'" } 									# Created in '35
+		7 = { "%da VAAD. MWRR.HQ. 'Cirene'" } 									# Created in '36
+		8 = { "%da VAAD. MWRR.HQ. 'Dio lo Vuole'" }								# Fictional divisions start here (3 volunteers divisions in SCW, 3 battalions in Greece / Balkan, 1 planned CC.NN. armored division)
+		9 = { "%da VAAD. MWRR.HQ. 'Fiamme Nere'" } 
+		10 = { "%da VAAD. MWRR.HQ. 'Penne Nere'" } 
+		11 = { "%da VAAD. MWRR.HQ. 'Galbiati'" } 
+		12 = { "%da VAAD. MWRR.HQ. 'Diamanti'" } 
+		13 = { "%da VAAD. MWRR.HQ. 'Biscaccianti'" } 
+		14 = { "%da VAAD. MWRR.HQ. 'M'" } 
+	} 
+} 

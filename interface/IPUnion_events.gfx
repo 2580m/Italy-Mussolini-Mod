@@ -32,4 +32,12 @@ spriteTypes = {
 		name = "GFX_report_spiderman_mussolini"
 		textureFile = "gfx/event_pictures/report_spiderman_mussolini.png"
 	}
+	spriteType = {
+		name = "GFX_report_event_bombard_headquarters"
+		textureFile = "gfx/event_pictures/report_event_bombard_headquarters.png"
+	}
+	spriteType = {
+		name = "GFX_report_italian_peoples_1"
+		textureFile = "gfx/event_pictures/report_italian_peoples_1.png"
+	}
 }
