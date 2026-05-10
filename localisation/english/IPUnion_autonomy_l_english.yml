@@ -4,6 +4,7 @@
  autonomy_condominium: "Condominium"
  autonomy_fascer_satellite: "Fasces Satellite"
  autonomy_peoples_commune: "Peoples's Commune"
+ autonomy_IBR_union_member: "Union Member State"
 
  YUG_autonomy_unilateral_union: "$YUG_neutrality$"
  YUG_autonomy_unilateral_union_DEF: "$YUG_neutrality_DEF$"

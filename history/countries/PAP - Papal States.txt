@@ -39,6 +39,7 @@ set_technology = {
 
 set_grand_doctrine = grand_battleplan
 set_grand_doctrine = new_fleet_in_being
+load_focus_tree = IPUnion_empty_focus_tree
 
 if = {
 	limit = {

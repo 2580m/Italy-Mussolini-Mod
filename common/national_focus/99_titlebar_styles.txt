@@ -50,3 +50,30 @@ style = {
 	available = GFX_focus_can_start_joint_CHI
 	current = GFX_focus_current_joint_CHI
 }
+
+style = {
+	name = italy_FRA_ENG_focus_style
+
+	unavailable = GFX_focus_unavailable_joint_ITA_FRA_ENG
+	completed = GFX_focus_completed_joint_ITA_FRA_ENG
+	available = GFX_focus_can_start_joint_ITA_FRA_ENG
+	current = GFX_focus_current_joint_ITA_FRA_ENG
+}
+
+style = {
+	name = italy_ITA_GER_focus_styles
+
+	unavailable = GFX_focus_unavailable_joint_ITA_GER
+	completed = GFX_focus_completed_joint_ITA_GER
+	available = GFX_focus_can_start_joint_ITA_GER
+	current = GFX_focus_current_joint_ITA_GER
+}
+
+style = {
+	name = italy_ITA_JAP_focus_styles
+
+	unavailable = GFX_focus_unavailable_joint_ITA_JAP
+	completed = GFX_focus_completed_joint_ITA_JAP
+	available = GFX_focus_can_start_joint_ITA_JAP
+	current = GFX_focus_current_joint_ITA_JAP
+}

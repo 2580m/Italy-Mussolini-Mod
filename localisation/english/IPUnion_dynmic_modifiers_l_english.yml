@@ -36,3 +36,6 @@
   dont_attack_cyprus_desc: "Due to the existence of scripted events, you can still win even without attacking it."
 
   allies_middle_east_command: "$Allies$"
+
+  iberian_union: "Iberian Union"
+  iberian_union_desc: "A member of the Iberian Union."

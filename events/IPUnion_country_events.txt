@@ -654,7 +654,7 @@ country_event = {
 	desc = IPUnion_country_event.17.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_report_event_generic_mussolini
+	picture = GFX_report_IPUnion_summon_blackshirts
 	option = {
 		name = IPUnion_country_event.17.a
 		ai_chance = {
@@ -1223,7 +1223,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	picture = GFX_report_event_gre_george_ii_victorious
+	picture = GFX_report_event_bombard_headquarters
 
 	option = {
 		name = IPUnion_country_event.34.a
@@ -2850,7 +2850,7 @@ country_event = {
 	desc = IPUnion_country_event.86.d
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_report_event_gre_george_ii_victorious
+	picture = GFX_report_event_papa_pio_xii
 	option = {
 		name = IPUnion_country_event.86.a
 		custom_effect_tooltip = IPUnion_country_event.86.tt
@@ -3040,6 +3040,8 @@ country_event = {
 					}
 				}
 			}
+
+			country_event = IPUnion_country_event.94
 		}
 	}
 
@@ -3090,6 +3092,9 @@ country_event = {
 					}
 				}
 			}
+
+			country_event = IPUnion_country_event.94
+
 		}
 	}
 
@@ -3140,7 +3145,54 @@ country_event = {
 					}
 				}
 			}
+
+			country_event = IPUnion_country_event.94
+
 		}
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.93
+	
+	title = IPUnion_country_event.93.t
+	desc = IPUnion_country_event.93.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_report_spiderman_mussolini
+	option = {
+		name = IPUnion_country_event.93.a
+
+		custom_effect_tooltip = GAME_OVER_TT
+		
+		hidden_effect = {
+			country_event = IPUnion_router_event.18
+		}
+	}
+
+	option = {
+		name = IPUnion_country_event.93.b
+
+		custom_effect_tooltip = GAME_OVER_TT
+		
+		hidden_effect = {
+			country_event = IPUnion_router_event.18
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.94
+	
+	title = IPUnion_country_event.94.t
+	desc = IPUnion_country_event.94.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_report_italian_peoples_1
+
+	option = {
+		name = IPUnion_country_event.94.a
+		custom_effect_tooltip = IPUnion_country_event.34.a.tt
 	}
 }
 

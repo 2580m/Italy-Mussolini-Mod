@@ -1,0 +1,90 @@
+
+
+
+	# joint_focus = {
+	# 	id = ITA_guarantee_austrian_independence_shared
+
+	# 	dynamic = yes
+
+	# 	icon = GFX_goal_generic_territory_or_war
+	# 	prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
+	# 	mutually_exclusive = { focus = ITA_pact_of_steel focus = ITA_italy_first }
+	# 	x = -8
+	# 	y = 1
+
+	# 	relative_position_id = ITA_potential_allies_in_the_balkans
+
+	# 	cost = 5
+
+	# 	text_icon = italy_FRA_ENG_focus_style
+
+	# 	joint_trigger = {
+	# 		ITA_stresa_front_nations = yes
+	# 	}
+
+		
+		
+	# }
+	
+	
+	
+	# joint_focus = {
+	# 	id = ITA_revive_the_stresa_front
+
+	# 	dynamic = yes
+
+	# 	icon = GFX_focus_focus_fra_ratify_stresa
+
+	# 	prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
+	# 	x = -8
+	# 	y = 1
+	# 	relative_position_id = ITA_potential_allies_in_the_balkans
+	# 	cost = 5
+
+	# 	text_icon = italy_FRA_ENG_focus_style
+
+	# 	joint_trigger = {
+	# 		ITA_stresa_front_nations = yes
+	# 	}
+
+	# 	available = {
+	# 		ITA = {
+	# 			exists = yes
+	# 			has_capitulated = no
+	# 		}
+	# 		FRA = {
+	# 			exists = yes
+	# 			has_capitulated = no
+	# 		}
+	# 		ENG = {
+	# 			exists = yes
+	# 			has_capitulated = no
+	# 		}
+	# 	}
+
+	# 	completion_reward = { }
+
+	# 	available_if_capitulated = no
+
+	# 	completion_reward_joint_originator = {
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = ITA
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				original_tag = FRA
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				original_tag = ENG
+	# 			}
+	# 		}
+	# 	}
+
+	# 	completion_reward_joint_member = {
+
+	# 	}
+	# }

@@ -873,6 +873,15 @@ ideas = {
 				special_forces_cap_flat = 120
 			}
 		}
+		idea_pareto_circulation_of_elites = {
+			name = idea_pareto_circulation_of_elites
+			removal_cost = -1
+			picture = air_support_focus
+			modifier = {
+				fascism_drift = 0.01
+				stability_factor = 0.05
+			}
+		}
 	}
 	industrial_concern = {
 		ITA_OND = {

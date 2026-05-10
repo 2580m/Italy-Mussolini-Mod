@@ -693,6 +693,77 @@ IPUnion_Tirumvirate = {
 			}
 		}
 	}
+
+	form_contribute_to_the_establishment_of_the_iberian_federation = {
+		cost = 30
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		visible = {
+			is_faction_leader = yes
+		}
+
+		available = {
+			SPR = {
+				is_in_faction_with = ROOT
+				is_subject = no
+				has_government = fascism
+			}
+			OR = {
+				POR = {
+					is_in_faction_with = ROOT
+					OR = {
+						is_subject = no
+						is_subject_of = ROOT
+					}
+				}
+				any_state = {
+					is_core_of = POR
+					is_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = POR
+					any_of_scopes = {
+						array = POR.core_states
+						is_controlled_by = POR
+					}
+				}
+
+				SPR = {
+					annex_country = {
+						target = POR
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					any_of_scopes = {
+						array = POR.core_states
+						is_controlled_by = ROOT
+					}
+				}
+
+				for_each_scope_loop = {
+					array = POR.core_states
+					SPR = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			SPR = {
+				set_cosmetic_tag = IBR_federation
+			}
+		}
+	}
 }
 IPUnion_Ita_Cosmetic_Tags = {
 	form_cos_rsi = {
@@ -1203,7 +1274,13 @@ ITA_mare_nostrum_category = {
 			NOT = {
 				has_global_flag = vic_regime_stablility
 			}
+			is_ai = no
 		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
 		custom_cost_trigger = {
 	    	command_power > 14.9
 	    }
@@ -3273,5 +3350,26 @@ ITA_mussolini_healthy = {
 				set_country_flag = from_spare_no_effort_in_treating_the_patient_flag
 			}
 		}
+	}
+}
+
+ITA_derheimilche_aufmarsch = {  ##秘密集结
+	from_der_heimilche_aufmarsch = {
+
+		cost = 100
+
+		days_remove = 1080
+
+		visible = {
+			has_completed_focus	= ITA_dejure_fake_pact_of_steel
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				activate_shine_on_focus = ITA_italy_first
+				
+			}
+		}
+
 	}
 }

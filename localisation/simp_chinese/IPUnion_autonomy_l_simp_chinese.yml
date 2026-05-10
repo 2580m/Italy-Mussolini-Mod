@@ -4,6 +4,7 @@
  autonomy_condominium: "共管地区"
  autonomy_fascer_satellite: "束棒卫星国"
  autonomy_peoples_commune: "地方人民公社"
+ autonomy_IBR_union_member: "联盟成员国"
 
  YUG_autonomy_unilateral_union: "$YUG_neutrality$"
  YUG_autonomy_unilateral_union_DEF: "$YUG_neutrality_DEF$"

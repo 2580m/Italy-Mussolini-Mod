@@ -297,3 +297,45 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = IPUnion_debug_event.9
+	title = "IBR Debug"
+	desc = ""
+
+	is_triggered_only = yes
+
+	option = {
+		name = YES
+
+		SPR = {
+			set_autonomy = {
+				target = POR
+				autonomous_state = autonomy_IBR_union_member
+			}
+		}
+
+		hidden_effect = {
+			SPR = {
+				add_dynamic_modifier = {
+					modifier = iberian_union
+				}
+			}
+			POR = {
+				add_dynamic_modifier = {
+					modifier = iberian_union
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_popularities = {
+					neutrality = 100
+					communism = 0
+					fascism = 0
+					democratic = 0
+				}
+				add_country_leader_trait = caudillo_1
+			}
+		}
+	}
+}
