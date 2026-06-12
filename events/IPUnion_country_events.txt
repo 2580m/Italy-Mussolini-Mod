@@ -9,9 +9,9 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = IPUnion_country_event.1.a
-		1047 = { remove_core_of = ITA }
+		1082 = { remove_core_of = ITA }
 		FRA = {
-			transfer_state = 1047
+			transfer_state = 1082
 		}
 		ai_chance = {
 			base = 10
@@ -26,12 +26,12 @@ country_event = {
 	}
 	option = {
 		name = IPUnion_country_event.1.b
-		1047 = { remove_core_of = ITA }
+		1082 = { remove_core_of = ITA }
 		FRA = {
 			create_wargoal = {
 				target = ITA
 				type = take_core_state
-				generator = { 1047 }
+				generator = { 1082 }
 			}
 		}
 		ai_chance = {
@@ -217,13 +217,13 @@ country_event = {
 			}
 		}
 		TUR = {
-			transfer_state = 1056
-			transfer_state = 1057
+			transfer_state = 1091
+			transfer_state = 1092
 		}
-		1056 = { add_core_of = TUR }
-		1057 = { add_core_of = TUR }
-		1056 = { remove_core_of = GRE }
-		1057 = { remove_core_of = GRE }
+		1091 = { add_core_of = TUR }
+		1092 = { add_core_of = TUR }
+		1091 = { remove_core_of = GRE }
+		1092 = { remove_core_of = GRE }
 	}
 	option = {
 		name = IPUnion_country_event.6.b
@@ -299,13 +299,13 @@ country_event = {
 				}
 			}
 		}
-		1056 = { add_core_of = TUR }
-		1057 = { add_core_of = TUR }
+		1091 = { add_core_of = TUR }
+		1092 = { add_core_of = TUR }
 		ROOT = {
 			create_wargoal = {
 				target = FROM
 				type = take_core_state
-				generator = { 1056 1057 }
+				generator = { 1091 1092 }
 			}
 		}
 		add_political_power = -10
@@ -2772,7 +2772,7 @@ country_event = {
 		}
 		effect_tooltip = {
 			SEZ = {
-				transfer_state = 1061
+				transfer_state = 1096
 			}
 			CHI = {
 				set_autonomy = {
@@ -2810,7 +2810,7 @@ country_event = {
 	option = {
 		name = IPUnion_country_event.85.a
 		SEZ = {
-			transfer_state = 1061
+			transfer_state = 1096
 		}
 		CHI = {
 			set_autonomy = {

@@ -16407,7 +16407,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_blacksea_base_trigger_tt
 				SOV = {
-					controls_state = 1052 #SOV control of Constanta
+					controls_state = 1087 #SOV control of Constanta
 				}
 				has_country_flag = Toulon_Base_Mod_Loaded_Check
 			}
@@ -16419,9 +16419,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			transfer_state = 1052
-			1052 = { add_core_of = ITA }
-			1052 = { remove_core_of = SOV }
+			transfer_state = 1087
+			1087 = { add_core_of = ITA }
+			1087 = { remove_core_of = SOV }
 		}
 	}
 
@@ -23585,13 +23585,13 @@ focus_tree = {
 				if = {
 					limit = {
 						SPR = {
-							controls_state = 1051
+							controls_state = 1086
 						}
 						hidden_trigger = {
 							has_country_flag = Toulon_Base_Mod_Loaded_Check
 						}
 					}
-					transfer_state = 1051
+					transfer_state = 1086
 					#1051 = { add_core_of = ITA }
 				}
 				else = {
@@ -23684,13 +23684,13 @@ focus_tree = {
 				if = {
 					limit = {
 						ITA = {
-							controls_state = 1051
+							controls_state = 1086
 						}
 						has_country_flag = Toulon_Base_Mod_Loaded_Check
 					}
 					177 = { add_core_of = ITA }
 					178 = { add_core_of = ITA }
-					1051 = { add_core_of = ITA }
+					1086 = { add_core_of = ITA }
 					297 = { add_core_of = ITA }
 					699 = { add_core_of = ITA }
 					783 = { add_core_of = ITA }
@@ -23926,10 +23926,10 @@ focus_tree = {
 				#}
 				#transfer_state = 183
 				#transfer_state = 446
-				#transfer_state = 1048
+				#transfer_state = 1083
 				#183 = { add_core_of = ITA } 
 				#446 = { add_core_of = ITA }
-				#1048 = { add_core_of = ITA }
+				#1083 = { add_core_of = ITA }
 			EGY = {
 				set_politics = {
 					ruling_party = neutrality
@@ -26137,14 +26137,14 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_FRA_control_Saigon_trigger_tt
 				FRA = {
-					controls_state = 1050
+					controls_state = 1085
 				}
 				has_country_flag = Toulon_Base_Mod_Loaded_Check
 			}
 		}
 		completion_reward = {
-			transfer_state = 1050
-			1050 = { add_core_of = ITA }
+			transfer_state = 1085
+			1085 = { add_core_of = ITA }
 			add_political_power = -25
 		}
 	}
@@ -26164,14 +26164,14 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_lease_toulon_99_years_tt
 				FRA = {
-					controls_state = 1047
+					controls_state = 1082
 				}
 				has_country_flag = Toulon_Base_Mod_Loaded_Check
 			}
 		}
 		completion_reward = {
-			transfer_state = 1047
-			1047 = { add_core_of = ITA }
+			transfer_state = 1082
+			1082 = { add_core_of = ITA }
 			add_timed_idea = {
 				idea = idea_ITA_lease_toulon
 				days = 36135

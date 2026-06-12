@@ -1,4 +1,4 @@
-capital = 1061
+capital = 1096
 
 oob = "SEZ_1936"
 #if = {

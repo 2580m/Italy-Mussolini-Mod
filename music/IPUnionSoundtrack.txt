@@ -200,3 +200,10 @@ music = {
 		factor = 1
 	}
 }
+
+music = {
+	song = "Giovinezza_1917_Arditi_Version"
+	chance = {
+		factor = 1
+	}
+}
