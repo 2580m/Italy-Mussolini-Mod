@@ -1078,7 +1078,7 @@
 					is_subject_of = CHI
 					is_in_faction_with = CHI
 				}
-				controls_state = 1061
+				controls_state = 1096
 			}
 		}
 
@@ -1107,7 +1107,7 @@
 				custom_effect_tooltip = if_they_accept
 				effect_tooltip = {
 					SEZ = {
-						transfer_state = 1061
+						transfer_state = 1096
 					}
 					CHI = {
 						set_autonomy = {
@@ -1144,7 +1144,7 @@
 				}
 				effect_tooltip = {
 					SEZ = {
-						transfer_state = 1061
+						transfer_state = 1096
 					}
 					CHI = {
 						set_autonomy = {
