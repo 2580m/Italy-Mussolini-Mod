@@ -896,6 +896,16 @@ ideas = {
 				production_speed_buildings_factor = 0.025
 			}
 		}
+		idea_durum_wheat = {
+			name = idea_durum_wheat
+			removal_cost = -1
+			picture = LIT_invested_in_farms
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				supply_node_range = 0.05
+			}
+		}
 	}
 	industrial_concern = {
 		ITA_OND = {
