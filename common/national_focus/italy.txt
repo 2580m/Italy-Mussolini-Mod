@@ -28360,7 +28360,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Sicilia_Big_Bridge
-		icon = GFX_focus_ITA_invest_in_infrastructure
+		icon = GFX_focus_POL_romania_bridgehead_strategy
 		relative_position_id = ITA_new_industrialization_program
 		x = 0
 		y = 1
@@ -28372,7 +28372,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 15
-
+			115 = {
+				add_extra_state_shared_building_slots = 35
+			}
 		}
 	}
 

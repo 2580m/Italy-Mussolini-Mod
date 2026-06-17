@@ -353,6 +353,36 @@ defined_text = {
 		}
 		localization_key = ITA_propaganda_dig_coal
 	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_left_icon_frame = 36 }
+		}
+		localization_key = ITA_propaganda_mussolini_is_the_red_sun_in_our_heart
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_left_icon_frame = 37 }
+		}
+		localization_key = ITA_nation_heart_world_view
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_left_icon_frame = 38 }
+		}
+		localization_key = ITA_carry_the_march_through_to_the_end
+	}
 }
 defined_text = {
 	name = ITA_GetPropagandaCampaignEffects_Center
@@ -602,6 +632,36 @@ defined_text = {
 		}
 		localization_key = ITA_propaganda_dig_coal
 	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_center_icon_frame = 36 }
+		}
+		localization_key = ITA_propaganda_mussolini_is_the_red_sun_in_our_heart
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_center_icon_frame = 37 }
+		}
+		localization_key = ITA_nation_heart_world_view
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_center_icon_frame = 38 }
+		}
+		localization_key = ITA_carry_the_march_through_to_the_end
+	}
 }
 defined_text = {
 	name = ITA_GetPropagandaCampaignEffects_Right
@@ -850,6 +910,36 @@ defined_text = {
 			check_variable = { SOV_poster_right_icon_frame = 35 }
 		}
 		localization_key = ITA_propaganda_dig_coal
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_right_icon_frame = 36 }
+		}
+		localization_key = ITA_propaganda_mussolini_is_the_red_sun_in_our_heart
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_right_icon_frame = 37 }
+		}
+		localization_key = ITA_nation_heart_world_view
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			NOT = {
+				tag = SOV
+			}
+			check_variable = { SOV_poster_right_icon_frame = 38 }
+		}
+		localization_key = ITA_carry_the_march_through_to_the_end
 	}
 }
 

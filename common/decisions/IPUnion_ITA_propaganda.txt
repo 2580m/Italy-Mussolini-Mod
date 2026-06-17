@@ -92,12 +92,32 @@ ITA_propaganda_campaigns = {
 		}
 
 		complete_effect = {
-			set_variable = { SOV_new_propaganda_campaign = 6 }
+			random_list = {
+				50 = {
+					set_variable = { SOV_new_propaganda_campaign = 6 }
+					set_variable = { ITA_propaganda_mussolini_is_the_red_sun_in_our_heart = 6 }
+				}
+				50 = {
+					set_variable = { SOV_new_propaganda_campaign = 37 }
+					set_variable = { ITA_propaganda_mussolini_is_the_red_sun_in_our_heart = 6 }
+				}
+			}
 			ITA_pick_propaganda_campaign_slot_effect = yes
 		}
 
 		remove_effect = {
-			set_variable = { SOV_propaganda_campaign_to_remove = 6 }
+			if = {
+				limit = {
+					check_variable = { ITA_propaganda_mussolini_is_the_red_sun_in_our_heart = 6 }
+				}
+				set_variable = { SOV_propaganda_campaign_to_remove = 6 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { ITA_propaganda_mussolini_is_the_red_sun_in_our_heart = 37 }
+				}
+				set_variable = { SOV_propaganda_campaign_to_remove = 37 }
+			}
 			SOV_reset_propaganda_campaign_slot_effect = yes
 
 			SOV_increase_propaganda_campaign_cost_effect = yes
@@ -1127,12 +1147,15 @@ ITA_propaganda_campaigns = {
 				random_list = {
 					33 = {
 						set_variable = { SOV_new_propaganda_campaign = 32 }
+						set_variable = { ITA_propaganda_give_respect_to_duce = 32 }
 					}
 					33 = {
 						set_variable = { SOV_new_propaganda_campaign = 33 }
+						set_variable = { ITA_propaganda_give_respect_to_duce = 33 }
 					}
 					33 = {
 						set_variable = { SOV_new_propaganda_campaign = 34 }
+						set_variable = { ITA_propaganda_give_respect_to_duce = 34 }
 					}
 				}
 			}
@@ -1148,19 +1171,19 @@ ITA_propaganda_campaigns = {
 			#set_variable = { SOV_propaganda_campaign_to_remove = 31 }
 			if = {
 				limit = {
-					check_variable = { SOV_new_propaganda_campaign = 32 }
+					check_variable = { ITA_propaganda_give_respect_to_duce = 32 }
 				}
 				set_variable = { SOV_propaganda_campaign_to_remove = 32 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { SOV_new_propaganda_campaign = 33 }
+					check_variable = { ITA_propaganda_give_respect_to_duce = 33 }
 				}
 				set_variable = { SOV_propaganda_campaign_to_remove = 33 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { SOV_new_propaganda_campaign = 34 }
+					check_variable = { ITA_propaganda_give_respect_to_duce = 34 }
 				}
 				set_variable = { SOV_propaganda_campaign_to_remove = 34 }
 			}
@@ -1260,6 +1283,83 @@ ITA_propaganda_campaigns = {
 				get_resources_coal = -500
 				tooltip = country_resource_coal_tt
 			}
+		}
+	}
+
+	ITA_nation_heart_world_view = {
+		priority = 81
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		cost = 15
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 36 }
+			ITA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		modifier = {
+			min_export = 0.05
+			industrial_capacity_factory = 0.15
+			industrial_capacity_dockyard = 0.15
+			production_speed_buildings_factor = 0.15
+			research_speed_factor = 0.10
+			civilian_intel_to_others = 5.0
+			navy_intel_to_others = 2.0
+			cic_construction_boost_factor = 0.05
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 36 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+			custom_effect_tooltip = ITA_propaganda_campaign_cooldown_tt
+		}
+	}
+
+	ITA_carry_the_march_through_to_the_end = {
+		priority = 80
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		cost = 15
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 38 }
+			ITA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		modifier = {
+			stability_factor = 0.15
+			war_support_factor = 0.15
+			industrial_capacity_factory = 0.10
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 38 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+			custom_effect_tooltip = ITA_propaganda_campaign_cooldown_tt
 		}
 	}
 	

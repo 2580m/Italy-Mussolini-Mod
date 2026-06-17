@@ -423,6 +423,9 @@ set_variable = { SOV_propaganda_happy_life_cost = SOV_propaganda_cost } # ID = 2
 
 set_variable = { SOV_propaganda_campaigns_taken = 0 } #Used as a requirement for certain focuses
 
+set_variable = { ITA_propaganda_give_respect_to_duce = 0 }
+set_variable = { ITA_propaganda_mussolini_is_the_red_sun_in_our_heart = 0 }
+
 
 ###PARANOIA ###
 set_variable = { SOV_paranoia = 0 } # Intitial Paranoia value
