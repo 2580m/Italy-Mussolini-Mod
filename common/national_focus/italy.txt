@@ -9797,6 +9797,9 @@ focus_tree = {
 				show_ideas_tooltip = ITA_renato_ricci
 			}
 			set_technology = { militia_tech = 1 }
+			set_technology = { mechanized_militia_tech = 1 }
+			set_technology = { motorized_militia_tech = 1 }
+			set_technology = { light_armor_militia_tech = 1 }
 		}
 	}
 
