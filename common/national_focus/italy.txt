@@ -31282,7 +31282,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_inner_circle_end_1
-		cost = 14
+		cost = 2
 		relative_position_id = ITA_duceprincipio
 		x = -1
 		y = 5
@@ -31377,7 +31377,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_inner_circle_end_2
-		cost = 14
+		cost = 2
 		relative_position_id = ITA_duceprincipio
 		x = 1
 		y = 5

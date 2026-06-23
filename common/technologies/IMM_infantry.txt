@@ -30,4 +30,18 @@ technologies = {
 			}
 		}
 	}
+
+	mechanized_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			mechanized_militia
+		}
+	}
+
+	motorized_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			motorized_militia
+		}
+	}
 }
