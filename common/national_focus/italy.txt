@@ -9836,6 +9836,18 @@ focus_tree = {
 			hidden_effect = {
 				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_dynamic_modifier = { modifier = support_blackshirt_assault_battalion }
+			hidden_effect = {
+				set_technology = { support_support_blackshirt_assault_battalion_tech = 1 }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_technology = { light_sp_artillery_militia_brigade_tech = 1 }
+
 		}
 	}
 
@@ -9865,6 +9877,8 @@ focus_tree = {
 				add_idea = ITA_camicie_nere_strengthened
 			}
 
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			#custom_effect_tooltip = ITA_strengthen_the_blackshirts_template_tt
 			#hidden_effect = {
 			#	add_to_variable = { ITA_militias_cap = 12 }
@@ -9876,19 +9890,29 @@ focus_tree = {
 				#	}
 				#}
 			#}
+
 			clear_division_template_cap = {
 				division_template = "Camicie Nere"
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			set_division_template_lock = {
 				division_template = "Camicie Nere"
 				is_locked = no
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_units_to_division_template = {
 				template_name = "Camicie Nere"
 				regiments = {
 					artillery_brigade = 1
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			random_controlled_state = { #Create a few more Blackshirt Divs
 				limit = {
 					is_core_of = ROOT
@@ -9904,6 +9928,11 @@ focus_tree = {
 					}
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_technology = { medium_armor_militia_tech = 1 }
+			set_technology = { heavy_armor_militia_tech = 1 }
 		}
 	}
 
@@ -9946,6 +9975,10 @@ focus_tree = {
 			#}
 			custom_effect_tooltip = ITA_unlock_colonial_militia_tt
 			ITA = { set_occupation_law_where_available = colonial_militia }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_technology = { light_sp_anti_air_militia_brigade_tech = 1 }
 		}
 	}
 

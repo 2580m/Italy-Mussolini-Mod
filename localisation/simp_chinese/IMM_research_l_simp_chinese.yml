@@ -1,4 +1,12 @@
 ﻿l_simp_chinese:
+###INFANTRY######INFANTRY######INFANTRY######INFANTRY######INFANTRY###
  mechanized_militia_tech: "机械化民兵"
  motorized_militia_tech: "摩托化民兵"
+###ARMOR######ARMOR######ARMOR######ARMOR######ARMOR######ARMOR###
  light_armor_militia_tech: "民兵轻型坦克营"
+ medium_armor_militia_tech: "民兵中型坦克营"
+ heavy_armor_militia_tech: "民兵重型坦克营"
+ light_sp_artillery_militia_brigade_tech: "民兵轻型自行火炮营"
+ light_sp_anti_air_militia_brigade_tech: "民兵轻型自行防空炮营"
+###SUPPORT######SUPPORT######SUPPORT######SUPPORT######SUPPORT###
+ support_support_blackshirt_assault_battalion_tech: "突击营"

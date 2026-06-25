@@ -293,3 +293,10 @@ iberian_union = {
 	icon = GFX_idea_SPA_embrace_the_spanish_destiny
 	enable = { always = yes }
 }
+
+support_blackshirt_assault_battalion = {
+	icon = GFX_unit_blackshirt_assault_battalion_icon_medium
+	enable = { always = yes }
+
+	custom_modifier_tooltip = support_blackshirt_assault_battalion_TT
+}

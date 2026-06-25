@@ -44,4 +44,19 @@ technologies = {
 			motorized_militia
 		}
 	}
+
+	support_support_blackshirt_assault_battalion_tech = {
+		allow = { always = no }
+		category_all_infantry = {
+			#Size Definitions
+			max_strength = 5 #Inf is 25
+			max_organisation = 2 #Inf is 60
+			default_morale = 0.2 #Inf is 30
+			#Misc Abilities
+			suppression = 1.5
+			# Important Ability
+			soft_attack = 0.1 #Same as Mechanized
+			breakthrough = 0.3 #Same as Marines/Mountaineers
+		}
+	}
 }

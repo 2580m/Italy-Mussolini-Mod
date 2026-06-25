@@ -354,5 +354,10 @@ country_event = {
 		set_technology = { motorized_militia_tech = 1 }
 		set_technology = { light_armor_militia_tech = 1 }
 		set_technology = { mechanised_infantry = 1 }
+		set_technology = { support_support_blackshirt_assault_battalion_tech = 1 }
+		set_technology = { medium_armor_militia_tech = 1 }
+		set_technology = { heavy_armor_militia_tech = 1 }
+
+		add_dynamic_modifier = { modifier = support_blackshirt_assault_battalion }
 	}
 }
