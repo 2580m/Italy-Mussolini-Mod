@@ -28,28 +28,28 @@ technologies = {
 	}
 
 	light_sp_anti_air_militia_brigade_tech = {
-		allow = { enable = no }
+		allow = { always = no }
 		enable_subunits = {
 			light_sp_anti_air_militia_brigade
 		}
 	}
 
 	medium_sp_anti_air_militia_brigade_tech = {
-		allow = { enable = no }
+		allow = { always = no }
 		enable_subunits = {
 			medium_sp_anti_air_militia_brigade
 		}
 	}
 
 	heavy_sp_anti_air_militia_brigade_tech = {
-		allow = { enable = no }
+		allow = { always = no }
 		enable_subunits = {
 			heavy_sp_anti_air_militia_brigade
 		}
 	}
 
 	medium_flame_tank_militia_tech = {
-		allow = { enable = no }
+		allow = { always = no }
 		enable_subunits = {
 			medium_flame_tank_militia
 		}
