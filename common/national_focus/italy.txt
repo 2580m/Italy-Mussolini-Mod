@@ -9233,7 +9233,7 @@ focus_tree = {
 	focus = {
 		id = ITA_the_man_of_providence
 		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = ITA_heroes_of_the_nation focus = ITA_capo_supremo }
+		prerequisite = { focus = ITA_capo_supremo }
 		x = -3
 		y = 2
 		relative_position_id = ITA_culto_del_duce
@@ -9847,6 +9847,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			set_technology = { light_sp_artillery_militia_brigade_tech = 1 }
+			set_technology = { medium_flame_tank_militia_tech = 1 }
 
 		}
 	}
@@ -9979,6 +9980,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			set_technology = { light_sp_anti_air_militia_brigade_tech = 1 }
+			set_technology = { medium_sp_anti_air_militia_brigade_tech = 1 }
+			set_technology = { heavy_sp_anti_air_militia_brigade_tech = 1 }
 		}
 	}
 
