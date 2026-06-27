@@ -13,3 +13,6 @@
  medium_flame_tank_militia_tech: "民兵中型喷火坦克连"
 ###SUPPORT######SUPPORT######SUPPORT######SUPPORT######SUPPORT###
  support_support_blackshirt_assault_battalion_tech: "突击营"
+###DOCTRINE######DOCTRINE######DOCTRINE######DOCTRINE######DOCTRINE###
+ ITA_royal_land_doctrine_folder: "皇家陆军"
+ ITA_royal_land_doctrine_folder_desc: "意大利的皇家陆军"

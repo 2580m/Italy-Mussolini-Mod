@@ -21,6 +21,7 @@ sub_units = {
 			category_vehicle_infantry
 			category_mobile_and_mobile_combat_sup
 			category_militia
+			category_mobile_militia
 		}
 
 		combat_width = 2
@@ -105,6 +106,7 @@ sub_units = {
 			category_vehicle_infantry
 			category_mobile_and_mobile_combat_sup
 			category_militia
+			category_mobile_militia
 		}
 		
 		combat_width = 2
@@ -176,6 +178,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_militia
+			category_armor_militia
 		}
 
 
@@ -247,6 +250,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_militia
+			category_armor_militia
 		}
 
 		combat_width = 2
@@ -321,6 +325,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_militia
+			category_armor_militia
 		}
 
 
@@ -400,6 +405,7 @@ sub_units = {
 			category_army
 			category_self_propelled_artillery
 			category_militia
+			category_armor_militia
 		}		
 
 		combat_width = 2
@@ -472,6 +478,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_militia
+			category_armor_militia
 		}
 
 		regimental = no
