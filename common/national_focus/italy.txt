@@ -8467,6 +8467,17 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 25
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = SHOW
+				}
+			}
+		}
+
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_the_abyssinian_fiasco_completion_tt
@@ -29143,6 +29154,17 @@ focus_tree = {
 			x = -20
 			trigger = {
 				is_ai = yes
+			}
+		}
+
+		offset = {
+			x = -4
+			y = 10
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = SHOW
+				}
 			}
 		}
 
