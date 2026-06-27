@@ -519,7 +519,7 @@ country_event = {
 			is_controlled_by_ROOT_or_subject = yes
 		}
 		NOT = {
-			has_country_flag = second_italo_ethiopian_war_flag
+			has_global_flag = second_italo_ethiopian_war_flag
 		}
 	}
 
