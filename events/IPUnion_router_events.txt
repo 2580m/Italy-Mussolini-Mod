@@ -437,7 +437,7 @@ country_event = {
 
 	immediate = {
 		ITA = {
-			news_event = { id = IPUnion_news.4 hours = 6 }
+			news_event = { id = IPUnion_news.8 hours = 6 }
 		}
 	}
 }
@@ -518,11 +518,14 @@ country_event = {
 			is_core_of = ETH
 			is_controlled_by_ROOT_or_subject = yes
 		}
+		NOT = {
+			has_country_flag = second_italo_ethiopian_war_flag
+		}
 	}
 
 	immediate = {
 		ITA = {
-			country_event = { id = IPUnion_news.4 hours = 6 }
+			country_event = { id = IPUnion_country_event.95 hours = 6 }
 		}
 	}
 }

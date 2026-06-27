@@ -5,7 +5,7 @@ news_event = {
 	title = IPUnion_news.1.t
 	desc = IPUnion_news.1.d
 	picture = GFX_news_event_german_soldiers
-	is_triggered_only = yes
+	#is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 
@@ -43,8 +43,6 @@ news_event = {
 	id = IPUnion_news.2  ##蒂罗尔和福拉贝尔格非军事化
 	title = IPUnion_news.2.t
 	desc = IPUnion_news.2.d
-	
-	is_triggered_only = yes
 
 	picture = GFX_news_event_german_soldiers
 	fire_only_once = yes
@@ -88,8 +86,6 @@ news_event = {
 	id = IPUnion_news.3  ##建立缓冲国
 	title = IPUnion_news.3.t
 	desc = IPUnion_news.3.d
-	
-	is_triggered_only = yes
 
 	picture = GFX_news_event_german_soldiers
 	fire_only_once = yes
@@ -136,8 +132,6 @@ news_event = {
 	id = IPUnion_news.4  ##占领蒂罗尔和福拉贝尔格
 	title = IPUnion_news.4.t
 	desc = IPUnion_news.4.d
-	
-	is_triggered_only = yes
 
 	picture = GFX_news_event_german_soldiers
 	fire_only_once = yes
