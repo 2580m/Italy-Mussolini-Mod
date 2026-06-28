@@ -361,3 +361,23 @@ country_event = {
 		add_dynamic_modifier = { modifier = support_blackshirt_assault_battalion }
 	}
 }
+
+country_event = {
+	id = IPUnion_debug_event.11
+	title = "Treaty Port Debug"
+	desc = ""
+
+	is_triggered_only = yes
+
+	option = {
+		name = YES
+
+		321 = {
+			set_state_category = treaty_port
+		}
+
+		ROOT = {
+			transfer_state = 321
+		}
+	}
+}

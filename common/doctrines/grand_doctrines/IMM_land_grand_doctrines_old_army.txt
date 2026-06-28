@@ -8,7 +8,7 @@ old_army = {
         has_completed_focus = ITA_army_primacy_bba
     }
 
-    xp_cost = 100
+    xp_cost = 0
     xp_type = army
 
     ai_will_do = {

@@ -1,0 +1,27 @@
+on_actions = {
+		# on_state_control_changed = {
+		# 	effect = {
+		# 		if = {
+		# 			limit = {
+		# 				FROM.FROM = {
+		# 					has_state_category = treaty_port
+		# 				}
+		# 			}
+		# 			every_country = {
+		# 				limit = {
+		# 					any_state = {
+		# 						is_neighbor_of = FROM.FROM
+		# 					}
+		# 				}
+		# 				save_event_target_as = tmp_treaty_port
+		# 			}
+		# 			event_target:tmp_treaty_port = {
+		# 				give_market_access = ROOT 
+		# 			}
+		# 			ROOT = {
+		# 				give_market_access = event_target:tmp_treaty_port
+		# 			}
+		# 		}
+		# 	}
+		# }
+}

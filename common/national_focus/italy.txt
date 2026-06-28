@@ -9157,10 +9157,43 @@ focus_tree = {
 					add_idea = vittorio_emanuele_albania_ethiopia
 				}
 			}
+			else_if = {
+				limit = {
+					AND = {
+						NOT = {
+							has_idea = vittorio_emanuele
+							has_idea = vittorio_emanuele_albania_ethiopia
+						}
+					}
+				}
 
-			custom_effect_tooltip = ITA_the_new_emperor_of_ethiopia_king_trait_tt
-			ITA_vittorio_emanuele_iii = { 
-				add_country_leader_trait = emperor_of_ethiopia
+				add_ideas = idea_ethiopia_governor
+			}
+
+			# custom_effect_tooltip = ITA_the_new_emperor_of_ethiopia_king_trait_tt
+			# ITA_vittorio_emanuele_iii = { 
+			# 	add_country_leader_trait = emperor_of_ethiopia
+			# }
+
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = vittorio_emanuele
+							has_idea = vittorio_emanuele_albania_ethiopia
+						}
+					}
+				}
+
+				ITA_benito_mussolini = {
+					add_country_leader_trait = ITA_ethiopia_governor_trait
+				}
+			}
+
+			else = {
+				ITA_vittorio_emanuele_iii = { 
+					add_country_leader_trait = emperor_of_ethiopia
+				}
 			}
 
 			add_popularity = {
