@@ -1,6 +1,8 @@
 ﻿l_simp_chinese:
  GRAND_DOCTRINE_PARTY_COMMAND_FORCES: "党指挥枪"
  GRAND_DOCTRINE_PARTY_COMMAND_FORCES_DESC: "枪，一定是要被党指挥的"
+ GRAND_DOCTRINE_OLD_ARMY: "旧军队"
+ GRAND_DOCTRINE_OLD_ARMY_DESC: "王国时代的旧军队"
  SUBDOCTRINE_FASCISM_MILITIA: "法西斯民兵"
  SUBDOCTRINE_FASCISM_MILITIA_DESC: "备战、备荒、为人民"
  fascism_militia_march_base_area: "进军根据地"

@@ -16,10 +16,10 @@ old_army = {
     }
 
     tracks = {
-        infantry
-        combat_support
-        armor
-        operations
+        infantry_old_army
+        combat_support_old_army
+        armor_old_army
+        operations_old_army
     }
 
     # EFFECTS
