@@ -372,12 +372,12 @@ country_event = {
 	option = {
 		name = YES
 
-		321 = {
-			set_state_category = treaty_port
-		}
+		# 321 = {
+		# 	set_state_category = treaty_port
+		# }
 
-		ROOT = {
-			transfer_state = 321
-		}
+		# ROOT = {
+		# 	transfer_state = 321
+		# }
 	}
 }
