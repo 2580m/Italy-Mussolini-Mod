@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ mechanized_militia: "机械化民兵"
+ motorized_militia: "摩托化民兵"
+ light_armor_militia: "民兵轻型坦克营"
+ medium_armor_militia: "民兵中型坦克营"
+ heavy_armor_militia: "民兵重型坦克营"
+ light_sp_artillery_militia_brigade: "民兵轻型自行火炮营"
+ light_sp_anti_air_militia_brigade: "民兵轻型自行防空炮营"
+ medium_sp_anti_air_militia_brigade: "民兵中型自行防空炮营"
+ heavy_sp_anti_air_militia_brigade: "民兵重型自行防空炮营"
+ medium_flame_tank_militia: "民兵中型喷火坦克连"

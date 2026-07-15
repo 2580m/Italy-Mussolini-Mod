@@ -1,0 +1,57 @@
+technologies = {
+	light_armor_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			light_armor_militia
+		}
+	}
+
+	medium_armor_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			medium_armor_militia
+		}
+	}
+
+	heavy_armor_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			heavy_armor_militia
+		}
+	}
+
+	light_sp_artillery_militia_brigade_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			light_sp_artillery_militia_brigade
+		}
+	}
+
+	light_sp_anti_air_militia_brigade_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			light_sp_anti_air_militia_brigade
+		}
+	}
+
+	medium_sp_anti_air_militia_brigade_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			medium_sp_anti_air_militia_brigade
+		}
+	}
+
+	heavy_sp_anti_air_militia_brigade_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			heavy_sp_anti_air_militia_brigade
+		}
+	}
+
+	medium_flame_tank_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			medium_flame_tank_militia
+		}
+	}
+}

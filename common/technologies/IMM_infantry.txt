@@ -1,0 +1,62 @@
+technologies = {
+	solider_are_willing_to_climb = { #Hidden tech showed as part of ITA_grande_rivolta_rurale_ns national spirit
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		infantry = {
+			hills = {
+				attack = 0.15
+				movement = 0.20
+			}
+			mountain = {
+				attack = 0.15
+				movement = 0.20
+			}
+		}
+
+		militia = {
+			hills = {
+				attack = 0.15
+				movement = 0.20
+			}
+			mountain = {
+				attack = 0.15
+				movement = 0.20
+			}
+		}
+	}
+
+	mechanized_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			mechanized_militia
+		}
+	}
+
+	motorized_militia_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			motorized_militia
+		}
+	}
+
+	support_support_blackshirt_assault_battalion_tech = {
+		allow = { always = no }
+		category_all_infantry = {
+			#Size Definitions
+			max_strength = 5 #Inf is 25
+			max_organisation = 2 #Inf is 60
+			default_morale = 0.2 #Inf is 30
+			#Misc Abilities
+			suppression = 1.5
+			# Important Ability
+			soft_attack = 0.1 #Same as Mechanized
+			breakthrough = 0.3 #Same as Marines/Mountaineers
+		}
+	}
+}

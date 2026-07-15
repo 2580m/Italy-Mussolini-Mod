@@ -882,6 +882,41 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+		idea_coffee_ethiopia = {
+			name = idea_coffee_ethiopia
+			removal_cost = -1
+			picture = DEN_sahnefront 
+
+			modifier = {
+				attrition = -0.05
+				supply_combat_penalties_on_core_factor = -0.1
+				out_of_supply_factor = -0.1
+				supply_node_range = 0.1
+				supply_consumption_factor = -0.1
+				production_speed_buildings_factor = 0.025
+			}
+		}
+		idea_durum_wheat = {
+			name = idea_durum_wheat
+			removal_cost = -1
+			picture = LIT_invested_in_farms
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				supply_node_range = 0.05
+			}
+		}
+		idea_ethiopia_governor = {
+			name = idea_ethiopia_governor
+			removal_cost = -1
+			picture = idea_vittorio_emanuele
+
+			modifier = {
+				stability_factor = 0.06
+				party_popularity_stability_factor = 0.1
+				compliance_growth = 0.1
+			}
+		}
 	}
 	industrial_concern = {
 		ITA_OND = {

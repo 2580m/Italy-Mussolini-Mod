@@ -339,3 +339,45 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = IPUnion_debug_event.10
+	title = "mechanized_militia Debug"
+	desc = ""
+
+	is_triggered_only = yes
+
+	option = {
+		name = YES
+
+		set_technology = { mechanized_militia_tech = 1 }
+		set_technology = { motorized_militia_tech = 1 }
+		set_technology = { light_armor_militia_tech = 1 }
+		set_technology = { mechanised_infantry = 1 }
+		set_technology = { support_support_blackshirt_assault_battalion_tech = 1 }
+		set_technology = { medium_armor_militia_tech = 1 }
+		set_technology = { heavy_armor_militia_tech = 1 }
+
+		add_dynamic_modifier = { modifier = support_blackshirt_assault_battalion }
+	}
+}
+
+country_event = {
+	id = IPUnion_debug_event.11
+	title = "Treaty Port Debug"
+	desc = ""
+
+	is_triggered_only = yes
+
+	option = {
+		name = YES
+
+		# 321 = {
+		# 	set_state_category = treaty_port
+		# }
+
+		# ROOT = {
+		# 	transfer_state = 321
+		# }
+	}
+}

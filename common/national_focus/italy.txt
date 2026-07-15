@@ -8467,6 +8467,17 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 25
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = SHOW
+				}
+			}
+		}
+
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_the_abyssinian_fiasco_completion_tt
@@ -9146,10 +9157,43 @@ focus_tree = {
 					add_idea = vittorio_emanuele_albania_ethiopia
 				}
 			}
+			else_if = {
+				limit = {
+					AND = {
+						NOT = {
+							has_idea = vittorio_emanuele
+							has_idea = vittorio_emanuele_albania_ethiopia
+						}
+					}
+				}
 
-			custom_effect_tooltip = ITA_the_new_emperor_of_ethiopia_king_trait_tt
-			ITA_vittorio_emanuele_iii = { 
-				add_country_leader_trait = emperor_of_ethiopia
+				add_ideas = idea_ethiopia_governor
+			}
+
+			# custom_effect_tooltip = ITA_the_new_emperor_of_ethiopia_king_trait_tt
+			# ITA_vittorio_emanuele_iii = { 
+			# 	add_country_leader_trait = emperor_of_ethiopia
+			# }
+
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_idea = vittorio_emanuele
+							has_idea = vittorio_emanuele_albania_ethiopia
+						}
+					}
+				}
+
+				ITA_benito_mussolini = {
+					add_country_leader_trait = ITA_ethiopia_governor_trait
+				}
+			}
+
+			else = {
+				ITA_vittorio_emanuele_iii = { 
+					add_country_leader_trait = emperor_of_ethiopia
+				}
 			}
 
 			add_popularity = {
@@ -9233,7 +9277,7 @@ focus_tree = {
 	focus = {
 		id = ITA_the_man_of_providence
 		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = ITA_heroes_of_the_nation focus = ITA_capo_supremo }
+		prerequisite = { focus = ITA_capo_supremo }
 		x = -3
 		y = 2
 		relative_position_id = ITA_culto_del_duce
@@ -9797,6 +9841,9 @@ focus_tree = {
 				show_ideas_tooltip = ITA_renato_ricci
 			}
 			set_technology = { militia_tech = 1 }
+			set_technology = { mechanized_militia_tech = 1 }
+			set_technology = { motorized_militia_tech = 1 }
+			set_technology = { light_armor_militia_tech = 1 }
 		}
 	}
 
@@ -9833,6 +9880,19 @@ focus_tree = {
 			hidden_effect = {
 				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_dynamic_modifier = { modifier = support_blackshirt_assault_battalion }
+			hidden_effect = {
+				set_technology = { support_support_blackshirt_assault_battalion_tech = 1 }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_technology = { light_sp_artillery_militia_brigade_tech = 1 }
+			set_technology = { medium_flame_tank_militia_tech = 1 }
+
 		}
 	}
 
@@ -9862,6 +9922,8 @@ focus_tree = {
 				add_idea = ITA_camicie_nere_strengthened
 			}
 
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			#custom_effect_tooltip = ITA_strengthen_the_blackshirts_template_tt
 			#hidden_effect = {
 			#	add_to_variable = { ITA_militias_cap = 12 }
@@ -9873,19 +9935,29 @@ focus_tree = {
 				#	}
 				#}
 			#}
+
 			clear_division_template_cap = {
 				division_template = "Camicie Nere"
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			set_division_template_lock = {
 				division_template = "Camicie Nere"
 				is_locked = no
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_units_to_division_template = {
 				template_name = "Camicie Nere"
 				regiments = {
 					artillery_brigade = 1
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			random_controlled_state = { #Create a few more Blackshirt Divs
 				limit = {
 					is_core_of = ROOT
@@ -9901,6 +9973,11 @@ focus_tree = {
 					}
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_technology = { medium_armor_militia_tech = 1 }
+			set_technology = { heavy_armor_militia_tech = 1 }
 		}
 	}
 
@@ -9943,6 +10020,12 @@ focus_tree = {
 			#}
 			custom_effect_tooltip = ITA_unlock_colonial_militia_tt
 			ITA = { set_occupation_law_where_available = colonial_militia }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			set_technology = { light_sp_anti_air_militia_brigade_tech = 1 }
+			set_technology = { medium_sp_anti_air_militia_brigade_tech = 1 }
+			set_technology = { heavy_sp_anti_air_militia_brigade_tech = 1 }
 		}
 	}
 
@@ -28360,7 +28443,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Sicilia_Big_Bridge
-		icon = GFX_focus_ITA_invest_in_infrastructure
+		icon = GFX_focus_POL_romania_bridgehead_strategy
 		relative_position_id = ITA_new_industrialization_program
 		x = 0
 		y = 1
@@ -28372,7 +28455,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 15
-
+			115 = {
+				add_extra_state_shared_building_slots = 35
+			}
 		}
 	}
 
@@ -29102,6 +29187,17 @@ focus_tree = {
 			x = -20
 			trigger = {
 				is_ai = yes
+			}
+		}
+
+		offset = {
+			x = -4
+			y = 10
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = SHOW
+				}
 			}
 		}
 
@@ -31280,7 +31376,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_inner_circle_end_1
-		cost = 14
+		cost = 2
 		relative_position_id = ITA_duceprincipio
 		x = -1
 		y = 5
@@ -31375,7 +31471,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_inner_circle_end_2
-		cost = 14
+		cost = 2
 		relative_position_id = ITA_duceprincipio
 		x = 1
 		y = 5

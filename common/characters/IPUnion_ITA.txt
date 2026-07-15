@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = "ITA_benito_mussolini_desc"
 			ideology = fascism_ideology
-			traits = { il_duce }
+			traits = { il_duce engineer }
 			expire = "1965.1.1.1"
 			id = -1
 		}

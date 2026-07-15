@@ -437,7 +437,7 @@ country_event = {
 
 	immediate = {
 		ITA = {
-			news_event = { id = IPUnion_news.4 hours = 6 }
+			news_event = { id = IPUnion_news.8 hours = 6 }
 		}
 	}
 }
@@ -500,6 +500,32 @@ country_event = {
 				}
 				transfer_state_to = RDS
 			}
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_router_event.19
+	title = IPUnion_router_event.19
+	desc = IPUnion_router_event.19
+	hidden = yes
+
+	#is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		any_state = {
+			is_core_of = ETH
+			is_controlled_by_ROOT_or_subject = yes
+		}
+		NOT = {
+			has_global_flag = second_italo_ethiopian_war_flag
+		}
+	}
+
+	immediate = {
+		ITA = {
+			country_event = { id = IPUnion_country_event.95 hours = 6 }
 		}
 	}
 }

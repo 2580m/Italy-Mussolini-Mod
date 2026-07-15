@@ -1,0 +1,4 @@
+sub_unit_categories = {
+	category_armor_militia
+	category_mobile_militia
+}
