@@ -3937,6 +3937,8 @@ focus_tree = {
 				}				
 			}
 
+			set_grand_doctrine = old_army
+
 			add_doctrine_cost_reduction = {
 				name = ITA_army_primacy_bba #land_doc_bonus
 				cost_reduction = 0.5
