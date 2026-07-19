@@ -37,7 +37,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-	idea_durum_wheat
+	#idea_durum_wheat
 }
 
 

@@ -182,3 +182,24 @@ country_event = {
 		activate_mission = from_mission_mussolini_death_range
 	}
 }
+
+country_event = {
+	id = italy_bop.8.auto
+	title = italy_bop.8.t
+	desc = italy_bop.8.d
+
+	hidden = yes
+	
+	picture = GFX_report_event_tur_inonu_diplomacy
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ITA_mussolini_death_range_flag
+		}
+		unlock_decision_tooltip	= from_spare_no_effort_in_treating_the_patient
+		custom_effect_tooltip = generic_skip_one_line_tt
+		activate_mission = from_mission_mussolini_death_range
+	}
+}

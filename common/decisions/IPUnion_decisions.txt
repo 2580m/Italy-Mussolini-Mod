@@ -3326,6 +3326,12 @@ ITA_mussolini_healthy = {
 			hidden_effect = {
 				clr_country_flag = ITA_mussolini_death_range_flag
 				clr_country_flag = from_spare_no_effort_in_treating_the_patient_flag
+				if = {
+					limit = {
+						has_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+					}
+					clr_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+				}
 			}
 		}
 
@@ -3334,6 +3340,45 @@ ITA_mussolini_healthy = {
 			hidden_effect = {
 				clr_country_flag = ITA_mussolini_death_range_flag
 				clr_country_flag = from_spare_no_effort_in_treating_the_patient_flag
+				if = {
+					limit = {
+						has_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+					}
+					clr_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+				}
+			}
+		}
+	}
+
+	from_mission_auto_first_aid_mussolini = {
+		activation = {
+			has_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+		}
+
+		days_mission_timeout = 5
+
+		fire_only_once = no
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+				}
+			}
+		}
+
+		available = {
+			always = no
+		}
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				set_country_flag = from_spare_no_effort_in_treating_the_patient_flag
+				
 			}
 		}
 	}
@@ -3343,11 +3388,29 @@ ITA_mussolini_healthy = {
 
 		visible = {
 			has_country_flag = ITA_mussolini_death_range_flag
+			NOT = {
+				has_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+			}
 		}
 
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = from_spare_no_effort_in_treating_the_patient_flag
+			}
+		}
+	}
+
+	from_manual_first_aid_mussolini = {
+		cost = 0
+
+		visible = {
+			has_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = from_spare_no_effort_in_treating_the_patient_flag
+				clr_country_flag = ITA_auto_first_aid_mussolini_flag
 			}
 		}
 	}

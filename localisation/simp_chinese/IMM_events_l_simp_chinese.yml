@@ -317,6 +317,8 @@
  IPUnion_country_event.91.t: "领袖脱离生命危险"
  IPUnion_country_event.91.d: "经过我们的全力抢救，领袖的各项生命体征终于恢复了正常。"
  IPUnion_country_event.91.a: "太好了"
+ IPUnion_country_event.91.b: "以后都按这个标准来"
+ IPUnion_country_event.91.b.tt: "开启自动救治"
  IPUnion_country_event.92.t: "米兰人民公社成立！"
  IPUnion_country_event.92.d: "今天上午，米兰市共和法西斯派造了当地王国政府的反，米兰市数十万军民举行誓师大会宣告米兰人民公社成立！"
  IPUnion_country_event.92.a: "自今日起"
