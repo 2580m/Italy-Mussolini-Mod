@@ -22,6 +22,9 @@ old_army = {
         operations_old_army
     }
 
+    max_track_columns = 4
+    max_track_rows = 1
+
     # EFFECTS
     enable_tactic = tactic_planned_attack
     
