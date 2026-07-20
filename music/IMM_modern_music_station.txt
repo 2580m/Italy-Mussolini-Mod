@@ -1,0 +1,22 @@
+music_station = "IMM_modern_music_station"
+
+music = {
+	song = "Giovinezza_1917_Arditi_Version"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "Suno_ai_Marinetti"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "AI_Gabriele_d_Annunzio"
+	chance = {
+		factor = 1
+	}
+}

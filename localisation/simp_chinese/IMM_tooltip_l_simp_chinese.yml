@@ -128,3 +128,5 @@
  estblish_milano_commune_tt: "§O米兰人民公社成立！§!"
 
  support_blackshirt_assault_battalion_TT: "§Y$category_all_infantry$§!\n$STAT_COMMON_MAX_STRENGTH$§G+5.0§!\n$MODIFIER_MAX_ORGANISATION_FACTOR$：§G+2.0§!\n$STAT_ARMY_DEFAULT_MORALE$§G+0.2§!\n$STAT_ARMY_SUPRESSION$§G+1.5§!\n$STAT_ARMY_SOFT_ATTACK$§G+0.1§!\n$STAT_ARMY_BREAKTHROUGH$§G+0.3§!\n"
+ 
+ IMM_get_zihonsenya_template_tt: "将会获得一个§R锁定的§!且内含§Y18§!个营级§Y象骑兵§!单位的§YZihonsenya§!编制"
