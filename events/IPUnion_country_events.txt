@@ -67,9 +67,9 @@ country_event = {
 			else = {
 				add_political_power = -10
 			}
-			hidden_effect = {
-				play_song = LacanzonedelCarnaro
-			}
+			#hidden_effect = {
+			#	play_song = LacanzonedelCarnaro
+			#}
 		}
 	}
 }
