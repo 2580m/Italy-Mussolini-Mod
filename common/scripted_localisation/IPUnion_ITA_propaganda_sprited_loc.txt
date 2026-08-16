@@ -359,7 +359,7 @@ defined_text = {
 			NOT = {
 				tag = SOV
 			}
-			check_variable = { SOV_poster_left_icon_frame = 36 }
+			check_variable = { SOV_poster_left_icon_frame = 37 }
 		}
 		localization_key = ITA_propaganda_mussolini_is_the_red_sun_in_our_heart
 	}
@@ -369,7 +369,7 @@ defined_text = {
 			NOT = {
 				tag = SOV
 			}
-			check_variable = { SOV_poster_left_icon_frame = 37 }
+			check_variable = { SOV_poster_left_icon_frame = 36 }
 		}
 		localization_key = ITA_nation_heart_world_view
 	}
@@ -638,7 +638,7 @@ defined_text = {
 			NOT = {
 				tag = SOV
 			}
-			check_variable = { SOV_poster_center_icon_frame = 36 }
+			check_variable = { SOV_poster_center_icon_frame = 37 }
 		}
 		localization_key = ITA_propaganda_mussolini_is_the_red_sun_in_our_heart
 	}
@@ -648,7 +648,7 @@ defined_text = {
 			NOT = {
 				tag = SOV
 			}
-			check_variable = { SOV_poster_center_icon_frame = 37 }
+			check_variable = { SOV_poster_center_icon_frame = 36 }
 		}
 		localization_key = ITA_nation_heart_world_view
 	}
@@ -917,7 +917,7 @@ defined_text = {
 			NOT = {
 				tag = SOV
 			}
-			check_variable = { SOV_poster_right_icon_frame = 36 }
+			check_variable = { SOV_poster_right_icon_frame = 37 }
 		}
 		localization_key = ITA_propaganda_mussolini_is_the_red_sun_in_our_heart
 	}
@@ -927,7 +927,7 @@ defined_text = {
 			NOT = {
 				tag = SOV
 			}
-			check_variable = { SOV_poster_right_icon_frame = 37 }
+			check_variable = { SOV_poster_right_icon_frame = 36 }
 		}
 		localization_key = ITA_nation_heart_world_view
 	}

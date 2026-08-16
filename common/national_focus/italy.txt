@@ -28959,6 +28959,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = coming_soooooooooooon_tt
+			hidden_effect = {
+				country_event = IPUnion_country_event.61
+			}
 		}
 	}
 
