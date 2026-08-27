@@ -184,6 +184,43 @@ country_event = {
 		}
 		complete_national_focus = ITA_ministry_of_italian_africa
 		complete_national_focus = ITA_the_new_emperor_of_ethiopia
+
+		# create_colonial_division_template = {
+		# 	subject = AOI
+		# 	division_template = {
+		# 		name = "Zihonsenya"
+		# 		is_locked = yes
+		# 		force_allow_recruiting = yes
+		# 		#division_cap = 108
+		# 		#division_names_group = FREN_INFB_01				# Uses French-language generic division names
+		# 		# Note: Represents both regular infantry and militia units
+		# 		template_counter = 108
+		# 		regiments = {
+		# 			elephantry = { x = 0 y = 0 }
+		# 			elephantry = { x = 0 y = 1 }
+		# 			elephantry = { x = 0 y = 2 }
+		# 			elephantry = { x = 0 y = 3 }
+		# 			elephantry = { x = 1 y = 0 }
+		# 			elephantry = { x = 1 y = 1 }
+		# 			elephantry = { x = 1 y = 2 }
+		# 			elephantry = { x = 1 y = 3 }
+		# 			elephantry = { x = 2 y = 0 }
+		# 			elephantry = { x = 2 y = 1 }
+		# 			elephantry = { x = 2 y = 2 }
+		# 			elephantry = { x = 2 y = 3 }
+		# 			elephantry = { x = 3 y = 0 }
+		# 			elephantry = { x = 3 y = 1 }
+		# 			elephantry = { x = 3 y = 2 }
+		# 			elephantry = { x = 3 y = 3 }
+		# 			elephantry = { x = 4 y = 0 }
+		# 			elephantry = { x = 4 y = 1 }
+		# 		}
+		# 		support = {
+		# 			engineer = { x = 0 y = 0 } 
+		# 			artillery = { x = 0 y = 1 } 
+		# 		}
+		# 	}
+		# }
 	}
 
 	option = {

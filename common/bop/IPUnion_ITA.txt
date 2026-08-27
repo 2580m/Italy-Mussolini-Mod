@@ -81,7 +81,22 @@ mussolini_power_balance = {
 				war_support_factor = -0.15
 			}
 			on_activate = {
-				country_event = italy_bop.8
+				if = {
+					limit = {
+						has_country_flag = ITA_auto_first_aid_mussolini_flag
+					}
+					hidden_effect = {
+						set_country_flag = ITA_mussolini_death_range_flag
+						unlock_decision_tooltip	= from_spare_no_effort_in_treating_the_patient
+						custom_effect_tooltip = generic_skip_one_line_tt
+						activate_mission = from_mission_mussolini_death_range
+						set_country_flag = ITA_auto_first_aid_mussolini_mission_flag
+						activate_mission = from_mission_auto_first_aid_mussolini
+					}			
+				}
+				else = {
+					country_event = italy_bop.8
+				}
 			}
 			on_deactivate = {
 				

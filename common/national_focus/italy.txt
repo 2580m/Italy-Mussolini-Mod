@@ -3431,6 +3431,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = ITA_foggia_farm_fields days = 730 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = idea_durum_wheat
 		}
 	}
 
@@ -3936,6 +3938,8 @@ focus_tree = {
 					}
 				}				
 			}
+
+			set_grand_doctrine = old_army
 
 			add_doctrine_cost_reduction = {
 				name = ITA_army_primacy_bba #land_doc_bonus
@@ -28955,6 +28959,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = coming_soooooooooooon_tt
+			hidden_effect = {
+				country_event = IPUnion_country_event.61
+			}
 		}
 	}
 

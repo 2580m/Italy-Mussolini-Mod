@@ -1,0 +1,6 @@
+technology_folders = {
+    ITA_royal_land_doctrine_folder = {
+        ledger = army
+        doctrine = yes
+    }
+}

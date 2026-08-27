@@ -123,6 +123,39 @@ ideas = {
 		}
 	}
 	country = {
+		Leap_Forward = {
+			name = Leap_Forward
+			picture = SOV_stakhanovite_movement
+			allowed = {
+			}
+			available = {
+			}
+			removal_cost = -1
+			cancel = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			modifier = {
+				political_power_gain = 0.5
+				consumer_goods_factor = -0.30
+				conversion_cost_civ_to_mil_factor = -0.4
+				conversion_cost_mil_to_civ_factor = -0.4
+				global_building_slots = 5
+				industrial_capacity_dockyard = 0.35
+				industrial_capacity_factory = 0.35
+				industry_air_damage_factor = -0.35
+				industry_free_repair_factor = 0.80
+				industry_repair_factor = 0.55
+				line_change_production_efficiency_factor = 0.35
+				production_oil_factor = 0.75
+				production_speed_industrial_complex_factor = 0.35
+				production_speed_arms_factory_factor = 0.35
+				production_lack_of_resource_penalty_factor = -0.20
+				local_resources_factor = 0.25
+			}
+		}
+
 		idea_ITA_the_question_of_por_colony_1 = {
 			name = idea_ITA_the_question_of_por_colony_1
 			picture = generic_deal_with_the_devil
@@ -885,7 +918,17 @@ ideas = {
 		idea_coffee_ethiopia = {
 			name = idea_coffee_ethiopia
 			removal_cost = -1
-			picture = DEN_sahnefront 
+			picture = LIT_invested_in_farms
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				supply_node_range = 0.05
+			}
+		}
+		idea_durum_wheat = {
+			name = idea_durum_wheat
+			removal_cost = -1
+			picture = DEN_sahnefront
 
 			modifier = {
 				attrition = -0.05
@@ -894,16 +937,7 @@ ideas = {
 				supply_node_range = 0.1
 				supply_consumption_factor = -0.1
 				production_speed_buildings_factor = 0.025
-			}
-		}
-		idea_durum_wheat = {
-			name = idea_durum_wheat
-			removal_cost = -1
-			picture = LIT_invested_in_farms
-
-			modifier = {
-				consumer_goods_factor = -0.10
-				supply_node_range = 0.05
+				production_lack_of_resource_penalty_factor = -0.15
 			}
 		}
 		idea_ethiopia_governor = {

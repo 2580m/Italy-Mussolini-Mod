@@ -5,4 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/IPUnion_SoundTrack_Icon.png"
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_IMM_modern_music_station_art"
+		texturefile = "gfx/IMM_modern_music_station_icon.png"
+		noOfFrames = 2
+	}
 }
