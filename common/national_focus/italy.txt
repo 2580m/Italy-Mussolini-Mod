@@ -9423,7 +9423,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_breadbasket_of_the_union
 		#prerequisite = { focus = ITA_culto_del_duce }
 		prerequisite = { focus = ITA_heroes_of_the_nation focus = ITA_capo_supremo }
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = ITA_culto_del_duce
 		cost = 4
@@ -9441,9 +9441,9 @@ focus_tree = {
 		id = ITA_la_battaglia_per_la_terra
 		icon = GFX_focus_generic_land_reclamation
 		#prerequisite = { focus = ITA_culto_del_duce }
-		prerequisite = { focus = ITA_heroes_of_the_nation focus = ITA_capo_supremo }
-		x = 1
-		y = 2
+		prerequisite = { focus = ITA_la_battaglia_del_grano }
+		x = -1
+		y = 4
 		relative_position_id = ITA_culto_del_duce
 		cost = 4
 		available = {
@@ -9503,7 +9503,7 @@ focus_tree = {
 	focus = {
 		id = ITA_la_battaglia_per_le_nascite
 		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = ITA_la_battaglia_del_grano focus = ITA_la_battaglia_per_la_terra }
+		prerequisite = { focus = ITA_la_battaglia_del_grano }
 
 		x = 1
 		y = 2
@@ -9523,9 +9523,9 @@ focus_tree = {
 	focus = {
 		id = ITA_strengthen_the_regime
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = ITA_la_battaglia_per_le_nascite }
+		prerequisite = { focus = ITA_la_battaglia_per_le_nascite focus = ITA_la_battaglia_per_la_terra }
 
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = ITA_la_battaglia_per_le_nascite
 		cost = 4
