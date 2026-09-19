@@ -67,21 +67,22 @@ country_event = {
 	hidden = yes
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		ITA = {
-			focus_progress = {
-				focus = ITA_capo_supremo
-				progress > 0.001
-			}
-		}
-	}
+	# trigger = {
+	# 	ITA = {
+	# 		focus_progress = {
+	# 			focus = ITA_capo_supremo
+	# 			progress > 0.001
+	# 		}
+	# 	}
+	# }
 
-	immediate = {
-		ITA = {
-			country_event = IPUnion_country_event.34
-		}
-	}
+	# immediate = {
+	# 	ITA = {
+	# 		country_event = IPUnion_country_event.34
+	# 	}
+	# }
 }
 
 country_event = {
@@ -120,19 +121,20 @@ country_event = {
 	hidden = yes
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		ITA = {
-			has_tech = basic_carrier
-			has_tech = cv_fighter1
-		}
-	}
+	# trigger = {
+	# 	ITA = {
+	# 		has_tech = basic_carrier
+	# 		has_tech = cv_fighter1
+	# 	}
+	# }
 
-	immediate = {
-		ITA = {
-			country_event = IPUnion_country_event.45
-		}
-	}
+	# immediate = {
+	# 	ITA = {
+	# 		country_event = IPUnion_country_event.45
+	# 	}
+	# }
 }
 
 country_event = {
@@ -526,6 +528,23 @@ country_event = {
 	immediate = {
 		ITA = {
 			country_event = { id = IPUnion_country_event.95 hours = 6 }
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_router_event.20
+	
+	hidden = yes
+
+	fire_only_once = yes
+	#is_triggered_only = yes
+	trigger = {
+		ITA = {
+			focus_progress = {
+				focus = ITA_naval_carrier_self_reliance
+				progress > 0.01
+			}
 		}
 	}
 }

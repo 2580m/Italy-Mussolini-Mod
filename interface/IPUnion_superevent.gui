@@ -25,6 +25,12 @@ guiTypes = {
 			spriteType = "GFX_SE_balkan_war_2"
 			position = { x=38 y = 55 }
 		}
+
+		iconType = {
+			name = "SE_italian_naval_aviation"
+			spriteType = "SE_italian_naval_aviation"
+			position = { x=38 y = 55 }
+		}
 		################################################################
 		containerWindowType = {
 			name = "Background"

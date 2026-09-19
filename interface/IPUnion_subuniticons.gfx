@@ -19,4 +19,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_heavy_sp_anti_air_militia_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_medium_flame_militia_tank_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_medium_flame_militia_tank_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_abyssinia_elephantry_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_elephantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_abyssinia_elephantry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_elephantry_icon.dds" noOfFrames = 2 }
 }

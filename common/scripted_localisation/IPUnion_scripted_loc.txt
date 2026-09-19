@@ -19,6 +19,29 @@ defined_text = {
 		localization_key = PNF_republic
 	}
 }
+
+defined_text = {
+	name = PNF_dynamic_name
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_capo_supremo
+				}
+			}
+		}
+		localization_key = PNF_national
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_capo_supremo
+			}
+		}
+		localization_key = PNF_republic
+	}
+}
+
 defined_text = {
 	name = GetDuceName
 	text = {
@@ -55,5 +78,37 @@ defined_text = {
 	}
 	text = {
 		localization_key = ETH_balance_range
+	}
+}
+
+defined_text = {
+	name = ITA_rm_dynamic_modifier_dynamic_name
+	text = {
+		trigger = {
+			has_country_flag = ITA_rm_to_republic_marina
+		}
+		localization_key = ITA_marina_repubblicana
+	}
+	text = {
+		trigger = {
+			has_completed_focus = ITA_into_the_deep_blue
+		}
+		localization_key = ITA_into_the_deep_blue
+	}
+	text = {
+		localization_key = ITA_regia_marina_dynamic_modifier_original_name
+	}
+}
+
+defined_text = {
+	name = ITA_rm_dynamic_modifier_dynamic_name_original
+	text = {
+		trigger = {
+			has_country_flag = ITA_rm_to_republic_marina
+		}
+		localization_key = ITA_marina_repubblicana
+	}
+	text = {
+		localization_key = ITA_regia_marina_dynamic_modifier_original_name
 	}
 }

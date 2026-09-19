@@ -1,0 +1,81 @@
+add_namespace = ITA_naval_develop
+add_namespace = ITA_army_develop
+add_namespace = ITA_air_develop
+
+country_event = {
+	#Battleship Ways#
+	id = ITA_naval_develop.1
+	title = ITA_naval_develop.1.t
+	desc = ITA_naval_develop.1.d
+
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ITA_naval_develop.1.a
+
+		add_tech_bonus = {
+			name = ITA_battleship_first
+			bonus = 1.0
+			#ahead_reduction = 2
+			uses = 1
+			category = bb_tech
+		}
+
+		custom_effect_tooltip = "COMING SOON"
+
+		hidden_effect = {
+			#set_country_flag = ITA_battleship_ways
+			#mark_focus_tree_layout_dirty = yes
+			uncomplete_national_focus = {
+				focus = ITA_battleship_first
+				uncomplete_children = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	#Carrier Ways#
+	id = ITA_naval_develop.2
+	desc = ITA_naval_develop.2.d
+	title = ITA_naval_develop.2.t
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ITA_naval_develop.2.a
+
+		add_tech_bonus = {
+			name = ITA_battleship_first
+			bonus = 1.0
+			#ahead_reduction = 2
+			uses = 1
+			category = cv_tech
+		}
+
+		hidden_effect = {
+			set_country_flag = ITA_carrier_ways
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = {
+	#Carrier Ways#
+	id = ITA_naval_develop.3
+	desc = ITA_naval_develop.3.d
+	title = ITA_naval_develop.3.t
+
+	picture = GFX_report_event_SOV_purge_navy
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ITA_naval_develop.3.a
+		add_stability = 0.05
+		add_political_power = 15
+	}
+}

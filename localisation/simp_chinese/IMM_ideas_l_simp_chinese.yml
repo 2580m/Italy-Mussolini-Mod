@@ -62,7 +62,7 @@
  idea_ITA_learn_form_foggia: "农业学福贾"
  idea_ITA_learn_form_foggia_desc: "政治挂帅，思想领先；自力更生，艰苦奋斗"
  idea_ITA_learn_form_torina: "工业学米兰"
- idea_ITA_learn_form_torina: "都灵精神，就是意大利劳动者们的革命精神。"
+ idea_ITA_learn_form_torina: "米兰精神，就是意大利劳动者们的革命精神。"
  idea_ITA_learn_form_camicie_nere: "全国人民学黑衫军"
  idea_ITA_learn_form_camicie_nere_desc: "政治挂帅，党委建在国民经济部门上。"
  idea_BUL_lonely_nationalist: "孤独的民族主义者"
@@ -167,3 +167,9 @@
  
  idea_ethiopia_governor: "埃塞俄比亚总督"
  idea_ethiopia_governor_desc: ""
+
+ idea_naval_industry_fervor: "海军热"
+ idea_naval_industry_fervor_desc: ""
+
+ ITA_replace_regia_marina_with_into_the_deep_blue_tt: "以§Y$ITA_into_the_deep_blue$§!取代§Y$ITA_regia_marina_dynamic_modifier$§!，效果变化："
+ ITA_replace_regia_marina_with_into_the_deep_blue_tt_original: "以§Y$ITA_into_the_deep_blue$§!取代§Y[ITA_rm_dynamic_modifier_dynamic_name_original]§!，效果变化："

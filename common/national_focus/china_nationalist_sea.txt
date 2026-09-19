@@ -15613,7 +15613,7 @@ focus = CHI_long_range }
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
-				CHI_gung_ho_idea_repair_speed_factor = 0.25
+				CHI_gung_ho_idea_naval_repair_speed = 0.25
 				tooltip = industry_free_repair_factor_tt
 			}
 
