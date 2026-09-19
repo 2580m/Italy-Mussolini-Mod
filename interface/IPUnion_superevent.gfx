@@ -159,6 +159,10 @@ spriteTypes = {
 		name = "GFX_SE_italian_revolution"
 		textureFile = "gfx/superevent_pictures/SE_italian_revolution.png"
 	}
+	spriteType = {
+		name = "SE_italian_naval_aviation"
+		textureFile = "gfx/superevent_pictures/SE_italian_naval_aviation.png"
+	}
 	#################
 	
 	spriteType = {

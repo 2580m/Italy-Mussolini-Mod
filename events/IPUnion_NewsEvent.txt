@@ -245,3 +245,28 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = IPUnion_news.8
+	title = IPUnion_news.8.t
+	desc = IPUnion_news.8.d
+
+	is_triggered_only = yes
+
+	picture = GFX_news_event_028
+	fire_only_once = yes
+	major = yes
+
+	trigger = {}
+
+	immediate = {}
+
+	option = {
+		name = IPUnion_news.8.a
+		hidden_effect = {
+			set_country_flag = SE_italian_naval_aviation
+			play_song = TrumpSongs
+			set_country_flag = has_carrier_style
+		}
+	}
+}

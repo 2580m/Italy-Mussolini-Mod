@@ -19,6 +19,12 @@ defined_text = { #SUPER EVENT TITLE
 		}
 		localization_key = SE_middle_east_war_T
 	}
+	text = {
+		trigger = {
+			has_country_flag = SE_italian_naval_aviation
+		}
+		localization_key = SE_italian_naval_aviation_T
+	}
 }
 defined_text = { #SUPER EVENT QUOTE
 	name = get_superevent_quote
@@ -41,6 +47,12 @@ defined_text = { #SUPER EVENT QUOTE
 		}
 		localization_key = SE_middle_east_war_D
 	}
+	text = {
+		trigger = {
+			has_country_flag = SE_italian_naval_aviation
+		}
+		localization_key = SE_italian_naval_aviation_D
+	}
 }
 defined_text = { #SUPER EVENT OPTION
 	name = get_superevent_option
@@ -62,5 +74,11 @@ defined_text = { #SUPER EVENT OPTION
 			has_country_flag = SE_middle_east_war
 		}
 		localization_key = SE_middle_east_war_A
+	}
+	text = {
+		trigger = {
+			has_country_flag = SE_italian_naval_aviation
+		}
+		localization_key = SE_italian_naval_aviation_A
 	}
 }	

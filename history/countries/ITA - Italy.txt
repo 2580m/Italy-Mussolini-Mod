@@ -461,6 +461,10 @@ set_variable = { get_resources_aluminium = 0 }
 set_variable = { get_resources_oil = 0 }
 set_variable = { get_resources_coal = 0 }
 
+#ITA REGIA MARINA Supply
+
+set_variable = { ITA_rm_naval_repair_speed = 0 }
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

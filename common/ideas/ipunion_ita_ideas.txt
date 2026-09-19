@@ -943,12 +943,21 @@ ideas = {
 		idea_ethiopia_governor = {
 			name = idea_ethiopia_governor
 			removal_cost = -1
-			picture = idea_vittorio_emanuele
+			picture = vittorio_emanuele
 
 			modifier = {
 				stability_factor = 0.06
 				party_popularity_stability_factor = 0.1
 				compliance_growth = 0.1
+			}
+		}
+		idea_naval_industry_fervor = {
+			name = idea_naval_industry_fervor
+			removal_cost = -1
+			picture = generic_navy_cruiser_warfare
+
+			modifier = {
+				industrial_capacity_dockyard = 0.10
 			}
 		}
 	}

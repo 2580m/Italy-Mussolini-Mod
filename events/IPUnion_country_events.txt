@@ -739,9 +739,11 @@ country_event = {
 	}
 	option = {
 		name = IPUnion_country_event.19.b
+		#complete_national_focus = ITA_Clear_the_Square
 		clr_global_flag = ITA_Hot_Autumn_flag
 		remove_ideas = idea_ITA_Hot_Autumn
-		#complete_national_focus = ITA_Clear_the_Square
+		#play_song = BellaCiao
+		complete_national_focus = ITA_Clear_the_Square
 		hidden_effect = {
 			country_event = {
 				id = IPUnion_country_event.25
@@ -751,6 +753,7 @@ country_event = {
 				id = IPUnion_country_event.26
 				days = 3
 			}
+			#complete_national_focus = ITA_Clear_the_Square_flag
 		}
 	}
 }
@@ -1245,6 +1248,14 @@ country_event = {
 				id = IPUnion_news.5
 				hours = 12
 			}
+		}
+		add_war_support = 0.05
+		add_stability = -0.05
+		add_political_power = 75
+		add_command_power = 50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
 		}
 	}
 }
@@ -1743,6 +1754,10 @@ country_event = {
 	option = {
 		name = IPUnion_country_event.45.a
 		add_political_power = 15
+		hidden_effect = {
+			#play_song = TrumpSongs
+			news_event = IPUnion_news.8
+		}
 	}
 }
 

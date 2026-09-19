@@ -6445,6 +6445,518 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_battleship_first
+		prerequisite = { focus = ITA_supermarina }
+		relative_position_id = ITA_supermarina
+		mutually_exclusive = { focus = ITA_carrier_first }
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_focus_generic_navy_battleship2
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = ITA_battleship_ways
+					has_country_flag = ITA_carrier_ways
+					has_country_flag = ITA_naval_focus_modding_yes
+				}
+			}
+		}
+
+		completion_reward = {
+			effect_tooltip = {
+				add_tech_bonus = {
+					name = ITA_battleship_first
+					bonus = 1.0
+					#ahead_reduction = 2
+					uses = 1
+					category = bb_tech
+				}
+			}
+			hidden_effect = {
+				country_event = ITA_naval_develop.1
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_carrier_first
+		prerequisite = { focus = ITA_supermarina }
+		relative_position_id = ITA_supermarina
+		mutually_exclusive = { focus = ITA_battleship_first }
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_focus_generic_air_carrier
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = ITA_battleship_ways
+					has_country_flag = ITA_carrier_ways
+					has_country_flag = ITA_naval_focus_modding_yes
+				}
+			}
+		}
+		
+		completion_reward = {
+			effect_tooltip = {
+				add_tech_bonus = {
+					name = ITA_battleship_first
+					bonus = 1.0
+					#ahead_reduction = 2
+					uses = 1
+					category = cv_tech
+				}
+			}
+
+			hidden_effect = {
+				country_event = ITA_naval_develop.2
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_navy_way_where
+		prerequisite = { focus = ITA_carrier_first focus = ITA_battleship_first }
+		relative_position_id = ITA_supermarina
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = ITA_battleship_ways
+					has_country_flag = ITA_carrier_ways
+					has_country_flag = ITA_naval_focus_modding_yes
+				}
+			}
+		}
+		
+		x = 0
+		y = 2
+		available = {
+			always = no
+		}
+		#icon = GFX_focus_generic_navy_battleship2
+
+		completion_reward = {
+			custom_effect_tooltip = ITA_navy_way_where_rewards_tt
+		}
+	}
+
+	#ITA Carrier Ways
+
+	focus = {
+		id = ITA_propaganda_for_carrier
+		icon = GFX_goal_generic_navy_carrier
+		relative_position_id = ITA_supermarina
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_supermarina }
+
+		cost = 1
+
+		allow_branch = {
+			has_country_flag = ITA_carrier_ways
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = idea_naval_industry_fervor
+				days = 1095
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ITA_regia_marina_dynamic_modifier_tt
+			add_to_variable = {
+				ITA_rm_naval_morale_factor = 0.05
+				tooltip = naval_morale_factor_tt
+			}
+			
+			hidden_effect = {
+				country_event = {
+					id = ITA_naval_develop.3
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_power_projection_theory
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id = ITA_supermarina
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_supermarina }
+
+		
+		allow_branch = {
+			has_country_flag = ITA_carrier_ways
+		}
+
+		cost = 2
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+
+	focus = {
+		id = ITA_dockyard_expand
+		icon = GFX_goal_generic_construct_naval_dockyard
+		relative_position_id = ITA_supermarina
+		x = 3
+		y = 1
+		prerequisite = { focus = ITA_supermarina }
+
+		
+		allow_branch = {
+			has_country_flag = ITA_carrier_ways
+		}
+
+		cost = 5
+
+		completion_reward = {
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = ITA
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+
+				}
+			}
+
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = ITA
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					
+				}
+			}
+
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = ITA
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					
+				}
+			}
+
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = ITA
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					
+				}
+			}
+
+			random_state = {
+				limit = {
+					is_owned_and_controlled_by = ITA
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ITA_regia_marina_dynamic_modifier_tt
+			add_to_variable = {
+				ITA_rm_naval_repair_speed = 0.10
+				tooltip = repair_speed_factor_tt
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_naval_aviation
+		icon = GFX_focus_BRA_italian_aircraft_development
+		relative_position_id = ITA_supermarina
+		x = 4
+		y = 2
+
+		cost = 5
+		prerequisite = { focus = ITA_propaganda_for_carrier }
+		prerequisite = { focus = ITA_power_projection_theory }
+		#prerequisite = { focus = ITA_stockpile_fuel }
+
+		completion_reward = {
+			navy_experience = 50
+
+			if = {
+				limit = {
+					NOT = {
+						has_tech = small_plane_airframe_2
+					}
+				}
+				add_tech_bonus = {
+					name = ITA_naval_aviation
+					bonus = 1.0
+					use = 1
+					category = light_air
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_refit_a_ship
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		relative_position_id = ITA_supermarina
+		x = 2
+		y = 2
+		prerequisite = { focus = ITA_stockpile_fuel }
+		prerequisite = { focus = ITA_dockyard_expand }
+		cost = 10
+		mutually_exclusive = { focus = ITA_naval_carrier_self_reliance }
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech = early_ship_hull_carrier
+					}
+				}
+				set_technology = {
+					early_ship_hull_carrier = 1
+					popup = no
+				}
+			}
+
+			create_equipment_variant = {
+				name = "RN Fiume Class"
+				type = ship_hull_carrier_conversion_ca
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+				}
+			}
+
+			create_ship = {
+				type = ship_hull_carrier_conversion_ca
+				equipment_variant = "RN Fiume Class"
+				creator = ROOT
+				name = "Fiume"
+			}	
+		}
+	}
+
+	focus = {
+		id = ITA_naval_carrier_self_reliance
+		icon = GFX_focus_generic_air_carrier
+		relative_position_id = ITA_supermarina
+		x = 0
+		y = 2
+		cost = 20
+		mutually_exclusive = { focus = ITA_refit_a_ship }
+		prerequisite = { focus = ITA_stockpile_fuel }
+		prerequisite = { focus = ITA_dockyard_expand }
+		prerequisite = { focus = ITA_propaganda_for_carrier }
+
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						has_tech = early_ship_hull_carrier
+					}
+				}
+				set_technology = {
+					early_ship_hull_carrier = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = basic_ship_hull_carrier
+					}
+				}
+				set_technology = {
+					basic_ship_hull_carrier = 1
+					popup = no
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_equipment_variant = {
+				name = "RN Fiume Class"
+				type = ship_hull_carrier_1
+				modules = {
+					front_1_custom_slot = ship_deck_space
+					mid_1_custom_slot = ship_deck_space
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_ship = {
+				type = ship_hull_carrier_1
+				equipment_variant = "RN Fiume Class"
+				creator = ROOT
+				name = "Fiume"
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = ITA_regia_marina_dynamic_modifier_tt
+			add_to_variable = {
+				ITA_rm_naval_detection = 0.15
+				tooltip = naval_detection_tt
+			}
+
+			add_to_variable = {
+				ITA_rm_spotting_chance = 0.15
+				tooltip = spotting_chance_tt
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_the_first_sea_trials
+		icon = GFX_focus_generic_naval_invasion
+		relative_position_id = ITA_refit_a_ship
+		x = 1
+		y = 1
+		cost = 2
+		prerequisite = { focus = ITA_naval_carrier_self_reliance focus = ITA_refit_a_ship }
+		prerequisite = { focus = ITA_naval_aviation }
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ITA_naval_carrier_self_reliance
+				}
+				
+				hidden_effect = {
+					country_event = {
+						id = IPUnion_country_event.45
+						hours = 7
+					}
+				}
+
+				if = {
+					limit = {
+						has_country_flag = has_carrier_style
+					}
+
+					effect_tooltip = {
+						country_event = {
+							id = IPUnion_country_event.45
+							hours = 7
+						}
+					}
+				}
+
+				navy_experience = 100
+			}
+
+			else = {
+				navy_experience = 100
+			}
+		}
+
+		
+	}
+	
+	focus = {
+		id = ITA_into_the_deep_blue
+		icon = GFX_focus_generic_naval_discipline
+		cost = 5
+		prerequisite = { focus = ITA_naval_carrier_self_reliance focus = ITA_refit_a_ship }
+		prerequisite = { focus = ITA_naval_aviation }
+		prerequisite = { focus = ITA_carrier_strike_group }
+		relative_position_id = ITA_naval_carrier_self_reliance
+		x = -1
+		y = 1
+
+		completion_reward = {
+			navy_experience = 50
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			#custom_effect_tooltip = ITA_replace_regia_marina_with_into_the_deep_blue_tt
+			if = {
+				limit = {
+					has_completed_focus = ITA_into_the_deep_blue
+				}
+				custom_effect_tooltip = ITA_replace_regia_marina_with_into_the_deep_blue_tt_original
+			}
+			else = {
+				custom_effect_tooltip = ITA_replace_regia_marina_with_into_the_deep_blue_tt
+			}
+			#custom_effect_tooltip = ITA_regia_marina_dynamic_modifier_tt
+			add_to_variable = {
+				ITA_rm_naval_strike_agility_factor = 0.15
+				tooltip = naval_strike_agility_factor_tt
+			}
+			add_to_variable = {
+				ITA_rm_decryption_factor = 0.10
+				tooltip = decryption_factor_tt
+			}
+			add_to_variable = {
+				ITA_rm_navy_intel_factor = 0.10
+				tooltip = navy_intel_factor_tt
+			}
+			add_to_variable = {
+				ITA_rm_naval_critical_score_chance_factor = 0.10
+				tooltip = naval_critical_score_chance_factor_tt
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_carrier_strike_group
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = ITA_propaganda_for_carrier }
+		prerequisite = { focus = ITA_milizia_marittima_di_artiglieria }
+		relative_position_id = ITA_supermarina
+		x = -2
+		y = 2
+
+		cost = 5
+
+		completion_reward = {
+			navy_experience = 50
+
+			custom_effect_tooltip = ITA_regia_marina_dynamic_modifier_tt
+			add_to_variable = {
+				ITA_rm_naval_coordination = 0.10
+				tooltip = naval_coordination_tt
+			}
+		}
+	}
+
+	focus = {
 		id = ITA_stockpile_fuel
 		icon = GFX_focus_generic_stockpile_fuel
 		prerequisite = { focus = ITA_expand_naval_facilities }
@@ -6775,6 +7287,10 @@ focus_tree = {
 		cost = 5
 		available = {
 		}
+		
+		allow_branch = {
+			has_country_flag = ITA_naval_focus_modding_yes
+		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
@@ -6828,6 +7344,11 @@ focus_tree = {
 		available = {
 		}
 
+		allow_branch = {
+			has_country_flag = ITA_naval_focus_modding_yes
+		}
+
+
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
@@ -6856,6 +7377,11 @@ focus_tree = {
 		cost = 4
 		available = {
 		}
+
+		allow_branch = {
+			has_country_flag = ITA_naval_focus_modding_yes
+		}
+
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
@@ -6907,6 +7433,11 @@ focus_tree = {
 		cost = 4
 		available = {
 		}
+
+		allow_branch = {
+			has_country_flag = ITA_naval_focus_modding_yes
+		}
+
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
@@ -6961,6 +7492,11 @@ focus_tree = {
 		available = {
 		}
 
+		allow_branch = {
+			has_country_flag = ITA_naval_focus_modding_yes
+		}
+
+
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
@@ -6983,6 +7519,11 @@ focus_tree = {
 		cost = 5
 		available = {
 		}
+
+		allow_branch = {
+			has_country_flag = ITA_naval_focus_modding_yes
+		}
+
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
 
@@ -9331,7 +9872,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_the_man_of_providence }
 
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = ITA_the_man_of_providence
 		cost = 5
 		available = {
@@ -10451,7 +10992,8 @@ focus_tree = {
 		y = 1
 		cancelable = no
 		relative_position_id = ITA_culto_del_duce
-		cost = 262.6
+		#cost = 262.6
+		cost = 5
 		available = {
 			#has_country_leader = {
 			#	character = ITA_benito_mussolini
@@ -10467,16 +11009,18 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			add_war_support = 0.05
-			add_stability = -0.05
-			add_political_power = 75
-			add_command_power = 50
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
+			# add_war_support = 0.05
+			# add_stability = -0.05
+			# add_political_power = 75
+			# add_command_power = 50
+			# add_popularity = {
+			# 	ideology = fascism
+			# 	popularity = 0.1
+			# }
 
-			#add_ideas = idea_ITA_party_command_guns
+			custom_effect_tooltip = capo_supremo_effect_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_country_leader_trait = capo_supremo
 
@@ -10490,60 +11034,42 @@ focus_tree = {
 					add_unit_leader_trait = media_personality
 					add_unit_leader_trait = harsh_leader
 				}
-				#play_song = "VogliamoScolpireUnaLapide"
 			}
 
-			set_cosmetic_tag = ITA_rsi
+			#set_cosmetic_tag = ITA_rsi
+
+			#ustom_effect_tooltip = generic_skip_one_line_tt
 
 			ITA_remove_king_vittorio_emanuele_as_idea = yes
 
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				if = {
-					limit = {
-						has_tech = super_heavy_tank_chassis
-					}
-					#SH template
-					ITA_add_il_duce_sh_tank_template_and_production = yes
-				}
-				else = {
-					add_tech_bonus = {
-						name = ITA_capo_supremo
-						ahead_reduction = 2
-						bonus = 1.0
-						uses = 1
-						technology = super_heavy_tank_chassis
-					}
-					custom_effect_tooltip = ITA_focus_sh_tank_template_tt
-					effect_tooltip = {
-						ITA_add_il_duce_sh_tank_template_and_production = yes
-					}
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = ITA_capo_supremo
-					ahead_reduction = 2
-					bonus = 1.0
-					uses = 1
-					technology = super_heavy_tank
-					technology = super_heavy_td
-					technology = super_heavy_art
-					technology = super_heavy_spaa
-				}
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			ITA_capo_supremo_super_heavy_tank_classic_effect = yes
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			ITA_bop_very_low_increase_effect = yes
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			#Names for NSs
 			hidden_effect = {
 				ITA_replace_stuff_based_on_ideology_effect = yes
 			}
+
 			add_country_leader_trait = ITA_duce_ffs_sfp
+
+			#custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = IPUnion_Ita_Cosmetic_Tags_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			retire_character = ITA_pietro_badoglio
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			country_event = IPUnion_country_event.34
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

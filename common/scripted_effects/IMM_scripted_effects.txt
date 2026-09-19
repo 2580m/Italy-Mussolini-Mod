@@ -521,3 +521,43 @@ ITA_start_civil_war_game_over_effect = { #The one triggered via BoP
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+
+ITA_capo_supremo_super_heavy_tank_classic_effect = {
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		if = {
+			limit = {
+				has_tech = super_heavy_tank_chassis
+			}
+			#SH template
+			ITA_add_il_duce_sh_tank_template_and_production = yes
+		}
+		else = {
+			add_tech_bonus = {
+				name = ITA_capo_supremo
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				technology = super_heavy_tank_chassis
+			}
+			custom_effect_tooltip = ITA_focus_sh_tank_template_tt
+			effect_tooltip = {
+				ITA_add_il_duce_sh_tank_template_and_production = yes
+			}
+		}
+	}
+	else = {
+		add_tech_bonus = {
+			name = ITA_capo_supremo
+			ahead_reduction = 2
+			bonus = 1.0
+			uses = 1
+			technology = super_heavy_tank
+			technology = super_heavy_td
+			technology = super_heavy_art
+			technology = super_heavy_spaa
+		}
+	}
+}

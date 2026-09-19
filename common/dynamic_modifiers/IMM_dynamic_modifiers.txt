@@ -300,3 +300,11 @@ support_blackshirt_assault_battalion = {
 
 	custom_modifier_tooltip = support_blackshirt_assault_battalion_TT
 }
+
+roma_metro = {
+	icon = GFX_modifiers_ETH_state_development
+	enable = { always = yes }
+	local_factories = 0.10
+	local_factory_energy_consumption = -0.05
+	local_supplies = 0.10
+}
