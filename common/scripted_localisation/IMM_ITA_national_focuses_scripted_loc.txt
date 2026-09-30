@@ -1,0 +1,12 @@
+defined_text = {
+	name = ITA_into_the_deep_blue_dynamic_desc
+	text = {
+		trigger = {
+			has_completed_focus = ITA_naval_carrier_self_reliance
+		}
+		localization_key = ITA_into_the_deep_blue_dynamic_desc_self
+	}
+	text = {
+		localization_key = ITA_into_the_deep_blue_dynamic_desc_refit
+	}
+}

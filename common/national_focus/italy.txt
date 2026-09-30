@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -6711,14 +6711,14 @@ focus_tree = {
 
 			if = {
 				limit = {
-					NOT = {
-						has_tech = small_plane_airframe_2
-					}
+					# NOT = {
+					# 	has_tech = small_plane_airframe_2
+					# }
 				}
 				add_tech_bonus = {
 					name = ITA_naval_aviation
 					bonus = 1.0
-					use = 1
+					uses = 1
 					category = light_air
 				}
 			}
