@@ -10,3 +10,16 @@ music = {
 	name = "TrumpSongs"
 	file = "TrumpSongs.ogg"
 }
+music = {
+	name = "Qian Si Xi"
+	file = "Qian Si Xi.ogg"
+}
+music = {
+	name = "Yung Chwen"
+	file = "Yung Chwen.ogg"
+}
+
+music = {
+	name = "Yong Chun DJ"
+	file = "Yong Chun DJ.ogg"
+}

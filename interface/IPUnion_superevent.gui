@@ -31,6 +31,18 @@ guiTypes = {
 			spriteType = "SE_italian_naval_aviation"
 			position = { x=38 y = 55 }
 		}
+
+		iconType = {
+			name = "SE_memorial_of_mussolini"
+			spriteType = "SE_memorial_of_mussolini"
+			position = { x=38 y = 55 }
+		}
+
+		iconType = {
+			name = "SE_celebrate_for_great_turning"
+			spriteType = "SE_celebrate_for_great_turning"
+			position = { x=38 y = 55 }
+		}
 		################################################################
 		containerWindowType = {
 			name = "Background"

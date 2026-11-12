@@ -163,6 +163,16 @@ spriteTypes = {
 		name = "SE_italian_naval_aviation"
 		textureFile = "gfx/superevent_pictures/SE_italian_naval_aviation.png"
 	}
+
+	spriteType = {
+		name = "SE_memorial_of_mussolini"
+		textureFile = "gfx/superevent_pictures/SE_memorial_of_mussolini.png"
+	}
+
+	spriteType = {
+		name = "SE_celebrate_for_great_turning"
+		textureFile = "gfx/superevent_pictures/SE_celebrate_for_great_turning.png"
+	}
 	#################
 	
 	spriteType = {

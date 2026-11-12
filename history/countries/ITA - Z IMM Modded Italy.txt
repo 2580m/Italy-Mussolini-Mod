@@ -1,0 +1,123 @@
+## UI
+
+set_variable = { ITA_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
+set_variable = { ITA_ascended_advisor_2 = 0 } #Ascended Advisor Portrait
+set_variable = { ITA_ascended_advisor_3 = 0 } 
+set_variable = { ITA_ascended_advisor_4 = 0 } 
+
+set_variable = { ITA_inner_circle_days_to_start_focus = 30 }
+set_variable = { ITA_inner_circle_random_days = 15 }
+
+
+############ WONDER WEAPONS #############
+
+set_variable = { GER_wunderwaffen_special_project_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_tag_tank_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_air_helicopter_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_tag_jet_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_tag_rocket_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_commercial_nuclear_reactor_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_nuclear_bomb_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_nuclear_reactor_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_nuclear_warheads_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_tag_artillery_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_naval_modern_battleship_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_naval_modern_carrier_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_production_speed_nuclear_reactor_factor = 0 }
+set_variable = { GER_wunderwaffen_production_speed_nuclear_facility_factor = 0 }
+set_variable = { GER_wunderwaffen_production_speed_facility_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_tag_submarine_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_air_intercontinental_bomber_speed_factor = 0 }
+set_variable = { GER_wunderwaffen_sp_air_mothership_aircraft_speed_factor = 0 }
+
+### PROPAGANDA ###
+set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
+set_variable = { SOV_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+set_variable = { SOV_propaganda_empty_slot_index = 2 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+set_variable = { SOV_poster_left_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate empty slot GFX
+set_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+
+set_variable = { SOV_default_propaganda_campaign_duration = 180 } #Duration days for propaganda campaigns
+set_variable = { SOV_default_propaganda_campaign_cooldown = 90 } #Days of cooldown after a Propaganda Campaign has been finished.
+set_variable = { SOV_default_propaganda_campaign_old_days = 150 } #A propaganda poster will age (change GFX) after this amount of days have passed since the campaign was activated
+set_variable = { SOV_propaganda_cost = 15 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
+set_variable = { SOV_propaganda_cost_increase = 2 } #This will multiply the regular propaganda_cost each time a propaganda campaign is activated, so that it's cost is increased
+set_variable = { SOV_propaganda_motherland_calls_cost = SOV_propaganda_cost } # ID = 2
+set_variable = { SOV_propaganda_victory_at_hand_cost = SOV_propaganda_cost } # ID = 3
+set_variable = { SOV_propaganda_defend_moscow_cost = SOV_propaganda_cost } # ID = 4
+set_variable = { SOV_propaganda_fight_to_the_last_cost = SOV_propaganda_cost } # ID = 5
+set_variable = { SOV_propaganda_hit_of_hammer_cost = SOV_propaganda_cost } # ID = 6
+set_variable = { SOV_propaganda_transport_cost = SOV_propaganda_cost } # ID = 7
+set_variable = { SOV_propaganda_oil_for_the_motherland_cost = SOV_propaganda_cost } # ID = 8
+set_variable = { SOV_propaganda_more_metal_cost = SOV_propaganda_cost } # ID = 9
+set_variable = { SOV_propaganda_high_yield_cost = SOV_propaganda_cost } # ID = 10
+set_variable = { SOV_propaganda_for_the_motherland_cost = SOV_propaganda_cost } # ID = 11
+set_variable = { SOV_propaganda_heroes_forward_cost = SOV_propaganda_cost } # ID = 12
+set_variable = { SOV_propaganda_anti_capitalism_cost = SOV_propaganda_cost } # ID = 13
+set_variable = { SOV_propaganda_anti_fascism_cost = SOV_propaganda_cost } # ID = 14
+set_variable = { SOV_propaganda_treacherous_enemy_cost = SOV_propaganda_cost } # ID = 15
+set_variable = { SOV_propaganda_do_not_blab_cost = SOV_propaganda_cost } # ID = 16
+set_variable = { SOV_propaganda_sweep_scum_out_cost = SOV_propaganda_cost } # ID = 17
+set_variable = { SOV_propaganda_knowledge_cost = SOV_propaganda_cost } # ID = 18
+set_variable = { SOV_propaganda_builders_of_communism_cost = SOV_propaganda_cost } # ID = 19
+set_variable = { SOV_propaganda_glory_to_partisans_cost = SOV_propaganda_cost } # ID = 20
+set_variable = { SOV_propaganda_death_to_invaders_cost = SOV_propaganda_cost } # ID = 21
+set_variable = { SOV_propaganda_stalin_cost = SOV_propaganda_cost } # ID = 22
+set_variable = { SOV_propaganda_rebuild_to_glory_cost = SOV_propaganda_cost } # ID = 23
+set_variable = { SOV_propaganda_peace_cost = SOV_propaganda_cost } # ID = 24
+set_variable = { SOV_propaganda_happy_life_cost = SOV_propaganda_cost } # ID = 25
+
+set_variable = { SOV_propaganda_campaigns_taken = 0 } #Used as a requirement for certain focuses
+
+set_variable = { ITA_propaganda_give_respect_to_duce = 0 }
+set_variable = { ITA_propaganda_mussolini_is_the_red_sun_in_our_heart = 0 }
+
+
+###PARANOIA ###
+set_variable = { SOV_paranoia = 0 } # Intitial Paranoia value
+set_variable = { SOV_paranoia_very_low_increase = 5 } #Paranoia very low increment
+set_variable = { SOV_paranoia_low_increase = 10 } #Paranoia low increment
+set_variable = { SOV_paranoia_medium_increase = 20 } #Paranoia medium increment
+set_variable = { SOV_paranoia_high_increase = 30 } #Paranoia high increment
+set_variable = { SOV_paranoia_very_high_increase = 50 } #Paranoia very high increment
+set_variable = { SOV_paranoia_low_decrease = -10 } #Paranoia low decrement --------> (prev -5)
+set_variable = { SOV_paranoia_medium_decrease = -20 } #Paranoia medium decrement --------> (prev -10)
+set_variable = { SOV_paranoia_high_decrease = -30 } #Paranoia high decrement --------> (prev -15)
+set_variable = { SOV_paranoia_very_high_decrease = -50 } #Paranoia very high decrement --------> (prev -25)
+set_variable = { SOV_paranoia_lower_threshold = 25 } #Lower Threshold -> Below Stalin doesn't purge
+set_variable = { SOV_paranoia_higher_threshold = 75 } #Higher Threshold -> Below Stalin purges occasionally / Above Stalin can start a Great Purge
+set_variable = { SOV_paranoia_modifier_increase = 1 } #Paranoia weekly increase via modifiers (Stalin's Paranoid leader trait) // WARNING: CUSTOM TOOLTIP DOES NOT WORK WITH VARS so needs to be updated
+set_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } #Number of Weekly Paranoia Modifiers currently active (Stalin's trait, Heads of NKVD, etc.). This value will be mulptiplied by SOV_paranoia_modifier_increase in order to apply the final weekly modifier
+SOV_paranoia_modifier_update_gui_tooltip = yes #Used in the Paranoia GUI to show total weekly increase/decrease of Paranoia
+set_country_flag = SOV_paranoia_modifier_active_flag
+set_variable = { SOV_paranoia_great_purge_administration_number_of_targets = 4 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
+set_variable = { SOV_paranoia_great_purge_army_number_of_targets = 4 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
+set_variable = { SOV_paranoia_great_purge_navy_number_of_targets = 4 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
+set_variable = { SOV_paranoia_great_purge_air_number_of_targets = 3 } #Max amount of targets to be purged by the appropriate Great Purge (so that it can be changed if necessary)
+set_variable = { SOV_specific_random_purge_targets_override = -1 } #-1 = default random people will be purged // 0+ = that many chars will be randomly targeted - Then the var is reset to -1
+
+
+set_variable = { get_resources_steel = 0 }
+set_variable = { get_resources_tungsten = 0 }
+set_variable = { get_resources_chromium = 0 }
+set_variable = { get_resources_rubber = 0 }
+set_variable = { get_resources_aluminium = 0 }
+set_variable = { get_resources_oil = 0 }
+set_variable = { get_resources_coal = 0 }
+
+#ITA REGIA MARINA Supply
+
+set_variable = { ITA_rm_naval_repair_speed = 0 }
+
+
+
+recruit_character = AUS_friedrich_hayek
+recruit_character = ITA_gabriele_d_annunzio
+recruit_character = ITA_claretta_petacci
+
+
+#focus
+
+complete_national_focus = ITA_patti_lateranensi_focus

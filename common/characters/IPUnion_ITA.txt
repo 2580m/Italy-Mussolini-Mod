@@ -179,4 +179,41 @@ characters = {
 			}
 		}
 	}
+
+	ITA_claretta_petacci = {
+		name = ITA_claretta_petacci
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_claretta_petacci_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_claretta_petacci
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+
+			visible = {
+				NOT = {
+					has_country_flag = ITA_claretta_petacci_hidden_flag
+				}
+			}
+
+			available = {
+				has_country_leader = {
+					ruling_only = yes
+					character = ITA_benito_mussolini
+				}
+			}
+			traits = {
+				petacci_mommy
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+
+	}
 }

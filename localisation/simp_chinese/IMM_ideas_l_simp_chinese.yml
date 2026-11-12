@@ -85,9 +85,9 @@
  Idea_Adjust_Consolidate_Fill_out_and_Improve: "调整、巩固、充实、提高"
  Idea_Adjust_Consolidate_Fill_out_and_Improve_desc: ""
  ITA_national_militia_peace: "小规模常备军，大规模预备役"
- ITA_national_militia_peace_desc: "和平的国度不需要规模庞大的常备军"
+ ITA_national_militia_peace_desc: "人民的武装，一支枪、一粒子弹，都要保存，不能交出去。"
  ITA_national_militia_war: "小规模常备军，大规模预备役"
- ITA_national_militia_war_desc: "兄弟姐妹们，保卫我们的祖国！"
+ ITA_national_militia_war_desc: "提高警惕，保卫祖国！"
  idea_AOI_talent_recruitment: "引进技术人才"
  idea_AOI_talent_recruitment_desc: ""
  AOI_banque_du_AOI_ITA_idea: "意大利埃塞俄比亚银行"
@@ -146,6 +146,8 @@
 
  ITA_gabriele_d_annunzio_desc: "§g诗人，记者，小说家，演说家，剧作家，冒险者，战争英雄，意大利卡纳罗摄政领领袖，意大利法西斯主义理想和实践的先驱，法西斯主义创始人墨索里尼的榜样。§!\n\n§Y小邓，您好！§!"
  AUS_friedrich_hayek_desc: "§g才饮葡萄酒，又食大波龙。\n密河沉浮，无为经济苏。\n任凭小岛大浪，胜似闲庭信步，哈公不干预。\n凯在河上曰：目田如斯夫。\n股市动，联储静，起宏图。\n海路飞架东西，市场变通途。\n更立总统铁壁，截断墨西云雨，难民入五湖。\n女神应无恙，当惊世界殊。§!"
+
+ ITA_gian_galeazzo_ciano_desc: "§g芦中人，芦中人！渡过江，谁的恩？宝剑上，七星纹，还给你，带在身。你今天得意了，可记得，渔丈人——§!"
  
  idea_SYR_condominium: "意土共管叙利亚"
  idea_KUR_condominium: "意土共管库尔德"

@@ -43,4 +43,8 @@ spriteTypes = {
 		name = GFX_portrait_ITA_gabriele_d_annunzio_small
 		textureFile = "gfx/interface/ideas/portrait_ITA_gabriele_d_annunzio_small.png"
 	}
+	spriteType = {
+		name = GFX_portrait_ITA_claretta_petacci_small
+		textureFile = "gfx/interface/ideas/portrait_ITA_claretta_petacci_small.png"
+	}
 }

@@ -87,6 +87,7 @@ leader_traits = {
 		
 	}
 	the_indulgent_aesthete = {
+		sprite = 13
 		political_power_gain = 0.01
 		research_speed_factor = 0.05
 	}
@@ -103,5 +104,11 @@ leader_traits = {
 		party_popularity_stability_factor = 0.1
 		compliance_growth = 0.1
 		non_core_manpower = 0.025
+	}
+	petacci_mommy = {
+		sprite = 13
+		political_power_gain = 0.01
+		stability_factor = 0.05
+		fascism_drift = 0.01
 	}
 }

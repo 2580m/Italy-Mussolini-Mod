@@ -11,3 +11,10 @@
  SE_italian_naval_aviation_T:0 "一着惊海天"
  SE_italian_naval_aviation_D:0 "\n\n\n才见虹霓君已去，英雄谢幕海天间。"
  SE_italian_naval_aviation_A:0 "我们也有自己的大航母了..."
+ SE_memorial_of_mussolini_T:0 "刚才最后一响，是罗马时间十六点整"
+ SE_memorial_of_mussolini_D:0 "\n\n\n“凭栏静听潇潇雨，故国人民有所思。”"
+ SE_memorial_of_mussolini_A:0 "欲语泪先流..."
+
+ SE_celebrate_for_great_turning_T:0 "粉碎“一人帮”"
+ SE_celebrate_for_great_turning_D:0 "\n\n“沉舟侧畔千帆过，病树前头万木春。”\n - 刘禹锡"
+ SE_celebrate_for_great_turning_A:0 "§A好！§!"

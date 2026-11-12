@@ -29278,7 +29278,7 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = ITA_side_fight_flag
 			NOT = {
-				has_country_flag = IPUnion_country_event.60.flag
+				has_country_flag = ITA_kudeta_has_successed
 			}
 		}
 		available = {
@@ -29472,7 +29472,7 @@ focus_tree = {
 			focus = ITA_mare_nostrum_bba
 		}
 		allow_branch = {
-			has_country_flag = IPUnion_country_event.60.flag
+			has_country_flag = ITA_kudeta_has_successed
 		}
 		available = {
 			#is_subject = no

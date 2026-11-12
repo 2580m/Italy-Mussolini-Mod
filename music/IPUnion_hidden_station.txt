@@ -20,3 +20,24 @@ music = {
 		factor = 0
 	}
 }
+
+music = {
+	song = "Qian Si Xi"
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "Yung Chwen"
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "Yong Chun DJ"
+	chance = {
+		factor = 0
+	}
+}

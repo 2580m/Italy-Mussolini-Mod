@@ -2077,6 +2077,13 @@ country_event = {
 	option = {
 		name = IPUnion_country_event.56.a
 		retire_character = ITA_benito_mussolini
+		hidden_effect = {
+			add_country_leader_role = {
+				character = ITA_grand_council
+				promote_leader = yes
+				ideology = fascism_ideology
+			}
+		}
 		if = {
 			limit = {
 				has_character = ITA_grand_council
@@ -2113,12 +2120,19 @@ country_event = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		custom_effect_tooltip = two_whatevers_tt
+
+		hidden_effect = {
+			news_event = IPUnion_news.9
+		}
 	}
 	option = {
 		name = IPUnion_country_event.57.b
 		add_popularity = {
 			ideology = neutrality
 			popularity = 0.15
+		}
+		hidden_effect = {
+			news_event = IPUnion_news.9
 		}
 	}
 	option = {
@@ -2130,6 +2144,9 @@ country_event = {
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.15
+		}
+		hidden_effect = {
+			news_event = IPUnion_news.9
 		}
 	}
 }
@@ -2224,14 +2241,119 @@ country_event = {
 	picture = GFX_report_event_gre_george_ii_victorious
 	option = {
 		name = IPUnion_country_event.60.a
-		add_political_power = 15
+		custom_effect_tooltip = ITA_claretta_petacci_hidden
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ITA_somethings_is_changing_tt
+		hidden_effect = {
+			set_country_flag = ITA_claretta_petacci_hidden_flag
+		}
+		hidden_effect = {
+			country_event = {
+				id = IPUnion_country_event.6001
+				hours = 12
+			}
+		}
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.6001
+	
+	title = IPUnion_country_event.6001.t
+	desc = IPUnion_country_event.6001.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_report_event_gre_george_ii_victorious
+	option = {
+		name = IPUnion_country_event.6001.a
+		#add_political_power = 15
+		#retire_character = ITA_rodolfo_graziani
+		custom_effect_tooltip = ITA_somethings_is_changing_tt
+		hidden_effect = {
+			country_event = {
+				id = IPUnion_country_event.6002
+				hours = 6
+			}
+		}
+		#mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.6002
+	
+	title = IPUnion_country_event.6002.t
+	desc = IPUnion_country_event.6002.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_report_event_gre_george_ii_victorious
+	option = {
+		name = IPUnion_country_event.6002.b
+		custom_effect_tooltip = IPUnion_country_event.6002.b.tt
+		hidden_effect = {
+			country_event = {
+				id = IPUnion_country_event.6003
+				hours = 12
+			}
+		}
+	}
+	#option = {
+	#	name = IPUnion_country_event.6002.a
+
+		
+	#}
+}
+
+country_event = {
+	id = IPUnion_country_event.6003
+	
+	title = IPUnion_country_event.6003.t
+	desc = IPUnion_country_event.6003.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_report_event_gre_george_ii_victorious
+	option = {
+		name = IPUnion_country_event.6003.a
+		#add_political_power = 15
 		retire_character = ITA_rodolfo_graziani
 		hidden_effect = {
-			set_country_flag = IPUnion_country_event.60.flag
+			country_event = {
+				id = IPUnion_country_event.6004
+				days = 1
+			}
 		}
+	}
+}
+
+country_event = {
+	id = IPUnion_country_event.6004
+	
+	title = IPUnion_country_event.6004.t
+	desc = IPUnion_country_event.6004.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_report_event_gre_george_ii_victorious
+	option = {
+		name = IPUnion_country_event.6004.a
+		#add_political_power = 15
+		hidden_effect = {
+			set_country_flag = ITA_kudeta_has_successed
+			news_event = IPunion_news.10
+		}
+		custom_effect_tooltip = ITA_kudeta_has_successed_tt
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+
+## Ciano Kudeta Done. ##
+
+country_event = {
+	id = IPUnion_country_event.6005
+	is_triggered_only = yes
+	fire_only_once = yes
+}
+
+
 
 country_event = {
 	id = IPUnion_country_event.61

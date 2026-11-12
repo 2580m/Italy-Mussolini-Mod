@@ -9,6 +9,8 @@ scripted_gui = {
 				has_country_flag = SE_italian_great_revolution
 				has_country_flag = SE_middle_east_war
 				has_country_flag = SE_italian_naval_aviation
+				has_country_flag = SE_memorial_of_mussolini
+				has_country_flag = SE_celebrate_for_great_turning
 			}
 		}
 		triggers = {
@@ -24,6 +26,12 @@ scripted_gui = {
 			SE_italian_naval_aviation_visible = {
 				has_country_flag = SE_italian_naval_aviation
 			}
+			SE_memorial_of_mussolini_visible = {
+				has_country_flag = SE_memorial_of_mussolini
+			}
+			SE_celebrate_for_great_turning_visible = {
+				has_country_flag = SE_celebrate_for_great_turning
+			}
 		}
 		effects = {
 			SE_Option_click = {
@@ -31,6 +39,8 @@ scripted_gui = {
 				clr_country_flag = SE_italian_great_revolution
 				clr_country_flag = SE_middle_east_war
 				clr_country_flag = SE_italian_naval_aviation
+				clr_country_flag = SE_memorial_of_mussolini
+				clr_country_flag = SE_celebrate_for_great_turning
 			}
 		}		
 	}		
