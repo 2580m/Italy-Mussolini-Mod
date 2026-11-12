@@ -1,4 +1,4 @@
-version="v20260919update1"
+version="v20261112update1"
 tags={
 	"National Focuses"
 }
